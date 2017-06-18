@@ -1,0 +1,266 @@
+<jittershader name="ray.template.jxs">
+	<description>SPARCK - ShaderTemplate - (c) 2017 by maybites</description>
+
+	<param name="sprk_screenMatrix" type="mat4" state="WORLD_MATRIX" />
+	<param name="sprk_rotMatrix" type="mat4" default="0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." />
+	<param name="sprk_viewPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_worldRefPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_globalTime" type="float" default="0." />
+	<param name="sprk_scale" type="float" default="1." />
+
+    <!-- COMMENT: add here your own parameters... 
+    
+    copy and modify the following lines outsite of this comment section:
+
+	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
+    
+    you can use parameters of the following types:
+    
+        TYPES       GUI     QUE
+
+        -int        y       y
+        -float      y       y   
+        -vec2       y       y
+        -vec3       y       y
+        -vec4       y       y
+        -mat3       -       y
+        -mat4       -       y
+
+    GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the userinterface
+    QUE: These parameters can be sent to this shader via OSC or QueScript.
+    
+    ...Dont forget to bind it the shader: END OF COMMENT-->
+
+	<language name="glsl" version="1.2">
+		<bind param="sprk_screenMatrix" program="vp" />
+		<bind param="sprk_rotMatrix" program="fp" />
+		<bind param="sprk_scale" program="fp" />
+		<bind param="sprk_viewPos" program="fp" />
+		<bind param="sprk_worldRefPos" program="fp" />
+		<bind param="sprk_globalTime" program="fp" />
+
+        <!-- COMMENT: bind your own parameters here to the vertex shader (vp) and/or fragment shader (fp)
+
+        copy and modify the following lines outsite of this comment section:
+        
+        <bind param="myVeryOwnFloat" program="fp" />
+        <bind param="myVeryOwnVec3" program="fp" />
+       
+        ...until here.-->
+
+		<program name="vp" type="vertex">
+<![CDATA[
+
+// >>>>> ================================
+// >>>>> DO NOT CHANGE ANYTHING FROM HERE
+// >>>>> ================================
+
+#version 120
+
+uniform mat4 sprk_screenMatrix;
+
+varying vec3 sprk_normal;	// surface normal
+varying vec3 sprk_worldPos;	// vertex world position
+
+void main(void)
+{
+	// perform standard transform on vertex (general approach)
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	
+	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
+	
+	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
+	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform vec3 sprk_viewPos; 			// point of view position
+uniform vec3 sprk_worldRefPos;      // reference position of this virtual world
+uniform mat4 sprk_rotMatrix; 		// rotation matrix
+uniform float sprk_scale;			// viewline scale
+uniform float sprk_globalTime; 		// time
+
+varying vec3 sprk_normal;			// surface normal
+varying vec3 sprk_worldPos;			// vertex world position
+
+// ================================= <<<<<<
+// ...................... UNTIL HERE <<<<<<
+// ================================= <<<<<<
+
+// From here onwards will be your custom code...
+
+// *************************************************************************
+//
+// Created by: 
+//
+//
+// *************************************************************************
+
+// Add here your own parameters
+
+uniform float myVeryOwnFloat;
+uniform vec3 myVeryOwnVec3;
+
+// If your old shader code came from shadertoy.com and used mouse interaction, 
+// these values will usually lead to good results
+// since we dont need them anymore they can be static.
+
+vec2 iMouse = vec2(0.5, 0.5);
+vec2 iResolution = vec2(1000, 1000);
+float iGlobalTime = sprk_globalTime;
+
+// Created by inigo quilez - iq/2014
+// License Creative Commons Attribution-NonCommercial-ShareAlike 3.0
+
+float hash( vec2 p ) { return fract(sin(1.0+dot(p,vec2(127.1,311.7)))*43758.545); }
+vec2  sincos( float x ) { return vec2( sin(x), cos(x) ); }
+vec3  opU( vec3 d1, vec3 d2 ){ return (d1.x<d2.x) ? d1 : d2;}
+
+vec2 sdSegment( in vec3 p, in vec3 a, in vec3 b )
+{
+    vec3 pa = p - a, ba = b - a;
+	float h = clamp( dot(pa,ba)/dot(ba,ba), 0.0, 1.0 );
+	return vec2( length( pa - ba*h ), h );
+}
+
+vec3 map( vec3 p )
+{
+    vec2  id = floor( (p.xz+1.0)/2.0 );
+    float ph = hash(id+113.1);
+    float ve = hash(id);
+
+    p.xz = mod( p.xz+1.0, 2.0 ) - 1.0;
+    p.xz += 0.5*cos( 2.0*ve*iGlobalTime + (p.y+ph)*vec2(0.53,0.32) - vec2(1.57,0.0) );
+
+    vec3 p1 = p; p1.xz += 0.15*sincos(p.y-ve*iGlobalTime*ve+0.0);
+    vec3 p2 = p; p2.xz += 0.15*sincos(p.y-ve*iGlobalTime*ve+2.0);
+    vec3 p3 = p; p3.xz += 0.15*sincos(p.y-ve*iGlobalTime*ve+4.0);
+    
+    vec2 h1 = sdSegment( p1, vec3(0.0,-50.0, 0.0), vec3(0.0, 50.0, 0.0) );
+    vec2 h2 = sdSegment( p2, vec3(0.0,-50.0, 0.0), vec3(0.0, 50.0, 0.0) );
+    vec2 h3 = sdSegment( p3, vec3(0.0,-50.0, 0.0), vec3(0.0, 50.0, 0.0) );
+
+    return opU( opU( vec3(h1.x-0.15*(0.8+0.2*sin(200.0*h1.y)), ve + 0.000, h1.y), 
+                     vec3(h2.x-0.15*(0.8+0.2*sin(200.0*h2.y)), ve + 0.015, h2.y) ), 
+                     vec3(h3.x-0.15*(0.8+0.2*sin(200.0*h3.y)), ve + 0.030, h3.y) );
+
+}
+
+vec3 intersect( in vec3 ro, in vec3 rd, in float px, const float maxdist )
+{
+    vec3 res = vec3(-1.0);
+    float t = 0.0;
+    for( int i=0; i<256; i++ )
+    {
+	    vec3 h = map(ro + t*rd);
+        res = vec3( t, h.yz );
+        if( h.x<(px*t) || t>maxdist ) break;
+        t += min( h.x, 0.5 )*0.7;
+    }
+	return res;
+}
+
+vec3 calcNormal( in vec3 pos )
+{
+    const vec2 e = vec2(1.0,-1.0)*0.003;
+    return normalize( e.xyy*map( pos + e.xyy ).x + 
+					  e.yyx*map( pos + e.yyx ).x + 
+					  e.yxy*map( pos + e.yxy ).x + 
+					  e.xxx*map( pos + e.xxx ).x );
+}
+
+float calcOcc( in vec3 pos, in vec3 nor )
+{
+    const float h = 0.1;
+	float ao = 0.0;
+    for( int i=0; i<8; i++ )
+    {
+        vec3 dir = sin( float(i)*vec3(1.0,7.13,13.71)+vec3(0.0,2.0,4.0) );
+        dir = dir + 2.0*nor*max(0.0,-dot(nor,dir));            
+        float d = map( pos + h*dir ).x;
+        ao += h-d;
+    }
+    return clamp( 1.0 - 0.7*ao, 0.0, 1.0 );
+}
+
+vec3 render( in vec3 ro, in vec3 rd, in float px )
+{
+    vec3 col = vec3(0.0);
+    
+    const float maxdist = 32.0;
+    vec3 res = intersect( ro, rd, px, maxdist );
+    if( res.x < maxdist )
+    {
+        vec3  pos = ro + res.x*rd;
+        vec3  nor = calcNormal( pos );
+        float occ = calcOcc( pos, nor );
+
+        col = 0.5 + 0.5*cos( res.y*30.0 + vec3(0.0,4.4,4.0) );
+        col *= 0.5 + 1.5*nor.y;
+        col += clamp(1.0+dot(rd,nor),0.0,1.0);
+        float u = 800.0*res.z - sin(res.y)*iGlobalTime;
+        col *= 0.95 + 0.05*cos( u + 3.1416*cos(1.5*u + 3.1416*cos(3.0*u)) + vec3(0.0,1.0,2.0) );
+        col *= vec3(1.5,1.0,0.7);
+        col *= occ;
+
+        float fl = mod( (0.5+cos(2.0+res.y*47.0))*iGlobalTime + res.y*7.0, 4.0 )/4.0;
+        col *= 2.5 - 1.5*smoothstep(0.02,0.04,abs(res.z-fl));
+        
+        col *= exp( -0.1*res.x );
+        col *= 1.0 - smoothstep( 20.0, 30.0, res.x );
+    }
+    
+    return pow( col, vec3(0.5,1.0,1.0) );
+}
+
+void main()
+{	
+    // It should start with the following code block
+    
+    // =================  DO NOT CHANGE THIS CODE  =============================
+	vec4 sprk_vl_raw = vec4(sprk_worldPos - sprk_viewPos - sprk_worldRefPos, 1);
+	vec3 sprk_vl_dir = (sprk_rotMatrix * sprk_vl_raw).xyz;
+	vec3 sprk_ray    = normalize(sprk_vl_dir) * sprk_scale;
+    // =================  DO NOT CHANGE THIS CODE  =============================
+    
+    // usefull variables that are controlled by the RayMarching Node are:
+ 
+    //  sprk_ray        (vec3) -> it is THE RAY
+    //  sprk_viewPos;   (vec3) -> the world postion of your eye
+    //  sprk_worldPos   (vec3) -> the place where the ray hits the canvas.
+    //  sprk_rotMatrix  (mat4) -> rotates the ray around itself
+    //  sprk_scale      (float)-> scales the ray
+    //  sprk_globalTime (float)-> the global time in seconds
+
+	//vec2 p = (-iResolution.xy+2.0*fragCoord.xy)/iResolution.y;
+    //vec2 q = fragCoord.xy/iResolution.xy;
+    vec2 q = sprk_ray.xy;
+    
+	vec3  ro = vec3(0.6,2.4,1.2) + sprk_viewPos;
+	vec3  ta = vec3(0.0,0.0,0.0);
+    float fl = 3.0;
+    vec3  ww = normalize( ta - ro);
+    vec3  uu = normalize( cross( vec3(0.0,1.0,0.0), ww ) );
+    vec3  vv = normalize( cross(ww,uu) );
+    //vec3  rd = normalize( p.x*uu + p.y*vv + fl*ww );
+    
+    vec3 rd = sprk_ray;
+
+    vec3 col = render( ro, rd, 1.0/(iResolution.y*fl) );
+    
+    //col *= pow( 16.0*q.x*q.y*(1.0-q.x)*(1.0-q.y), 0.1 );
+
+//	int tint = mode * 1;
+    
+	gl_FragColor = vec4( col, 1.0 );
+}
+
+]]>
+		</program>		
+	</language>
+</jittershader>

@@ -1,0 +1,143 @@
+{
+	"_enable" : 1,
+	"Window" : 	{
+		"Output_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Output_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 20, 5, 200, 127 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window"
+	}
+,
+	"Grid" : 	{
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "Grid_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 210, 21, 390, 121 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Grid"
+	}
+,
+	"Calibrator" : 	{
+		"Calibrator_1" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Calibrator_1",
+			"_title" : "Calibrator_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 20, 132, 200, 213 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Calibrator",
+		"Calibrator_2" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Calibrator_2",
+			"_title" : "Calibrator_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 209, 132, 389, 213 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"Calibrator_3" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Calibrator_3",
+			"_title" : "Calibrator_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 398, 131, 578, 212 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"Calibrator_4" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "Calibrator_4",
+			"_title" : "Calibrator_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 587, 132, 767, 213 ],
+			"_nodespace.idx" : 4
+		}
+
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 18, 223, 198, 300 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Calibrator_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort",
+		"ViewPort_2" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "ViewPort_2",
+			"_title" : "ViewPort_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 209, 222, 389, 299 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Calibrator_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"ViewPort_3" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "ViewPort_3",
+			"_title" : "ViewPort_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 399, 222, 579, 299 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Calibrator_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"ViewPort_4" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "ViewPort_4",
+			"_title" : "ViewPort_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 587, 221, 767, 298 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Calibrator_4", 2, "texture", 2, "texture", 1 ]
+		}
+
+	}
+
+}

@@ -1,0 +1,184 @@
+<jittershader name="bs.roadToHell.jxs">
+	<description>Road To Hell by rez - https://www.shadertoy.com/view/Mds3Rn </description>
+
+	<param name="sprk_screenMatrix" type="mat4" state="WORLD_MATRIX" />
+	<param name="sprk_rotMatrix" type="mat4" default="0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." />
+	<param name="sprk_viewPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_worldRefPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_globalTime" type="float" default="0." />
+	<param name="sprk_scale" type="float" default="1." />
+
+    <!-- COMMENT: add here your own parameters... 
+    
+    copy and modify the following line outsite of this comment section:
+
+	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
+    
+    you can use parameters of the following types:
+    
+        TYPES       GUI     OSC
+
+        -int        y       y
+        -float      y       y   
+        -vec2       y       y
+        -vec3       y       y
+        -vec4       y       y
+        -mat3       -       y
+        -mat4       -       y
+
+    ...Dont forget to bind it the shader: END OF COMMENT-->
+
+	<language name="glsl" version="1.2">
+		<bind param="sprk_screenMatrix" program="vp" />
+		<bind param="sprk_rotMatrix" program="fp" />
+		<bind param="sprk_scale" program="fp" />
+		<bind param="sprk_viewPos" program="fp" />
+		<bind param="sprk_worldRefPos" program="fp" />
+		<bind param="sprk_globalTime" program="fp" />
+
+        <!-- COMMENT: bind your own parameters here to the vertex shader (vp) and/or fragment shader (fp)
+
+        <bind param="myVeryOwnFloat" program="fp" />
+        <bind param="myVeryOwnVec3" program="fp" />
+       
+        ...until here.-->
+
+		<program name="vp" type="vertex">
+<![CDATA[
+
+// >>>>> ================================
+// >>>>> DO NOT CHANGE ANYTHING FROM HERE
+// >>>>> ================================
+
+#version 120
+
+uniform mat4 sprk_screenMatrix;
+
+varying vec3 sprk_normal;	// surface normal
+varying vec3 sprk_worldPos;	// vertex world position
+
+void main(void)
+{
+	// perform standard transform on vertex (general approach)
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	
+	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
+	
+	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
+	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform vec3 sprk_viewPos; 			// point of view position
+uniform vec3 sprk_worldRefPos;      // reference position of this virtual world
+uniform mat4 sprk_rotMatrix; 		// rotation matrix
+uniform float sprk_scale;			// viewline scale
+uniform float sprk_globalTime; 		// time
+
+varying vec3 sprk_normal;			// surface normal
+varying vec3 sprk_worldPos;			// vertex world position
+
+// ================================= <<<<<<
+// DO NOT CHANGE ANYTHING UNTIL HERE <<<<<<
+// ================================= <<<<<<
+
+// COMMENT: Add here your own parameters
+
+uniform float myVeryOwnFloat;
+uniform vec3 myVeryOwnVec3;
+
+// *************************************************************************
+// Road To Hell by rez:
+// https://www.shadertoy.com/view/Mds3Rn
+
+// adapted for SPARCK by Maybites
+// *************************************************************************
+
+// From here onwards will be custom code...
+
+// If your shader uses mouse interaction, these values will usually lead to good results
+// since we dont need them anymore they can be static.
+
+vec2 iMouse = vec2(0.5, 0.5);
+vec2 iResolution = vec2(1000, 1000);
+
+const float PI=3.14159265358979323846;
+
+float speed=sprk_globalTime*0.2975;
+float ground_x=1.0-0.2*sin(PI*speed*0.25);
+float ground_y=1.0;
+float ground_z=1.0;
+
+vec2 rotate(vec2 k,float t){
+	return vec2(cos(t)*k.x-sin(t)*k.y,sin(t)*k.x+cos(t)*k.y);
+}
+
+float draw_scene(vec3 p){
+	float tunnel_m=0.125*cos(PI*p.z*1.0+speed*4.0-PI);
+	float tunnel1_p=2.0;
+	float tunnel1_w=tunnel1_p*0.225;
+	float tunnel1=length(mod(p.xy,tunnel1_p)-tunnel1_p*0.5)-tunnel1_w;	// tunnel1
+	float tunnel2_p=2.0;
+	float tunnel2_w=tunnel2_p*0.2125+tunnel2_p*0.0125*cos(PI*p.y*8.0)+tunnel2_p*0.0125*cos(PI*p.z*8.0);
+	float tunnel2=length(mod(p.xy,tunnel2_p)-tunnel2_p*0.5)-tunnel2_w;	// tunnel2
+	float hole1_p=1.0;
+	float hole1_w=hole1_p*0.5;
+	float hole1=length(mod(p.xz,hole1_p).xy-hole1_p*0.5)-hole1_w;	// hole1
+	float hole2_p=0.25;
+	float hole2_w=hole2_p*0.375;
+	float hole2=length(mod(p.yz,hole2_p).xy-hole2_p*0.5)-hole2_w;	// hole2
+	float hole3_p=0.5;
+	float hole3_w=hole3_p*0.25+0.125*sin(PI*p.z*2.0);
+	float hole3=length(mod(p.xy,hole3_p).xy-hole3_p*0.5)-hole3_w;	// hole3
+	float tube_m=0.075*sin(PI*p.z*1.0);
+	float tube_p=0.5+tube_m;
+	float tube_w=tube_p*0.025+0.00125*cos(PI*p.z*128.0);
+	float tube=length(mod(p.xy,tube_p)-tube_p*0.5)-tube_w;			// tube
+	float bubble_p=0.05;
+	float bubble_w=bubble_p*0.5+0.025*cos(PI*p.z*2.0);
+	float bubble=length(mod(p.yz,bubble_p)-bubble_p*0.5)-bubble_w;	// bubble
+	return max(min(min(-tunnel1,mix(tunnel2,-bubble,0.375)),max(min(-hole1,hole2),-hole3)),-tube);
+}
+
+void main(){
+    // =================  DO NOT CHANGE THIS CODE  =============================
+	vec4 sprk_vl_raw = vec4(sprk_worldPos - sprk_viewPos - sprk_worldRefPos, 1);
+	vec3 sprk_vl_dir = (sprk_rotMatrix * sprk_vl_raw).xyz;
+	vec3 sprk_ray    = normalize(sprk_vl_dir) * sprk_scale;
+    // =================  DO NOT CHANGE THIS CODE  =============================
+
+	//vec2 position=(fragCoord.xy/iResolution.xy);
+	//vec2 p=-1.0+2.0*position;
+	//vec3 dir=normalize(vec3(p*vec2(1.77,1.0),1.0));		// screen ratio (x,y) fov (z)
+	
+	vec3 dir=sprk_ray;
+	
+	vec3 ray=vec3(ground_x,ground_y,ground_z-speed*2.5) - sprk_viewPos;
+	float t=0.0;
+	const int ray_n=96;
+	for(int i=0;i<ray_n;i++){
+		float k=draw_scene(ray+dir*t);
+		t+=k*0.75;
+	}
+	vec3 hit=ray+dir*t;
+	vec2 h=vec2(-0.0025,0.002); // light
+	vec3 n=normalize(vec3(draw_scene(hit+h.xyx),draw_scene(hit+h.yxy),draw_scene(hit+h.yyx)));
+	float c=(n.x+n.y+n.z)*0.35;
+	vec3 color=vec3(c,c,c)+t*0.0625;
+
+//	int tint = mode * 1;
+
+	gl_FragColor=vec4(vec3(c-t*0.0375,c-t*0.025,c+t*0.025)+color*color,1.0);
+
+}
+
+
+]]>
+		</program>		
+	</language>
+</jittershader>

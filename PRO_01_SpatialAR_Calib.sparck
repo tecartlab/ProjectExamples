@@ -1,0 +1,118 @@
+{
+	"_enable" : 1,
+	"Grid" : 	{
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "Grid_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 10, 17, 190, 117 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Grid"
+	}
+,
+	"Calibrator" : 	{
+		"Calibrator_1" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Calibrator_1",
+			"_title" : "Calibrator_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 15, 151, 195, 232 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Calibrator",
+		"Calibrator_2" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Calibrator_2",
+			"_title" : "Calibrator_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 202, 152, 382, 233 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"Calibrator_3" : 		{
+			"_type" : "Calibrator",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Calibrator_3",
+			"_title" : "Calibrator_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 390, 151, 570, 232 ],
+			"_nodespace.idx" : 3
+		}
+
+	}
+,
+	"Window" : 	{
+		"Output_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Output_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 217, 11, 397, 133 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window"
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 14, 250, 194, 327 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Calibrator_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort",
+		"ViewPort_2" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "ViewPort_2",
+			"_title" : "ViewPort_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 202, 250, 382, 327 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Calibrator_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"ViewPort_3" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "ViewPort_3",
+			"_title" : "ViewPort_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 389, 253, 569, 330 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Calibrator_3", 2, "texture", 2, "texture", 1 ]
+		}
+
+	}
+
+}

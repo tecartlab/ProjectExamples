@@ -1,0 +1,268 @@
+{
+	"_enable" : 1,
+	"Window" : 	{
+		"Output_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Output_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 13, 14, 193, 136 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window"
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 15, 242, 195, 319 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Video_5", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort"
+	}
+,
+	"SceneCapture" : 	{
+		"_type" : "SceneCapture"
+	}
+,
+	"CornerPin" : 	{
+		"CornerPin_1" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "CornerPin_1",
+			"_title" : "CornerPin_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 202, 108, 382, 167 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "CornerPin",
+		"CornerPin_2" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "CornerPin_2",
+			"_title" : "CornerPin_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 392, 109, 572, 168 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Video_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_3" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "CornerPin_3",
+			"_title" : "CornerPin_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 577, 108, 757, 167 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Video_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_4" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "CornerPin_4",
+			"_title" : "CornerPin_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 764, 106, 944, 165 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Video_4", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_5" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "CornerPin_5",
+			"_title" : "CornerPin_5",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 206, 178, 386, 237 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_6" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 6,
+			"_name" : "CornerPin_6",
+			"_title" : "CornerPin_6",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 393, 181, 573, 240 ],
+			"_nodespace.idx" : 6,
+			"_connection_0" : [ "Video_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_7" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 7,
+			"_name" : "CornerPin_7",
+			"_title" : "CornerPin_7",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 580, 177, 760, 236 ],
+			"_nodespace.idx" : 7,
+			"_connection_0" : [ "Video_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_8" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 8,
+			"_name" : "CornerPin_8",
+			"_title" : "CornerPin_8",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 767, 173, 947, 232 ],
+			"_nodespace.idx" : 8,
+			"_connection_0" : [ "Video_4", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_9" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 9,
+			"_name" : "CornerPin_9",
+			"_title" : "CornerPin_9",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 211, 252, 391, 311 ],
+			"_nodespace.idx" : 9,
+			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_10" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 10,
+			"_name" : "CornerPin_10",
+			"_title" : "CornerPin_10",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 400, 252, 580, 311 ],
+			"_nodespace.idx" : 10,
+			"_connection_0" : [ "Video_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_11" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 11,
+			"_name" : "CornerPin_11",
+			"_title" : "CornerPin_11",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 587, 252, 767, 311 ],
+			"_nodespace.idx" : 11,
+			"_connection_0" : [ "Video_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"CornerPin_12" : 		{
+			"_type" : "CornerPin",
+			"_version" : 1,
+			"_id" : 12,
+			"_name" : "CornerPin_12",
+			"_title" : "CornerPin_12",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 767, 253, 947, 312 ],
+			"_nodespace.idx" : 12,
+			"_connection_0" : [ "Video_4", 2, "texture", 2, "texture", 1 ]
+		}
+
+	}
+,
+	"Video" : 	{
+		"Video_1" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Video_1",
+			"_title" : "Video_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 203, 16, 383, 98 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Video",
+		"Video_2" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Video_2",
+			"_title" : "Video_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 391, 17, 571, 99 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"Video_3" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Video_3",
+			"_title" : "Video_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 578, 19, 758, 101 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"Video_4" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "Video_4",
+			"_title" : "Video_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 763, 20, 943, 102 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"Video_5" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "Video_5",
+			"_title" : "Video_5",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 16, 157, 196, 239 ],
+			"_nodespace.idx" : 5
+		}
+
+	}
+,
+	"MeshWarp" : 	{
+		"_type" : "MeshWarp"
+	}
+
+}

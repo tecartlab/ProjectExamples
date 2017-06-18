@@ -1,0 +1,47 @@
+<ledstrip version="1">
+	<segment name="LEDStripe_A">
+		<coord x="-0.35" y="-0.85" z="0.02"></coord>
+		<coord x="-0.35" y="-0.85" z="1.94"></coord>
+		<coord x="-0.11" y="-0.25" z="2.31"></coord>
+	</segment>
+	<segment name="LEDStripe_B">
+		<coord x="0.31" y="-0.88" z="1.93"></coord>
+		<coord x="-0.31" y="-0.88" z="0.95"></coord>
+	</segment>
+	<segment name="LEDStripe_C">
+		<coord x="-0.13" y="-0.88" z="0.95"></coord>
+		<coord x="-0.33" y="-0.88" z="1.27"></coord>
+	</segment>
+	<segment name="LEDStripe_D">
+		<coord x="-0.33" y="-0.88" z="1.32"></coord>
+		<coord x="0.05" y="-0.88" z="1.93"></coord>
+	</segment>
+	<segment name="LEDStripe_E">
+		<coord x="0.17" y="-0.88" z="1.93"></coord>
+		<coord x="0.33" y="-0.88" z="1.68"></coord>
+	</segment>
+	<segment name="LEDStripe_F">
+		<coord x="0.33" y="-0.88" z="1.62"></coord>
+		<coord x="-0.08" y="-0.88" z="0.95"></coord>
+	</segment>
+	<segment name="LEDStripe_G">
+		<coord x="0.08" y="-0.88" z="0.95"></coord>
+		<coord x="-0.33" y="-0.88" z="1.62"></coord>
+	</segment>
+	<segment name="LEDStripe_H">
+		<coord x="-0.33" y="-0.88" z="1.68"></coord>
+		<coord x="-0.17" y="-0.88" z="1.93"></coord>
+	</segment>
+	<segment name="LEDStripe_I">
+		<coord x="-0.05" y="-0.88" z="1.93"></coord>
+		<coord x="0.33" y="-0.88" z="1.32"></coord>
+	</segment>
+	<segment name="LEDStripe_J">
+		<coord x="0.33" y="-0.88" z="1.27"></coord>
+		<coord x="0.13" y="-0.88" z="0.95"></coord>
+	</segment>
+	<segment name="LEDStripe_K">
+		<coord x="0.31" y="-0.88" z="0.95"></coord>
+		<coord x="-0.31" y="-0.88" z="1.93"></coord>
+	</segment>
+</ledstrip>

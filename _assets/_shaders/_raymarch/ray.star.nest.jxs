@@ -1,0 +1,213 @@
+<jittershader name="ray.template.jxs">
+	<description> Star Nest - Pablo Román Andrioli - https://www.shadertoy.com/view/lslyRn</description>
+
+	<param name="sprk_screenMatrix" type="mat4" state="WORLD_MATRIX" />
+	<param name="sprk_rotMatrix" type="mat4" default="0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." />
+	<param name="sprk_viewPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_worldRefPos" type="vec3" default="0. 0. 0." description="test"/>
+	<param name="sprk_globalTime" type="float" default="0." />
+	<param name="sprk_scale" type="float" default="1." />
+
+    <!-- COMMENT: add here your own parameters... 
+    
+    copy and modify the following lines outsite of this comment section:
+
+	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
+    
+    you can use parameters of the following types:
+    
+        TYPES       GUI     QUE
+
+        -int        y       y
+        -float      y       y   
+        -vec2       y       y
+        -vec3       y       y
+        -vec4       y       y
+        -mat3       -       y
+        -mat4       -       y
+
+    GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the userinterface
+    QUE: These parameters can be sent to this shader via OSC or QueScript.
+    
+    ...Dont forget to bind it the shader: END OF COMMENT-->
+
+	<language name="glsl" version="1.2">
+		<bind param="sprk_screenMatrix" program="vp" />
+		<bind param="sprk_rotMatrix" program="fp" />
+		<bind param="sprk_scale" program="fp" />
+		<bind param="sprk_viewPos" program="fp" />
+		<bind param="sprk_worldRefPos" program="fp" />
+		<bind param="sprk_globalTime" program="fp" />
+
+        <!-- COMMENT: bind your own parameters here to the vertex shader (vp) and/or fragment shader (fp)
+
+        copy and modify the following lines outsite of this comment section:
+        
+        <bind param="myVeryOwnFloat" program="fp" />
+        <bind param="myVeryOwnVec3" program="fp" />
+       
+        ...until here.-->
+
+		<program name="vp" type="vertex">
+<![CDATA[
+
+// >>>>> ================================
+// >>>>> DO NOT CHANGE ANYTHING FROM HERE
+// >>>>> ================================
+
+#version 120
+
+uniform mat4 sprk_screenMatrix;
+
+varying vec3 sprk_normal;	// surface normal
+varying vec3 sprk_worldPos;	// vertex world position
+
+void main(void)
+{
+	// perform standard transform on vertex (general approach)
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	
+	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
+	
+	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
+	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform vec3 sprk_viewPos; 			// point of view position
+uniform vec3 sprk_worldRefPos;      // reference position of this virtual world
+uniform mat4 sprk_rotMatrix; 		// rotation matrix
+uniform float sprk_scale;			// viewline scale
+uniform float sprk_globalTime; 		// time
+
+varying vec3 sprk_normal;			// surface normal
+varying vec3 sprk_worldPos;			// vertex world position
+
+// ================================= <<<<<<
+// ...................... UNTIL HERE <<<<<<
+// ================================= <<<<<<
+
+// From here onwards will be your custom code...
+
+// *************************************************************************
+//
+// Created by: Star Nest by Pablo Román Andrioli
+// Adapted for SPARCK by maybites
+//
+// *************************************************************************
+
+// Add here your own parameters
+
+uniform float myVeryOwnFloat;
+uniform vec3 myVeryOwnVec3;
+
+// If your old shader code came from shadertoy.com and used mouse interaction, 
+// these values will usually lead to good results
+// since we dont need them anymore they can be static.
+
+vec2 iMouse = vec2(0.5, 0.5);
+vec2 iResolution = vec2(1000, 1000);
+float iGlobalTime = sprk_globalTime;
+
+const float PI=3.14159265358979323846;
+
+// This content is under the MIT License.
+
+#define iterations 17
+#define formuparam 0.53
+
+#define volsteps 20
+#define stepsize 0.1
+
+#define zoom   0.800
+#define tile   0.850
+#define speed  0.010 
+
+#define brightness 0.0015
+#define darkmatter 0.300
+#define distfading 0.730
+#define saturation 0.850
+
+
+void main()
+{
+    // It should start with the following code block
+    
+    // =================  DO NOT CHANGE THIS CODE  =============================
+	vec4 sprk_vl_raw = vec4(sprk_viewPos - sprk_worldPos - sprk_worldRefPos, 1);
+	vec3 sprk_vl_dir = (sprk_rotMatrix * sprk_vl_raw).xyz;
+	vec3 sprk_ray    = normalize(sprk_vl_dir) * sprk_scale;
+    // =================  DO NOT CHANGE THIS CODE  =============================
+    
+    // usefull variables that are controlled by the RayMarching Node are:
+ 
+    //  sprk_ray        (vec3) -> it is THE RAY
+    //  sprk_viewPos;   (vec3) -> the world postion of your eye
+    //  sprk_worldPos   (vec3) -> the place where the ray hits the canvas.
+    //  sprk_rotMatrix  (mat4) -> rotates the ray around itself
+    //  sprk_scale      (float)-> scales the ray
+    //  sprk_globalTime (float)-> the global time in seconds
+     
+
+	//get coords and direction
+	//vec2 uv=fragCoord.xy/iResolution.xy-.5;
+	//uv.y*=iResolution.y/iResolution.x;
+	
+	//vec3 dir=vec3(uv*zoom,1.);
+	vec3 dir=sprk_ray;
+	
+	float time=iGlobalTime*speed+.25;
+
+	//mouse rotation
+	//float a1=.5+iMouse.x/iResolution.x*2.;
+	//float a2=.8+iMouse.y/iResolution.y*2.;
+	float a1=.5+1.0*2.;
+	float a2=.8+1.0*2.;
+	mat2 rot1=mat2(cos(a1),sin(a1),-sin(a1),cos(a1));
+	mat2 rot2=mat2(cos(a2),sin(a2),-sin(a2),cos(a2));
+	dir.xz*=rot1;
+	dir.xy*=rot2;
+	vec3 from=vec3(1.,.5,0.5) + sprk_viewPos * 0.05;
+	from+=vec3(time*2.,time,-2.);
+	from.xz*=rot1;
+	from.xy*=rot2;
+	
+	//volumetric rendering
+	float s=0.1,fade=1.;
+	vec3 v=vec3(0.);
+	for (int r=0; r<volsteps; r++) {
+		vec3 p=from+s*dir*.5;
+		p = abs(vec3(tile)-mod(p,vec3(tile*2.))); // tiling fold
+		float pa,a=pa=0.;
+		for (int i=0; i<iterations; i++) { 
+			p=abs(p)/dot(p,p)-formuparam; // the magic formula
+			a+=abs(length(p)-pa); // absolute sum of average change
+			pa=length(p);
+		}
+		float dm=max(0.,darkmatter-a*a*.001); //dark matter
+		a*=a*a; // add contrast
+		if (r>6) fade*=1.-dm; // dark matter, don't render near
+		//v+=vec3(dm,dm*.5,0.);
+		v+=fade;
+		v+=vec3(s,s*s,s*s*s*s)*a*brightness*fade; // coloring based on distance
+		fade*=distfading; // distance fading
+		s+=stepsize;
+	}
+	v=mix(vec3(length(v)),v,saturation); //color adjust
+	gl_FragColor = vec4(v*.01,1.);	
+
+//	int tint = mode * 1;
+	
+}
+
+
+
+]]>
+		</program>		
+	</language>
+</jittershader>

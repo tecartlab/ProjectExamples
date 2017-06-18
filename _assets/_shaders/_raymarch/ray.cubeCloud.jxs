@@ -1,0 +1,234 @@
+<jittershader name="bs.raymarch.jxs">
+	<description>Spatial Augmented Reality Projection System - Shader</description>
+	<param name="mode" type="int" default="0" />
+
+	<param name="screen_m_matrix" type="mat4" state="WORLD_MATRIX" />
+	<param name="offset_rot_matrix" type="mat4" default="0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." />
+	<param name="cam0_rot_matrix" type="mat4" default="0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." />
+	<param name="cam0_pos" type="vec3" default="0. 0. 0." />
+	<param name="iGlobalTime" type="float" default="0." />
+
+	<param name="tex0" type="int"/>
+	<param name="tex1" type="int"/>
+
+	<language name="glsl" version="1.2">
+		<bind param="screen_m_matrix" program="vp" />
+		<bind param="offset_rot_matrix" program="vp" />
+		<bind param="cam0_rot_matrix" program="vp" />
+		<bind param="cam0_pos" program="fp" />
+		<bind param="iGlobalTime" program="fp" />
+		
+		<program name="vp" type="vertex">
+<![CDATA[
+
+#version 120
+
+uniform vec3 cam0_pos;
+uniform mat4 screen_m_matrix;
+uniform mat4 cam0_rot_matrix;
+uniform mat4 offset_rot_matrix;
+
+varying vec3 normal;	// surface normal
+varying vec3 worldPos;	// vertex world position
+
+
+mat4 inv_trans_matrix = mat4(1.0, 0.0, 0.0, 0.0, 0, 1, 0, 0, 0, 0, 1, 0, -cam0_pos.x, -cam0_pos.y, -cam0_pos.z, 1);
+mat4 trans_matrix = mat4(1.0, 0.0, 0.0, 0.0, 0, 1, 0, 0, 0, 0, 1, 0, cam0_pos.x, cam0_pos.y, cam0_pos.z, 1);
+
+mat4 corrected_model_matrix = screen_m_matrix * trans_matrix * cam0_rot_matrix * offset_rot_matrix * inv_trans_matrix;
+
+void main(void)
+{
+	// perform standard transform on vertex (general approach)
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	
+	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
+	
+	normal = normalize(mat3(corrected_model_matrix) * gl_Normal);
+	worldPos = vec3(corrected_model_matrix * gl_Vertex);
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+// samplers
+uniform vec3 cam0_pos;
+
+// samplers
+uniform sampler2DRect tex0;
+uniform sampler2DRect tex1;
+
+varying vec3 normal;	// surface normal
+varying vec3 worldPos;	// vertex world position
+
+vec2 iMouse = vec2(0.5, 0.5);
+vec2 iResolution = vec2(1000, 1000);
+
+uniform float iGlobalTime;
+
+// texcoords
+varying vec2 texcoord0;
+varying vec2 texcoord1;
+
+
+//--------------------------------------------------------------------------
+//--------------------------------------------------------------------------
+
+#define AA 1
+#define PRECIS 0.001
+#define DMAX 30.0
+#define EDGE_WIDTH 0.4
+#define EDGE_SMOOTH 0.1
+
+float hash(float n) {
+    return fract(sin(n)*43758.5453);
+}
+
+//=============
+
+float fSphere(vec3 p) {
+    return length(p) - 0.6;
+}
+
+float fBox(vec3 p, vec3 b) {
+  return length(max(abs(p)-b,0.0))-0.2;
+}
+
+float fCylinder(vec3 p, vec3 c) {
+  return length(p.xz-c.xy)-c.z;
+}
+
+float fTorus(vec3 p, vec2 t) {
+  vec2 q = vec2(length(p.xz)-t.x,p.y);
+  return length(q)-t.y;
+}
+
+//=============
+
+vec3 rotx(vec3 p, float a)
+{
+    float s = sin(a), c = cos(a);
+    return vec3(p.x, c*p.y - s*p.z, s*p.y + c*p.z);
+}
+vec3 roty(vec3 p, float a)
+{
+    float s = sin(a), c = cos(a);
+    return vec3(c*p.x + s*p.z, p.y, -s*p.x + c*p.z);
+}
+
+vec2 map(vec3 pos) {
+    vec3 id = floor((pos+2.0)/4.0);
+    float rid = hash(dot(id, vec3(0.1, 0.4, 0.9)))+0.5;
+    pos = mod( pos+2.0, 4.0)-2.0;
+    pos = rotx(pos, iGlobalTime * 0.5 + id.x * id.y * 1.7 + sin(iGlobalTime));
+    pos = roty(pos, iGlobalTime * 0.5 + id.y * id.z * 1.7 + cos(iGlobalTime));
+    return vec2(fBox(pos, vec3(0.3)), rid);
+    return vec2(fTorus(pos, vec2(0.3, 0.4)), rid);
+    //return vec2(fCylinder(pos, vec3(0.1, 0.1, 0.3)), rid);
+    //return vec2(fSphere(pos), rid);
+}
+
+vec3 normal(vec3 pos) {
+    vec2 eps = vec2(0.001, 0.0);
+    return normalize(vec3(	map(pos + eps.xyy).x - map(pos - eps.xyy).x,
+                    map(pos + eps.yxy).x - map(pos - eps.yxy).x,
+                         	map(pos + eps.yyx).x - map(pos - eps.yyx).x));
+}
+    
+vec2 render(vec3 ro, vec3 rd) {
+    float t = 0.0;
+    float id = -1.0;
+    float lastD = 0.0;
+    for (int i = 0; i < 50; i++) {
+       	vec2 res = map(ro+t*rd);
+        t += res.x;
+        id = res.y;
+        if (res.x < PRECIS || t > DMAX) break; 
+    }
+    
+    if (t > DMAX) id = -1.0;
+    
+    return vec2(t, id);
+}
+
+vec3 marching(vec3 ro, vec3 rd) {
+    vec3 light = normalize(vec3(0.6, 0.8, -0.3));
+    float sun = dot(-rd, light);
+    sun = 0.5 * sun + 0.5;
+    vec3 bg = vec3(0.65,0.45,0.4)*sun+vec3(0.2, 0.2, 0.3);
+    vec3 col = bg;
+    
+    vec2 res = render(ro, rd);
+    if (res.y > -0.5) {
+        // lighting
+        vec3 nor = normal(ro+res.x*rd);
+        vec3 view = -rd;
+        
+        vec3 amb = vec3(0.05);
+        
+        float dif = dot(nor, light);
+        dif = dif * 0.5 + 0.5;
+        
+        vec3 h = normalize(light - rd);
+        float spec = pow(clamp(dot(nor, h), 0.0, 1.0), 50.0) * 0.9;
+        
+        float edge = clamp(dot(nor, view), 0.0, 1.0);
+        edge = mix(0.0, 1.0, smoothstep(EDGE_WIDTH-EDGE_SMOOTH, EDGE_WIDTH, edge));
+        
+        vec3 scol = vec3(0.3+hash(res.y*0.2),0.3+hash(res.y*0.4),0.3+hash(res.y*0.6));
+        col = amb + (dif + spec) * scol * pow(sun, 0.2) * edge;
+    }
+    
+    col = mix(col, bg, smoothstep(10.0, DMAX, res.x));
+    return col;
+}
+
+vec3 rotrd(vec3 rd, vec2 mouse) {
+    rd = rotx(rd,sin(iGlobalTime*0.12+sin(iGlobalTime*.5)*1.)+mouse.x*5.0);
+    rd = roty(rd,sin(iGlobalTime*0.2)*0.5+mouse.y*5.0);
+    return rd;
+}
+
+void main()
+{
+	vec3 viewline = cam0_pos - worldPos;
+	vec3 vl_abs = abs(viewline);
+	//vec2 p = fragCoord.xy / iResolution.xy;
+    //p = -1.0 + 2.0 * p;
+    //p.x *= iResolution.x/iResolution.y;
+    
+    vec2 p = viewline.xy;
+    
+    vec2 mouse = iMouse.xy/iResolution.xy;
+    mouse = -1.0 * 2.0 * mouse;
+    
+    vec2 delta = vec2(1.0/iResolution.y, 0.0);
+    vec3 ro, rd;
+    vec3 col = vec3(0.0, 0.0, 0.0);
+    
+    ro = vec3(2.0, 2.0, 0.0) + iGlobalTime*2.0;
+    for (int i = -AA; i <= AA; i++) {
+        for (int j = -AA; j <= AA; j++) {
+//            rd = normalize(vec3(p.xy+1.0/iResolution.y*vec2(i,j), 1.5));
+//  		rd = rotrd(rd, mouse);
+    		rd = viewline;
+    		col += marching(ro, rd);
+        }
+    }
+    col /= float((2*AA+1)*(2*AA+1));
+    
+    col *= clamp(1.0-length(p)*0.3,0.0,1.0);
+    
+    col = pow(col, vec3(0.4545));
+    
+	gl_FragColor = vec4(col,1.0);
+}
+
+//--------------------------------------------------------------------------
+
+]]>
+		</program>		
+	</language>
+</jittershader>

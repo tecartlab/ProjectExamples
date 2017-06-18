@@ -1,0 +1,313 @@
+{
+	"_enable" : 1,
+	"Grid" : 	{
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "Grid_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 13, 13, 193, 113 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Grid"
+	}
+,
+	"subnode" : 	{
+		"subnode_1" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "subnode_1",
+			"_title" : "LedStrips",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 212, 18, 392, 58 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "subnode"
+	}
+,
+	"LedStrip" : 	{
+		"LedStrip_1" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "LedStrip_1",
+			"_title" : "LedStrip_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 14, 14, 224, 422 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "LedStrip",
+		"LedStrip_2" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "LedStrip_2",
+			"_title" : "LedStrip_2",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 230, 14, 440, 422 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"LedStrip_3" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "LedStrip_3",
+			"_title" : "LedStrip_3",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 444, 15, 654, 423 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"LedStrip_4" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "LedStrip_4",
+			"_title" : "LedStrip_4",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 658, 15, 868, 423 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"LedStrip_5" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "LedStrip_5",
+			"_title" : "LedStrip_5",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 871, 16, 1081, 424 ],
+			"_nodespace.idx" : 5
+		}
+,
+		"LedStrip_6" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 6,
+			"_name" : "LedStrip_6",
+			"_title" : "LedStrip_6",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 1084, 17, 1294, 425 ],
+			"_nodespace.idx" : 6
+		}
+,
+		"LedStrip_7" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 7,
+			"_name" : "LedStrip_7",
+			"_title" : "LedStrip_7",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 1297, 17, 1507, 425 ],
+			"_nodespace.idx" : 7
+		}
+,
+		"LedStrip_8" : 		{
+			"_type" : "LedStrip",
+			"_version" : 1,
+			"_id" : 8,
+			"_name" : "LedStrip_8",
+			"_title" : "LedStrip_8",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 1511, 17, 1721, 425 ],
+			"_nodespace.idx" : 8
+		}
+
+	}
+,
+	"BoxMapProjection" : 	{
+		"BoxMapProjection_1" : 		{
+			"_type" : "BoxMapProjection",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "BoxMapProjection_1",
+			"_title" : "BoxMapProjection_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 412, 382, 592, 480 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "BoxMapCapture_1", 7, "cubemap", 2, "cubemap", -1 ]
+		}
+,
+		"_type" : "BoxMapProjection"
+	}
+,
+	"BoxMapCamera" : 	{
+		"BoxMapCamera_1" : 		{
+			"_type" : "BoxMapCamera",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "BoxMapCamera_1",
+			"_title" : "BoxMapCamera_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 408, 18, 588, 139 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "BoxMapCamera"
+	}
+,
+	"BoxMapCapture" : 	{
+		"BoxMapCapture_1" : 		{
+			"_type" : "BoxMapCapture",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "BoxMapCapture_1",
+			"_title" : "BoxRender",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 408, 139, 588, 320 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "BoxMapCapture",
+		"BoxMapCapture_2" : 		{
+			"_type" : "BoxMapCapture",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "BoxMapCapture_2",
+			"_title" : "BoxLEDSetup",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 594, 138, 774, 319 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"PixelPusher" : 	{
+		"PixelPusher_1" : 		{
+			"_type" : "PixelPusher",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "PixelPusher_1",
+			"_title" : "PixelPusher_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 600, 330, 810, 555 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "BoxMapCapture_1", 8, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "BoxMapCapture_2", 8, "texture", 3, "texture", 1 ]
+		}
+,
+		"_type" : "PixelPusher"
+	}
+,
+	"Video" : 	{
+		"Video_1" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Video_1",
+			"_title" : "Video_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 16, 346, 196, 428 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Video"
+	}
+,
+	"Canvas" : 	{
+		"Canvas_1" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Canvas_1",
+			"_title" : "RenderCanvas",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 16, 454, 196, 536 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "Canvas"
+	}
+,
+	"Model" : 	{
+		"Model_1" : 		{
+			"_type" : "Model",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Model_1",
+			"_title" : "Gazebo",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 20, 211, 200, 293 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Model"
+	}
+,
+	"Window" : 	{
+		"Output_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Output_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 213, 65, 393, 187 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window"
+	}
+,
+	"TextureStitcher" : 	{
+		"TextureStitcher_1" : 		{
+			"_type" : "TextureStitcher",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "TextureStitcher_1",
+			"_title" : "TextureStitcher_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 220, 384, 400, 446 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "BoxMapCapture_1", 8, "texture", 8, "texture", 1 ]
+		}
+,
+		"_type" : "TextureStitcher"
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 219, 462, 399, 539 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "TextureStitcher_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort"
+	}
+
+}

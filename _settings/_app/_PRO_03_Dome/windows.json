@@ -1,0 +1,413 @@
+{
+	"bs_gui_win_workspace_WorkSpace" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 138, 1409, 663 ],
+			"_visible" : 1
+		}
+
+	}
+,
+	"bs_gui_win_Output_1_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Grid_1_P_Model" : 	{
+		"_pin" : 0,
+		"_type" : "Model",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_MultiAugmented_1_P_Light" : 	{
+		"_pin" : 1,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SoftEdgeCanvas_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_BoxMapCamera_1_P_Camera" : 	{
+		"_pin" : 0,
+		"_type" : "Camera",
+		"_slotsize" : 22
+	}
+,
+	"bs_gui_win_workspace_subnode_6" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 153, 1001, 640 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"bs_gui_win_workspace_subnode_5" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 153, 1001, 640 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"bs_gui_win_workspace_subnode_4" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 153, 1001, 640 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"bs_gui_win_workspace_subnode_3" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 153, 1001, 640 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"bs_gui_win_workspace_subnode_2" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 551, 153, 1001, 640 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"bs_gui_win_workspace_subnode_1" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 190, 155, 640, 642 ],
+			"_visible" : 0
+		}
+
+	}
+,
+	"_storenames" : "Main",
+	"bs_gui_win_Warp2d_1_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_1_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_1_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_1_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_1_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Warp2d_2_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_2_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_2_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_2_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_2_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Warp2d_3_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_3_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_3_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_3_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_3_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Warp2d_4_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_4_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_4_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_4_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_4_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Warp2d_5_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_5_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_5_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_5_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_5_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Warp2d_6_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Capture_6_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "SceneCapture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_Beamer_6_C_BeamerSetup" : 	{
+		"_pin" : 0,
+		"_type" : "BeamerSetup",
+		"_slotsize" : 132,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Beamer_6_P_Beamer" : 	{
+		"_pin" : 0,
+		"_type" : "Beamer",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_ViewPort_6_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"_slotspot" : 0,
+	"bs_gui_win_RayMarchDome_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_VideoDome_P_Model" : 	{
+		"_pin" : 0,
+		"_type" : "Model",
+		"_slotsize" : 45
+	}
+,
+	"bs_gui_win_Video_1_P_Moovie" : 	{
+		"_pin" : 0,
+		"_type" : "Moovie",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_VideoDome_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SceneCapture_1_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SceneCapture_2_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_SceneCapture_3_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_SceneCapture_4_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_SceneCapture_5_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_SceneCapture_6_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_RayMarcher_1_P_Camera" : 	{
+		"_pin" : 0,
+		"_type" : "Camera",
+		"_slotsize" : 22
+	}
+
+}

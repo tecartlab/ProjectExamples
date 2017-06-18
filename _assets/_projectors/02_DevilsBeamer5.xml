@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "Beamer">
+	<slot number = "1">
+		<patcher name = "calibrationSetting">
+			<pattr name = "fileName" value = "02_DevilsTargets5.xml" />
+		</patcher>
+		<patcher name = "gateObject">
+			<pattr name = "fileName" value = "02/DevilsStone_lores.obj" />
+		</patcher>
+		<patcher name = "color">
+			<pattr name = "alpha" value = "1." />
+			<pattr name = "blue" value = "0." />
+			<pattr name = "green" value = "1." />
+			<pattr name = "red" value = "0." />
+		</patcher>
+		<pattr name = "azimuthAngle" value = "138.55" />
+		<pattr name = "calibObjOffsetPosX" value = "0." />
+		<pattr name = "calibObjOffsetPosY" value = "0." />
+		<pattr name = "calibObjOffsetPosZ" value = "0." />
+		<pattr name = "calibObjOffsetRotX" value = "0." />
+		<pattr name = "calibObjOffsetRotY" value = "0." />
+		<pattr name = "calibObjOffsetRotZ" value = "0." />
+		<pattr name = "calibObjOffsetScaleXYZ" value = "1." />
+		<pattr name = "frustumFarClipping" value = "16.68" />
+		<pattr name = "frustumNearClipping" value = "0.1" />
+		<pattr name = "frustumShiftX" value = "-0.463999" />
+		<pattr name = "frustumShiftY" value = "-2.690995" />
+		<pattr name = "lensDistance" value = "10.661963" />
+		<pattr name = "lookAtShiftOffsetX" value = "0." />
+		<pattr name = "lookAtShiftOffsetY" value = "0.001268" />
+		<pattr name = "lookAtShiftX" value = "0.066864" />
+		<pattr name = "lookAtShiftY" value = "0.300496" />
+		<pattr name = "lookAtTargetPosX" value = "-0.88509" />
+		<pattr name = "lookAtTargetPosY" value = "1.768588" />
+		<pattr name = "lookAtTargetPosZ" value = "3.588853" />
+		<pattr name = "lookAtTargetRotX" value = "0." />
+		<pattr name = "lookAtTargetRotY" value = "0." />
+		<pattr name = "lookAtTargetRotZ" value = "0." />
+		<pattr name = "polarAngle" value = "19.8" />
+		<pattr name = "screenHeight" value = "6.050996" />
+		<pattr name = "screenWidth" value = "10.98" />
+		<pattr name = "stageOffsetPosX" value = "0." />
+		<pattr name = "stageOffsetPosY" value = "0." />
+		<pattr name = "stageOffsetPosZ" value = "0." />
+		<pattr name = "stageOffsetRotX" value = "0." />
+		<pattr name = "stageOffsetRotY" value = "0." />
+		<pattr name = "stageOffsetRotZ" value = "0." />
+		<pattr name = "stagePosX" value = "0." />
+		<pattr name = "stagePosY" value = "0." />
+		<pattr name = "stagePosZ" value = "0." />
+		<pattr name = "stageRotX" value = "0." />
+		<pattr name = "stageRotY" value = "0." />
+		<pattr name = "stageRotZ" value = "0." />
+		<pattr name = "tiltAngle" value = "-79.4" />
+	</slot>
+</pattrstorage>
+

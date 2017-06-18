@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.71.0 commit date:2014-06-25, commit time:18:36, hash:9337574</authoring_tool>
+    </contributor>
+    <created>2014-08-09T16:38:12</created>
+    <modified>2014-08-09T16:38:12</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="Material_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="Material_003-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="Material_004-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_002-material" name="Material_002">
+      <instance_effect url="#Material_002-effect"/>
+    </material>
+    <material id="Material_003-material" name="Material_003">
+      <instance_effect url="#Material_003-effect"/>
+    </material>
+    <material id="Material_004-material" name="Material_004">
+      <instance_effect url="#Material_004-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Circle_003-mesh" name="Circle.003">
+      <mesh>
+        <source id="Circle_003-mesh-positions">
+          <float_array id="Circle_003-mesh-positions-array" count="45">0.7050392 0.9704036 3.14028 1.120221 1.541863 1.920403 -0.7050396 0.970403 3.14028 -1.120232 1.541855 1.920403 -1.140778 -0.3706611 3.14028 -1.160161 -1.596825 1.181774 0 -1.199484 3.14028 1.812563 -0.588944 1.920403 1.140777 -0.3706611 3.14028 -1.812572 -0.5889415 1.920399 -1.877174 0.6099228 1.18177 1.160152 -1.596821 1.18177 1.22086e-6 -1.905851 1.920399 1.877173 0.6099249 1.18177 -6.83464e-6 1.973775 1.18177</float_array>
+          <technique_common>
+            <accessor source="#Circle_003-mesh-positions-array" count="15" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_003-mesh-normals">
+          <float_array id="Circle_003-mesh-normals-array" count="45">-0.5322748 -0.7326142 0.4242168 0.5322756 -0.7326134 0.4242175 -3.44506e-7 0.905561 0.4242162 -3.3728e-6 0.9055627 0.4242125 -0.8612394 0.2798338 0.4242166 -0.532275 -0.7326138 0.4242174 -0.5074008 -0.6983783 0.5047893 0.5074051 -0.6983825 0.5047793 0.5322751 -0.7326142 0.4242164 0.8612415 0.2798347 0.4242116 0.8612415 0.2798343 0.4242121 0.820994 0.2667575 0.5047866 -3.21804e-6 0.8632463 0.5047832 -0.8612396 0.2798336 0.4242162 -0.820998 0.2667585 0.5047795</float_array>
+          <technique_common>
+            <accessor source="#Circle_003-mesh-normals-array" count="15" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_003-mesh-map-0">
+          <float_array id="Circle_003-mesh-map-0-array" count="90">0.5006651 0.8427761 0.1785651 0.5994936 0.3625756 0.5424776 0.3031757 0.2386665 0.3625756 0.5424776 0.1785651 0.5994936 0.6390877 0.5427364 0.5862395 0.3884474 0.6986946 0.2388088 0.6986946 0.2388088 0.8229418 0.6000571 0.6390877 0.5427364 0.8229418 0.6000571 0.5008262 0.8427761 0.5008334 0.6378345 0.3625756 0.5424776 0.5007249 0.6378344 0.5006651 0.8427761 0.5006651 0.8427761 0.1867977 0.9188084 0.1785651 0.5994936 0.1785651 0.5994936 0.01307249 0.354546 0.3031757 0.2386665 0.3031757 0.2386665 0.4154437 0.388447 0.3625756 0.5424776 0.5862395 0.3884474 0.3031757 0.2386665 0.6986946 0.2388088 0.5862395 0.3884474 0.4154437 0.388447 0.3031757 0.2386665 0.3031757 0.2386665 0.5008416 3.04222e-4 0.6986946 0.2388088 0.6986946 0.2388088 0.9886358 0.3546339 0.8229418 0.6000571 0.5008334 0.6378345 0.6390877 0.5427364 0.8229418 0.6000571 0.8229418 0.6000571 0.8046697 0.9262766 0.5008262 0.8427761</float_array>
+          <technique_common>
+            <accessor source="#Circle_003-mesh-map-0-array" count="45" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle_003-mesh-vertices">
+          <input semantic="POSITION" source="#Circle_003-mesh-positions"/>
+        </vertices>
+        <polylist material="Material_002-material" count="3">
+          <input semantic="VERTEX" source="#Circle_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_003-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 </vcount>
+          <p>2 2 6 0 2 7 1 2 8 1 3 9 3 3 10 2 3 11 1 12 36 14 12 37 3 12 38</p>
+        </polylist>
+        <polylist material="Material_003-material" count="6">
+          <input semantic="VERTEX" source="#Circle_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_003-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>7 1 3 6 1 4 12 1 5 12 7 21 11 7 22 7 7 23 7 8 24 8 8 25 6 8 26 0 9 27 7 9 28 1 9 29 0 10 30 8 10 31 7 10 32 7 11 33 13 11 34 1 11 35</p>
+        </polylist>
+        <polylist material="Material_004-material" count="6">
+          <input semantic="VERTEX" source="#Circle_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_003-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>9 0 0 12 0 1 6 0 2 3 4 12 9 4 13 4 4 14 6 5 15 4 5 16 9 5 17 9 6 18 5 6 19 12 6 20 4 13 39 2 13 40 3 13 41 3 14 42 10 14 43 9 14 44</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Hemispheric" name="Hemispheric" type="NODE">
+        <matrix sid="transform">0.5877853 -0.8090169 0 0 0.8090169 0.5877853 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Circle_003-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_002-material" target="#Material_002-material"/>
+              <instance_material symbol="Material_003-material" target="#Material_003-material"/>
+              <instance_material symbol="Material_004-material" target="#Material_004-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

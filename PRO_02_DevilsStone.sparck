@@ -1,0 +1,478 @@
+{
+	"_enable" : 1,
+	"subnode" : 	{
+		"subnode_1" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "subnode_1",
+			"_title" : "subnode_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 228, 22, 408, 62 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "subnode",
+		"subnode_2" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "subnode_2",
+			"_title" : "subnode_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 228, 73, 408, 113 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"subnode_3" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "subnode_3",
+			"_title" : "subnode_3",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 228, 120, 408, 160 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"subnode_4" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "subnode_4",
+			"_title" : "subnode_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 227, 171, 407, 211 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"subnode_5" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "subnode_5",
+			"_title" : "subnode_5",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 225, 222, 405, 262 ],
+			"_nodespace.idx" : 5
+		}
+
+	}
+,
+	"Hap" : 	{
+		"_type" : "Hap"
+	}
+,
+	"Canvas" : 	{
+		"Canvas_1" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Canvas_1",
+			"_title" : "Canvas_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 17, 462, 197, 544 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "Canvas",
+		"Canvas_2" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Canvas_2",
+			"_title" : "MaskShaded",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 436, 457, 616, 539 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"Calibrator" : 	{
+		"_type" : "Calibrator"
+	}
+,
+	"sub-inlet" : 	{
+		"_type" : "sub-inlet"
+	}
+,
+	"" : 	{
+		"nodename" : 		{
+			"_iolets" : 0
+		}
+
+	}
+,
+	"SceneCapture" : 	{
+		"SceneCapture_1" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "SceneCapture_1",
+			"_title" : "SceneCapture_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 158, 115, 338, 196 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "SceneCapture",
+		"SceneCapture_2" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "SceneCapture_2",
+			"_title" : "SceneCapture_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 144, 133, 324, 214 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"SceneCapture_3" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "SceneCapture_3",
+			"_title" : "SceneCapture_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 167, 112, 347, 193 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"SceneCapture_4" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "SceneCapture_4",
+			"_title" : "SceneCapture_4",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 169, 132, 349, 213 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"SceneCapture_5" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "SceneCapture_5",
+			"_title" : "SceneCapture_5",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 144, 99, 324, 180 ],
+			"_nodespace.idx" : 5
+		}
+
+	}
+,
+	"TextureMask" : 	{
+		"_type" : "TextureMask"
+	}
+,
+	"TextureBlur" : 	{
+		"_type" : "TextureBlur"
+	}
+,
+	"TextureOP" : 	{
+		"_type" : "TextureOP"
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 55, 216, 235, 293 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_1", 2, "texture", 3, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort",
+		"ViewPort_2" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "ViewPort_2",
+			"_title" : "ViewPort_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 69, 263, 249, 340 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_2", 2, "texture", 3, "texture", 1 ]
+		}
+,
+		"ViewPort_3" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "ViewPort_3",
+			"_title" : "ViewPort_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 61, 206, 241, 283 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_3", 2, "texture", 3, "texture", 1 ]
+		}
+,
+		"ViewPort_4" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "ViewPort_4",
+			"_title" : "ViewPort_4",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 39, 237, 219, 314 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Beamer_4", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_4", 2, "texture", 3, "texture", 1 ]
+		}
+,
+		"ViewPort_5" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "ViewPort_5",
+			"_title" : "ViewPort_5",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 33, 203, 213, 280 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "Beamer_5", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_5", 2, "texture", 3, "texture", 1 ]
+		}
+
+	}
+,
+	"Window" : 	{
+		"Output_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Output_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 11, 18, 191, 140 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window"
+	}
+,
+	"SpatialSoftedge" : 	{
+		"MultiAugmented_1" : 		{
+			"_type" : "SpatialSoftedge",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "MultiAugmented_1",
+			"_title" : "MultiAugmented_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 425, 19, 605, 288 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "SpatialSoftedge"
+	}
+,
+	"MeshWarp" : 	{
+		"Warp2d_1" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Warp2d_1",
+			"_title" : "Warp2d_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 333, 128, 513, 228 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"_type" : "MeshWarp",
+		"Warp2d_2" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Warp2d_2",
+			"_title" : "Warp2d_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 347, 107, 527, 207 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"Warp2d_3" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Warp2d_3",
+			"_title" : "Warp2d_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 360, 106, 540, 206 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"Warp2d_4" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "Warp2d_4",
+			"_title" : "Warp2d_4",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 361, 134, 541, 234 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Beamer_4", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"Warp2d_5" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "Warp2d_5",
+			"_title" : "Warp2d_5",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 337, 99, 517, 199 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "Beamer_5", 2, "texture", 2, "texture", 1 ]
+		}
+
+	}
+,
+	"BlendSoftedge" : 	{
+		"BlendSoftedge_1" : 		{
+			"_type" : "BlendSoftedge",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "BlendSoftedge_1",
+			"_title" : "BlendSoftedge_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 429, 298, 609, 434 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "BlendSoftedge"
+	}
+,
+	"Beamer" : 	{
+		"Beamer_1" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Beamer_1",
+			"_title" : "Beamer_1",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 71, 33, 251, 95 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Beamer",
+		"Beamer_2" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Beamer_2",
+			"_title" : "Beamer_2",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 53, 39, 233, 101 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"Beamer_3" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Beamer_3",
+			"_title" : "Beamer_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 65, 43, 245, 105 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"Beamer_4" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "Beamer_4",
+			"_title" : "Beamer_4",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 40, 29, 220, 91 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"Beamer_5" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "Beamer_5",
+			"_title" : "Beamer_5",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 36, 16, 216, 78 ],
+			"_nodespace.idx" : 5
+		}
+
+	}
+,
+	"Video" : 	{
+		"_type" : "Video",
+		"Video_1" : 		{
+			"_type" : "Video",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Video_1",
+			"_title" : "Video_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 15, 347, 195, 429 ],
+			"_nodespace.idx" : 1
+		}
+
+	}
+,
+	"Grid" : 	{
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "Grid_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 24, 195, 204, 295 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Grid"
+	}
+
+}

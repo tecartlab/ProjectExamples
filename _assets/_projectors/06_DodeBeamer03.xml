@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "Beamer">
+	<slot number = "1">
+		<patcher name = "calibrationSetting">
+			<pattr name = "fileName" value = "06_DodeTarget03.xml" />
+		</patcher>
+		<patcher name = "gateObject">
+			<pattr name = "fileName" value = "06/dodekaeder.obj" />
+		</patcher>
+		<patcher name = "color">
+			<pattr name = "alpha" value = "1." />
+			<pattr name = "blue" value = "0.517149" />
+			<pattr name = "green" value = "0.838142" />
+			<pattr name = "red" value = "0.685976" />
+		</patcher>
+		<pattr name = "azimuthAngle" value = "-33.541641" />
+		<pattr name = "calibObjOffsetPosX" value = "0." />
+		<pattr name = "calibObjOffsetPosY" value = "0." />
+		<pattr name = "calibObjOffsetPosZ" value = "0." />
+		<pattr name = "calibObjOffsetRotX" value = "0." />
+		<pattr name = "calibObjOffsetRotY" value = "0." />
+		<pattr name = "calibObjOffsetRotZ" value = "0." />
+		<pattr name = "calibObjOffsetScaleXYZ" value = "1." />
+		<pattr name = "frustumFarClipping" value = "8." />
+		<pattr name = "frustumNearClipping" value = "0.001" />
+		<pattr name = "frustumShiftX" value = "0.236667" />
+		<pattr name = "frustumShiftY" value = "1.902334" />
+		<pattr name = "lensDistance" value = "2.74207" />
+		<pattr name = "lookAtShiftOffsetX" value = "-0.189345" />
+		<pattr name = "lookAtShiftOffsetY" value = "0.012914" />
+		<pattr name = "lookAtShiftX" value = "0.111128" />
+		<pattr name = "lookAtShiftY" value = "-0.227172" />
+		<pattr name = "lookAtTargetPosX" value = "-0.588929" />
+		<pattr name = "lookAtTargetPosY" value = "-1.812538" />
+		<pattr name = "lookAtTargetPosZ" value = "1.919121" />
+		<pattr name = "lookAtTargetRotX" value = "0." />
+		<pattr name = "lookAtTargetRotY" value = "0." />
+		<pattr name = "lookAtTargetRotZ" value = "0." />
+		<pattr name = "polarAngle" value = "49.533218" />
+		<pattr name = "screenHeight" value = "3.227236" />
+		<pattr name = "screenWidth" value = "5.796797" />
+		<pattr name = "stageOffsetPosX" value = "0." />
+		<pattr name = "stageOffsetPosY" value = "0." />
+		<pattr name = "stageOffsetPosZ" value = "0." />
+		<pattr name = "stageOffsetRotX" value = "0." />
+		<pattr name = "stageOffsetRotY" value = "0." />
+		<pattr name = "stageOffsetRotZ" value = "0." />
+		<pattr name = "stagePosX" value = "0." />
+		<pattr name = "stagePosY" value = "0." />
+		<pattr name = "stagePosZ" value = "0." />
+		<pattr name = "stageRotX" value = "0." />
+		<pattr name = "stageRotY" value = "0." />
+		<pattr name = "stageRotZ" value = "0." />
+		<pattr name = "tiltAngle" value = "-1.157382" />
+	</slot>
+</pattrstorage>
+

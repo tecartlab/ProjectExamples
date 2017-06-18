@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<script>
+	<que name="START" loop="no">
+		<print>animation Start</print>
+		<anim name="XRamp" duration="5s" loop="palindrome">
+             <track name="t1">-20.0 20.0</track>
+             <send>/sparck/node ::AnimTFM::rotationX {t1}</send>
+        </anim>
+		<anim name="YRamp" duration="7s" loop="palindrome">
+             <track name="t1">-30.0 30.0</track>
+             <send>/sparck/node ::AnimTFM::rotationY {t1}</send>
+        </anim>
+ 	<anim name="HeadRot" duration="10s" loop="normal">
+             <track name="t1">0. 360.</track>
+             <send>/sparck/node ::O_HEAD_TFM::rotationZ {t1}</send>
+        </anim>
+        <wait anim="XRamp"/>
+	</que>
+</script>

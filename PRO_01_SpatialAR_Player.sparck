@@ -1,0 +1,732 @@
+{
+	"_enable" : 1,
+	"Window" : 	{
+		"Window_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Window_1",
+			"_title" : "Output_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 13, 22, 193, 144 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window",
+		"Window_2" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Window_2",
+			"_title" : "Output_2",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 605, 71, 785, 193 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"Grid" : 	{
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "BG_Grid",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 16, 170, 196, 270 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Grid",
+		"Grid_2" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Grid_2",
+			"_title" : "Ground_Grid",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 19, 278, 199, 378 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"subnode" : 	{
+		"subnode_1" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "subnode_1",
+			"_title" : "Beamer_Left",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 235, 20, 415, 60 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "subnode",
+		"subnode_2" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "subnode_2",
+			"_title" : "Beamer_middle",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 420, 20, 600, 60 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"subnode_3" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "subnode_3",
+			"_title" : "Beamer_right",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 605, 21, 785, 61 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"subnode_4" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "subnode_4",
+			"_title" : "BackGround",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 419, 99, 599, 139 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"subnode_5" : 		{
+			"_type" : "subnode",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "subnode_5",
+			"_title" : "Head",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 232, 98, 412, 138 ],
+			"_nodespace.idx" : 5
+		}
+
+	}
+,
+	"Beamer" : 	{
+		"Beamer_1" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Beamer_1",
+			"_title" : "Beamer_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 54, 104, 234, 166 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "sub-inlet_1", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"_type" : "Beamer",
+		"Beamer_2" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Beamer_2",
+			"_title" : "Beamer_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 63, 128, 243, 190 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "sub-inlet_2", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"Beamer_3" : 		{
+			"_type" : "Beamer",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "Beamer_3",
+			"_title" : "Beamer_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 49, 130, 229, 192 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "sub-inlet_3", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"Model" : 	{
+		"_type" : "Model",
+		"Model_1" : 		{
+			"_type" : "Model",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Model_1",
+			"_title" : "Brain_Model",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 20, 180, 200, 262 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "ViewPort_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 54, 186, 234, 263 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "sub-inlet_1", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"_type" : "ViewPort",
+		"ViewPort_2" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "ViewPort_2",
+			"_title" : "ViewPort_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 64, 300, 244, 377 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "sub-inlet_2", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"ViewPort_3" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "ViewPort_3",
+			"_title" : "ViewPort_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 60, 285, 240, 362 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "sub-inlet_3", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"ViewPort_4" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "ViewPort_4",
+			"_title" : "ViewPort_4",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 229, 159, 409, 236 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "subnode_5", 2, "type", 2, "texture", 1 ]
+		}
+,
+		"ViewPort_8" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 8,
+			"_name" : "ViewPort_8",
+			"_title" : "ViewPort_8",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 419, 156, 599, 233 ],
+			"_nodespace.idx" : 8,
+			"_connection_0" : [ "subnode_4", 2, "type", 2, "texture", 1 ]
+		}
+
+	}
+,
+	"SceneCapture" : 	{
+		"_type" : "SceneCapture",
+		"SceneCapture_5" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "SceneCapture_5",
+			"_title" : "BGCapture",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 436, 244, 616, 325 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"SceneCapture_3" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "SceneCapture_3",
+			"_title" : "HeadCapture",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 491, 247, 671, 328 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"SpatialSoftedge" : 	{
+		"_type" : "SpatialSoftedge",
+		"SpatialSoftedge_2" : 		{
+			"_type" : "SpatialSoftedge",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "SpatialSoftedge_2",
+			"_title" : "HeadAugment",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 491, 356, 671, 625 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "SceneCapture_3", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"Canvas" : 	{
+		"_type" : "Canvas",
+		"Canvas_5" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "Canvas_5",
+			"_title" : "Head_Canvas",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 24, 78, 204, 160 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"Canvas_1" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Canvas_1",
+			"_title" : "BackgroundCanvas",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 33, 79, 213, 161 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"Canvas_2" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Canvas_2",
+			"_title" : "Head_StageView",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 21, 272, 201, 354 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"BlendSoftedge" : 	{
+		"_type" : "BlendSoftedge"
+	}
+,
+	"Video" : 	{
+		"_type" : "Video"
+	}
+,
+	"Optitrack" : 	{
+		"_type" : "Optitrack"
+	}
+,
+	"SceneCamera" : 	{
+		"_type" : "SceneCamera",
+		"SceneCamera_2" : 		{
+			"_type" : "SceneCamera",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "SceneCamera_2",
+			"_title" : "BackGroundCam",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 434, 78, 614, 236 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"SceneCamera_3" : 		{
+			"_type" : "SceneCamera",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "SceneCamera_3",
+			"_title" : "HeadCam",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 490, 84, 670, 242 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"TextureProjection" : 	{
+		"_type" : "TextureProjection",
+		"TextureProjection_2" : 		{
+			"_type" : "TextureProjection",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "TextureProjection_2",
+			"_title" : "TextureProjection_2",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 436, 346, 616, 443 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "SceneCapture_5", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"TfmLookAt" : 	{
+		"TfmLookAt_1" : 		{
+			"_type" : "TfmLookAt",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "TfmLookAt_1",
+			"_title" : "Bkgn_LookAt",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 227, 78, 407, 201 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"_type" : "TfmLookAt",
+		"TfmLookAt_3" : 		{
+			"_type" : "TfmLookAt",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "TfmLookAt_3",
+			"_title" : "Head_LookAt",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 267, 227, 447, 350 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+
+	}
+,
+	"TfmNode" : 	{
+		"TfmNode_1" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "TfmNode_1",
+			"_title" : "O_HEAD_TFM",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 226, 254, 406, 385 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "TfmNode",
+		"TfmNode_2" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "TfmNode_2",
+			"_title" : "Head_TFM",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 264, 83, 444, 214 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+		}
+,
+		"TfmNode_3" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "TfmNode_3",
+			"_title" : "O_CAP_TFM",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 420, 257, 600, 388 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"TfmNode_5" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "TfmNode_5",
+			"_title" : "BrainLookAt_TFM",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 270, 360, 450, 491 ],
+			"_nodespace.idx" : 5
+		}
+,
+		"TfmNode_7" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 7,
+			"_name" : "TfmNode_7",
+			"_title" : "LookAtBackground",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 229, 206, 409, 337 ],
+			"_nodespace.idx" : 7
+		}
+,
+		"TfmNode_4" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "TfmNode_4",
+			"_title" : "Brain_TFM",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 25, 377, 205, 508 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"TfmNode_6" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 6,
+			"_name" : "TfmNode_6",
+			"_title" : "AnimTFM",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 606, 195, 786, 326 ],
+			"_nodespace.idx" : 6
+		}
+
+	}
+,
+	"sub-outlet" : 	{
+		"sub-outlet_1" : 		{
+			"_type" : "sub-outlet",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "sub-outlet_1",
+			"_title" : "sub-outlet_1",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 312, 450, 522, 489 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "SceneCapture_5", 2, "texture", 2, "type", -1 ]
+		}
+,
+		"_type" : "sub-outlet",
+		"sub-outlet_2" : 		{
+			"_type" : "sub-outlet",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "sub-outlet_2",
+			"_title" : "sub-outlet_2",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 263, 618, 473, 657 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "SceneCapture_3", 2, "texture", 2, "type", -1 ]
+		}
+,
+		"sub-outlet_4" : 		{
+			"_type" : "sub-outlet",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "sub-outlet_4",
+			"_title" : "sub-outlet_4",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 123, 304, 333, 343 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "type", -1 ]
+		}
+,
+		"sub-outlet_5" : 		{
+			"_type" : "sub-outlet",
+			"_version" : 1,
+			"_id" : 5,
+			"_name" : "sub-outlet_5",
+			"_title" : "sub-outlet_5",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 122, 418, 332, 457 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "type", -1 ]
+		}
+,
+		"sub-outlet_6" : 		{
+			"_type" : "sub-outlet",
+			"_version" : 1,
+			"_id" : 6,
+			"_name" : "sub-outlet_6",
+			"_title" : "sub-outlet_6",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 108, 408, 318, 447 ],
+			"_nodespace.idx" : 6,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "type", -1 ]
+		}
+
+	}
+,
+	"" : 	{
+		"sub-outlet_1" : 		{
+			"_iolets" : 2
+		}
+,
+		"sub-outlet_2" : 		{
+			"_iolets" : 1
+		}
+,
+		"nodename" : 		{
+			"_iolets" : 0
+		}
+,
+		"sub-outlet_3" : 		{
+			"_iolets" : 3
+		}
+,
+		"sub-outlet_4" : 		{
+			"_iolets" : 1
+		}
+,
+		"sub-outlet_5" : 		{
+			"_iolets" : 1
+		}
+,
+		"sub-outlet_6" : 		{
+			"_iolets" : 1
+		}
+
+	}
+,
+	"sub-inlet" : 	{
+		"sub-inlet_1" : 		{
+			"_type" : "sub-inlet",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "sub-inlet_1",
+			"_title" : "sub-inlet_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 45, 46, 255, 85 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "sub-inlet",
+		"sub-inlet_2" : 		{
+			"_type" : "sub-inlet",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "sub-inlet_2",
+			"_title" : "sub-inlet_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 41, 34, 251, 73 ],
+			"_nodespace.idx" : 2
+		}
+,
+		"sub-inlet_3" : 		{
+			"_type" : "sub-inlet",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "sub-inlet_3",
+			"_title" : "sub-inlet_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 31, 22, 241, 61 ],
+			"_nodespace.idx" : 3
+		}
+,
+		"sub-inlet_4" : 		{
+			"_type" : "sub-inlet",
+			"_version" : 1,
+			"_id" : 4,
+			"_name" : "sub-inlet_4",
+			"_title" : "sub-inlet_4",
+			"_nodespace" : "root::5",
+			"_level" : 1,
+			"_rect" : [ 32, 13, 242, 52 ],
+			"_nodespace.idx" : 4
+		}
+,
+		"sub-inlet_6" : 		{
+			"_type" : "sub-inlet",
+			"_version" : 1,
+			"_id" : 6,
+			"_name" : "sub-inlet_6",
+			"_title" : "sub-inlet_6",
+			"_nodespace" : "root::4",
+			"_level" : 1,
+			"_rect" : [ 28, 7, 238, 46 ],
+			"_nodespace.idx" : 6
+		}
+
+	}
+,
+	"Material" : 	{
+		"_type" : "Material"
+	}
+,
+	"Light" : 	{
+		"_type" : "Light"
+	}
+,
+	"VolumeShader" : 	{
+		"_type" : "VolumeShader"
+	}
+,
+	"VolumeLoader" : 	{
+		"_type" : "VolumeLoader"
+	}
+,
+	"Volume" : 	{
+		"_type" : "Volume"
+	}
+,
+	"TurnTable" : 	{
+		"_type" : "TurnTable"
+	}
+,
+	"Monitor" : 	{
+		"_type" : "Monitor"
+	}
+,
+	"QueScript" : 	{
+		"QueScript_1" : 		{
+			"_type" : "QueScript",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "QueScript_1",
+			"_title" : "QueScript_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 605, 331, 785, 430 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "QueScript"
+	}
+
+}
