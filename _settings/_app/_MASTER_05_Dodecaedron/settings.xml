@@ -13,9 +13,9 @@
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position -0.396063 0.602346 0.769507" />
-				<pattr name = "orbitOneQuat" value = "quat 0. 0. -0.017452 -0.999805" />
+				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.333792 -0.942601" />
 				<pattr name = "orbitThreePosition" value = "position 0. 0. 5.5" />
-				<pattr name = "orbitTwoQuat" value = "quat 0.398734 0. 0. 0.917025" />
+				<pattr name = "orbitTwoQuat" value = "quat 0.566385 0. 0. 0.824095" />
 			</patcher>
 			<patcher name = "_setgroupstage">
 				<pattr name = "groupOne" value = "0 0 1 1 0 1" />
@@ -62,6 +62,9 @@
 					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
 					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
 				</patcher>
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Output_1" />
+				</patcher>
 				<pattr name = "clipFar" value = "100." />
 				<pattr name = "clipNear" value = "0.1" />
 				<pattr name = "desktop" value = "0" />
@@ -96,6 +99,9 @@
 					<pattr name = "groupStage" value = "0 0 1" />
 					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Grid_1" />
+				</patcher>
 				<pattr name = "enable" value = "1" />
 				<pattr name = "gridsizeX" value = "0.5" />
 				<pattr name = "gridsizeY" value = "0.5" />
@@ -124,6 +130,7 @@
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "displaylist" value = "0" />
+					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
 					<pattr name = "layer" value = "0" />
@@ -141,6 +148,8 @@
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
 					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "smooth_shading" value = "1" />
+					<pattr name = "smoothing_angle" value = "89." />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 1" />
 						<pattr name = "groupShady" value = "0 0 0" />
@@ -152,6 +161,9 @@
 					<pattr name = "fileName" value = "06/LienarMapping.dae" />
 				</patcher>
 				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Canvas_2" />
+				</patcher>
 			</patcher>
 			<patcher name = "Video_1">
 				<patcher name = "video">
@@ -176,6 +188,9 @@
 					<pattr name = "vol" value = "1." />
 				</patcher>
 				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_1" />
+				</patcher>
 			</patcher>
 			<patcher name = "Dodecaedron">
 				<patcher name = "transformnode">
@@ -229,7 +244,7 @@
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "displaylist" value = "1" />
-					<pattr name = "drawboudns" value = "0" />
+					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
 					<pattr name = "layer" value = "10" />
@@ -267,8 +282,14 @@
 					<pattr name = "fileName" value = "06/dode.obj" />
 				</patcher>
 				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Dodecaedron" />
+				</patcher>
 			</patcher>
 			<patcher name = "Beamer">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Beamer" />
+				</patcher>
 				<patcher name = "node_workspace">
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "nodeSelector">
@@ -289,6 +310,7 @@
 							</patcher>
 							<pattr name = "activestereo" value = "0" />
 							<pattr name = "antialias" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "dimX" value = "1920" />
 							<pattr name = "dimY" value = "1080" />
 							<pattr name = "identify" value = "0" />
@@ -305,6 +327,9 @@
 						<patcher name = "_transformationRig">
 							<pattr name = "Beamer" value = "1" />
 						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Beamer_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "Beamer_2">
 						<patcher name = "_transformationRig">
@@ -320,6 +345,7 @@
 							</patcher>
 							<pattr name = "activestereo" value = "0" />
 							<pattr name = "antialias" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "dimX" value = "1920" />
 							<pattr name = "dimY" value = "1080" />
 							<pattr name = "identify" value = "0" />
@@ -332,6 +358,9 @@
 						</patcher>
 						<patcher name = "beamer">
 							<pattr name = "fileName" value = "06_DodeBeamer02.xml" />
+						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Beamer_2" />
 						</patcher>
 					</patcher>
 					<patcher name = "Beamer_3">
@@ -348,6 +377,7 @@
 							</patcher>
 							<pattr name = "activestereo" value = "0" />
 							<pattr name = "antialias" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "dimX" value = "1920" />
 							<pattr name = "dimY" value = "1080" />
 							<pattr name = "identify" value = "0" />
@@ -360,6 +390,9 @@
 						</patcher>
 						<patcher name = "beamer">
 							<pattr name = "fileName" value = "06_DodeBeamer03.xml" />
+						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Beamer_3" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_1">
@@ -396,6 +429,9 @@
 						<patcher name = "outputSelection">
 							<pattr name = "address" value = "Output_1" />
 						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_2">
 						<patcher name = "property">
@@ -430,6 +466,9 @@
 						<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 						<patcher name = "outputSelection">
 							<pattr name = "address" value = "Output_1" />
+						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "ViewPort_2" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_3">
@@ -466,6 +505,9 @@
 						<patcher name = "outputSelection">
 							<pattr name = "address" value = "Output_1" />
 						</patcher>
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
+						</patcher>
 					</patcher>
 					<patcher name = "Canvas_1">
 						<patcher name = "transformnode">
@@ -491,6 +533,7 @@
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
+							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
@@ -508,6 +551,8 @@
 							<pattr name = "scaleX" value = "1." />
 							<pattr name = "scaleY" value = "1." />
 							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "smooth_shading" value = "1" />
+							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
 								<pattr name = "groupShady" value = "0 0 0" />
@@ -519,6 +564,9 @@
 							<pattr name = "fileName" value = "06/dodeScreen01.obj" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Canvas_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "Canvas_3">
 						<patcher name = "transformnode">
@@ -544,6 +592,7 @@
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
+							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
@@ -561,6 +610,8 @@
 							<pattr name = "scaleX" value = "1." />
 							<pattr name = "scaleY" value = "1." />
 							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "smooth_shading" value = "1" />
+							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "1 1 1" />
 								<pattr name = "groupShady" value = "0 0 0" />
@@ -572,6 +623,9 @@
 							<pattr name = "fileName" value = "06/dodeScreen02.obj" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Canvas_3" />
+						</patcher>
 					</patcher>
 					<patcher name = "Canvas_4">
 						<patcher name = "transformnode">
@@ -597,6 +651,7 @@
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
+							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
@@ -614,6 +669,8 @@
 							<pattr name = "scaleX" value = "1." />
 							<pattr name = "scaleY" value = "1." />
 							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "smooth_shading" value = "1" />
+							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "2 1 1" />
 								<pattr name = "groupShady" value = "0 0 0" />
@@ -625,6 +682,9 @@
 							<pattr name = "fileName" value = "06/dodeScreen03.obj" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Canvas_4" />
+						</patcher>
 					</patcher>
 					<patcher name = "SceneCapture_1">
 						<patcher name = "property">
@@ -642,6 +702,7 @@
 							</patcher>
 							<pattr name = "antialias" value = "0" />
 							<pattr name = "blendEnable" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "capture" value = "0" />
 							<pattr name = "dimOverrule" value = "1" />
 							<pattr name = "dimX" value = "1920" />
@@ -661,6 +722,9 @@
 							<pattr name = "address" value = "Beamer_1" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "SceneCapture_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "SceneCapture_2">
 						<patcher name = "property">
@@ -678,6 +742,7 @@
 							</patcher>
 							<pattr name = "antialias" value = "0" />
 							<pattr name = "blendEnable" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "capture" value = "0" />
 							<pattr name = "dimOverrule" value = "1" />
 							<pattr name = "dimX" value = "1920" />
@@ -694,9 +759,12 @@
 							</patcher>
 						</patcher>
 						<patcher name = "transformationSelection">
-							<pattr name = "address" value = "Beamer_3" />
+							<pattr name = "address" value = "Beamer_2" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "SceneCapture_2" />
+						</patcher>
 					</patcher>
 					<patcher name = "SceneCapture_3">
 						<patcher name = "property">
@@ -714,6 +782,7 @@
 							</patcher>
 							<pattr name = "antialias" value = "0" />
 							<pattr name = "blendEnable" value = "0" />
+							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "capture" value = "0" />
 							<pattr name = "dimOverrule" value = "1" />
 							<pattr name = "dimX" value = "1920" />
@@ -733,6 +802,9 @@
 							<pattr name = "address" value = "Beamer_3" />
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "SceneCapture_3" />
+						</patcher>
 					</patcher>
 					<patcher name = "TextureOP_1">
 						<pattr name = "enable" value = "1" />
@@ -743,6 +815,9 @@
 						<pattr name = "mode" value = "mult" />
 						<pattr name = "outoffset" value = "0." />
 						<pattr name = "renderOne" value = "0" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "TextureOP_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "Warp2d_1">
 						<patcher name = "lattice">
@@ -800,6 +875,9 @@
 							</patcher>
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Warp2d_1" />
+						</patcher>
 					</patcher>
 					<patcher name = "Warp2d_2">
 						<patcher name = "lattice">
@@ -857,6 +935,9 @@
 							</patcher>
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Warp2d_2" />
+						</patcher>
 					</patcher>
 					<patcher name = "Warp2d_3">
 						<patcher name = "lattice">
@@ -914,6 +995,9 @@
 							</patcher>
 						</patcher>
 						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Warp2d_3" />
+						</patcher>
 					</patcher>
 				</patcher>
 			</patcher>
