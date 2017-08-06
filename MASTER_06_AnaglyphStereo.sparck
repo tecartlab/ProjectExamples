@@ -1,0 +1,207 @@
+{
+	"_enable" : 1,
+	"Window" : 	{
+		"Window_1" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Window_1",
+			"_title" : "StereoView",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 24, 39, 204, 161 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Window",
+		"Window_2" : 		{
+			"_type" : "Window",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Window_2",
+			"_title" : "Preview",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 23, 165, 203, 287 ],
+			"_nodespace.idx" : 2
+		}
+
+	}
+,
+	"ViewPort" : 	{
+		"ViewPort_1" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "ViewPort_1",
+			"_title" : "Stereo_View",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 194, 372, 374, 449 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "SceneCapture_1", 2, "texture", 2, "texture", 1 ],
+			"_connection_1" : [ "SceneCapture_1", 4, "texture", 3, "texture", 1 ]
+		}
+,
+		"_type" : "ViewPort",
+		"ViewPort_2" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "ViewPort_2",
+			"_title" : "Preview_left",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 9, 373, 189, 450 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "SceneCapture_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"ViewPort_3" : 		{
+			"_type" : "ViewPort",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "ViewPort_3",
+			"_title" : "Preview_right",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 381, 371, 561, 448 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "SceneCapture_1", 4, "texture", 2, "texture", 1 ]
+		}
+
+	}
+,
+	"SceneCamera" : 	{
+		"SceneCamera_1" : 		{
+			"_type" : "SceneCamera",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "SceneCamera_1",
+			"_title" : "SceneCamera_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 213, 35, 393, 193 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "SceneCamera"
+	}
+,
+	"SceneCapture" : 	{
+		"SceneCapture_1" : 		{
+			"_type" : "SceneCapture",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "SceneCapture_1",
+			"_title" : "SceneCapture_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 212, 198, 392, 279 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "SceneCapture"
+	}
+,
+	"TextureAnaglyph" : 	{
+		"TextureAnaglyph_1" : 		{
+			"_type" : "TextureAnaglyph",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "TextureAnaglyph_1",
+			"_title" : "TextureAnaglyph_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 198, 457, 378, 553 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "TextureAnaglyph"
+	}
+,
+	"Shape" : 	{
+		"_type" : "Shape"
+	}
+,
+	"Light" : 	{
+		"Light_1" : 		{
+			"_type" : "Light",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Light_1",
+			"_title" : "Light_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 600, 43, 780, 104 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Light"
+	}
+,
+	"Model" : 	{
+		"Model_1" : 		{
+			"_type" : "Model",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Model_1",
+			"_title" : "Model_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 600, 206, 780, 288 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Model"
+	}
+,
+	"Grid" : 	{
+		"_type" : "Grid",
+		"Grid_1" : 		{
+			"_type" : "Grid",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Grid_1",
+			"_title" : "Grid_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 601, 300, 781, 400 ],
+			"_nodespace.idx" : 1
+		}
+
+	}
+,
+	"Material" : 	{
+		"Material_1" : 		{
+			"_type" : "Material",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "Material_1",
+			"_title" : "Material_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 599, 122, 779, 190 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "Material"
+	}
+,
+	"QueScript" : 	{
+		"QueScript_1" : 		{
+			"_type" : "QueScript",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "QueScript_1",
+			"_title" : "QueScript_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 405, 39, 585, 138 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "QueScript"
+	}
+
+}

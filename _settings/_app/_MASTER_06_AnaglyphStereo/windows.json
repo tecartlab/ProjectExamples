@@ -1,0 +1,148 @@
+{
+	"_slotspot" : 0,
+	"bs_gui_win_workspace_WorkSpace" : 	{
+		"_type" : "workspace",
+		"Main" : 		{
+			"_rect" : [ 549, 123, 1356, 692 ],
+			"_visible" : 1
+		}
+
+	}
+,
+	"bs_gui_win_SceneCamera_1_P_Camera" : 	{
+		"_pin" : 0,
+		"_type" : "Camera",
+		"_slotsize" : 22,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SceneCapture_1_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"_storenames" : "Main",
+	"bs_gui_win_Shape_1_P_Model" : 	{
+		"_pin" : 0,
+		"_type" : "Model",
+		"_slotsize" : 45
+	}
+,
+	"bs_gui_win_Light_1_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Model_1_P_Model" : 	{
+		"_pin" : 0,
+		"_type" : "Model",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Grid_1_P_Model" : 	{
+		"_pin" : 0,
+		"_type" : "Model",
+		"_slotsize" : 45,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_Material_1_P_Material" : 	{
+		"_pin" : 0,
+		"_type" : "Material",
+		"_slotsize" : 25,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_QueScript_1_PB_ProgressBar" : 	{
+		"_pin" : 0,
+		"_type" : "ProgressBar",
+		"_slotsize" : 25,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_QueScript_1_P_Script" : 	{
+		"_pin" : 0,
+		"_type" : "Script",
+		"_slotsize" : 25,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SceneCamera_P_Camera" : 	{
+		"_pin" : 0,
+		"_type" : "Camera",
+		"_slotsize" : 22
+	}
+,
+	"bs_gui_win_Preview_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_StereoView_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Preview_left_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Preview_right_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_Stereo_View_P_Viewport" : 	{
+		"_pin" : 0,
+		"_type" : "Viewport",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+
+}

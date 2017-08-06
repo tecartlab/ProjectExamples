@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<script>
+	<que name="Rotate" loop="no">
+		<print>set to HD</print>
+		<anim name="simpleRamp" duration="10s" loop="normal">
+             <track name="t1">0. 360.</track>
+             <send>/sparck/node ::Model_1::property::rotationZ {t1}</send>
+        </anim>
+        <wait anim="simpleRamp"/>
+	</que>
+</script>
