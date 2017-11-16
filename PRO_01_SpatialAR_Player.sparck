@@ -530,7 +530,7 @@
 			"_title" : "sub-outlet_1",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 312, 450, 522, 489 ],
+			"_rect" : [ 312, 450, 522, 494 ],
 			"_nodespace.idx" : 1,
 			"_connection_0" : [ "SceneCapture_5", 2, "texture", 2, "type", -1 ]
 		}
@@ -544,7 +544,7 @@
 			"_title" : "sub-outlet_2",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 263, 618, 473, 657 ],
+			"_rect" : [ 263, 618, 473, 662 ],
 			"_nodespace.idx" : 2,
 			"_connection_0" : [ "SceneCapture_3", 2, "texture", 2, "type", -1 ]
 		}
@@ -557,7 +557,7 @@
 			"_title" : "sub-outlet_4",
 			"_nodespace" : "root::1",
 			"_level" : 1,
-			"_rect" : [ 123, 304, 333, 343 ],
+			"_rect" : [ 123, 304, 333, 348 ],
 			"_nodespace.idx" : 4,
 			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "type", -1 ]
 		}
@@ -570,7 +570,7 @@
 			"_title" : "sub-outlet_5",
 			"_nodespace" : "root::2",
 			"_level" : 1,
-			"_rect" : [ 122, 418, 332, 457 ],
+			"_rect" : [ 122, 418, 332, 462 ],
 			"_nodespace.idx" : 5,
 			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "type", -1 ]
 		}
@@ -583,7 +583,7 @@
 			"_title" : "sub-outlet_6",
 			"_nodespace" : "root::3",
 			"_level" : 1,
-			"_rect" : [ 108, 408, 318, 447 ],
+			"_rect" : [ 108, 408, 318, 452 ],
 			"_nodespace.idx" : 6,
 			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "type", -1 ]
 		}
@@ -630,7 +630,7 @@
 			"_title" : "sub-inlet_1",
 			"_nodespace" : "root::1",
 			"_level" : 1,
-			"_rect" : [ 45, 46, 255, 85 ],
+			"_rect" : [ 45, 46, 255, 90 ],
 			"_nodespace.idx" : 1
 		}
 ,
@@ -643,7 +643,7 @@
 			"_title" : "sub-inlet_2",
 			"_nodespace" : "root::2",
 			"_level" : 1,
-			"_rect" : [ 41, 34, 251, 73 ],
+			"_rect" : [ 41, 34, 251, 78 ],
 			"_nodespace.idx" : 2
 		}
 ,
@@ -655,7 +655,7 @@
 			"_title" : "sub-inlet_3",
 			"_nodespace" : "root::3",
 			"_level" : 1,
-			"_rect" : [ 31, 22, 241, 61 ],
+			"_rect" : [ 31, 22, 241, 66 ],
 			"_nodespace.idx" : 3
 		}
 ,
@@ -667,7 +667,7 @@
 			"_title" : "sub-inlet_4",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 32, 13, 242, 52 ],
+			"_rect" : [ 32, 13, 242, 57 ],
 			"_nodespace.idx" : 4
 		}
 ,
@@ -679,7 +679,7 @@
 			"_title" : "sub-inlet_6",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 28, 7, 238, 46 ],
+			"_rect" : [ 28, 7, 238, 51 ],
 			"_nodespace.idx" : 6
 		}
 

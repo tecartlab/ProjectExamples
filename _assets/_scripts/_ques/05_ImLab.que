@@ -1,16 +1,5 @@
 <?xml version="1.0"?>
 <script>
-	<que name="HD" loop="no">
-		<print>set to HD</print>
-		<send>/sparck/node ::Beamer_1::property::dimX 1280</send>
-		<send>/sparck/node ::Beamer_1::property::dimY 720</send>
-		<send>/sparck/node ::Beamer_2::property::dimX 1280</send>
-		<send>/sparck/node ::Beamer_2::property::dimY 720</send>
-		<send>/sparck/node ::Beamer_3::property::dimX 1280</send>
-		<send>/sparck/node ::Beamer_3::property::dimY 720</send>
-		<send>/sparck/node ::Beamer_4::property::dimX 1280</send>
-		<send>/sparck/node ::Beamer_4::property::dimY 720</send>
-	</que>
 	<que name="LowRes" loop="no">
 		<print>set to LowRes</print>
 		<send>/sparck/node ::Beamer_1::property::dimX 320</send>
@@ -21,5 +10,16 @@
 		<send>/sparck/node ::Beamer_3::property::dimY 200</send>
 		<send>/sparck/node ::Beamer_4::property::dimX 320</send>
 		<send>/sparck/node ::Beamer_4::property::dimY 200</send>
+	</que>
+	<que name="HD" loop="no">
+		<print>set to HD</print>
+		<send>/sparck/node ::Beamer_1::property::dimX 1280</send>
+		<send>/sparck/node ::Beamer_1::property::dimY 720</send>
+		<send>/sparck/node ::Beamer_2::property::dimX 1280</send>
+		<send>/sparck/node ::Beamer_2::property::dimY 720</send>
+		<send>/sparck/node ::Beamer_3::property::dimX 1280</send>
+		<send>/sparck/node ::Beamer_3::property::dimY 720</send>
+		<send>/sparck/node ::Beamer_4::property::dimX 1280</send>
+		<send>/sparck/node ::Beamer_4::property::dimY 720</send>
 	</que>
 </script>
