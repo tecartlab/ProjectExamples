@@ -81,7 +81,7 @@
 			"_title" : "SceneCamera_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 213, 35, 393, 197 ],
+			"_rect" : [ 213, 35, 393, 219 ],
 			"_nodespace.idx" : 1
 		}
 ,
@@ -97,7 +97,7 @@
 			"_title" : "SceneCapture_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 212, 198, 392, 279 ],
+			"_rect" : [ 213, 233, 393, 314 ],
 			"_nodespace.idx" : 1
 		}
 ,

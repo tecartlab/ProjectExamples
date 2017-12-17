@@ -42,24 +42,24 @@
 				</patcher>
 			</patcher>
 			<patcher name = "QueScript_1">
-				<patcher name = "script">
-					<pattr name = "fileName" value = "AnaglyphAnimation.que" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "oscSendNode">
-						<pattr name = "address" value = "&lt;none&gt;" />
-					</patcher>
-					<pattr name = "autostart" value = "0" />
-					<pattr name = "debug" value = "0" />
-					<pattr name = "editor" value = "Brackets" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "update_mode" value = "automatic" />
-					<pattr name = "updatefreq" value = "1" />
-				</patcher>
+				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "QueScript_1" />
 				</patcher>
-				<pattr name = "enable" value = "1" />
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "debug" value = "0" />
+					<pattr name = "editor" value = "Atom" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "update_mode" value = "automatic" />
+					<pattr name = "updatefreq" value = "1" />
+					<patcher name = "oscSendNode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+				</patcher>
+				<patcher name = "script">
+					<pattr name = "fileName" value = "AnaglyphAnimation.que" />
+				</patcher>
 			</patcher>
 			<patcher name = "Material_1">
 				<pattr name = "enable" value = "1" />
@@ -190,7 +190,7 @@
 					<pattr name = "publishTfm" value = "0" />
 					<pattr name = "rotationX" value = "-1." />
 					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "221.76" />
+					<pattr name = "rotationZ" value = "224.496002" />
 					<pattr name = "scaleX" value = "1.03" />
 					<pattr name = "scaleY" value = "1.03" />
 					<pattr name = "scaleZ" value = "1.03" />
@@ -355,16 +355,21 @@
 			<patcher name = "SceneCamera_1">
 				<pattr name = "adapt" value = "0" />
 				<pattr name = "adaptReference" value = "0." />
+				<pattr name = "bottomFrustum" value = "-0.05" />
 				<pattr name = "enable" value = "1" />
 				<pattr name = "farFrustum" value = "10." />
 				<pattr name = "fov" value = "50." />
+				<pattr name = "leftFrustum" value = "-0.05" />
 				<pattr name = "nearFrustum" value = "0.1" />
 				<pattr name = "onstage" value = "1" />
+				<pattr name = "optics" value = "fov" />
 				<pattr name = "projectionMode" value = "0" />
 				<pattr name = "ratio" value = "1." />
+				<pattr name = "rightFrustum" value = "0.05" />
 				<pattr name = "rotation" value = "-2.59" />
 				<pattr name = "spread" value = "0.112" />
 				<pattr name = "stereo" value = "1" />
+				<pattr name = "topFrustum" value = "0.05" />
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "SceneCamera_1" />
 				</patcher>
