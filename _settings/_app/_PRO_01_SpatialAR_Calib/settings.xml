@@ -42,8 +42,14 @@
 				</patcher>
 			</patcher>
 			<patcher name = "Grid_1">
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "select..." />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Grid_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 0" />
+					<pattr name = "groupShady" value = "0 0 0" />
+					<pattr name = "groupStage" value = "0 0 1" />
+					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
 				<patcher name = "property">
 					<pattr name = "layer" value = "10" />
@@ -57,137 +63,130 @@
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
 					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "showAxis" value = "1" />
 				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupShady" value = "0 0 0" />
-					<pattr name = "groupStage" value = "0 0 1" />
-					<pattr name = "groupTwo" value = "0 0 0" />
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
 				<pattr name = "enable" value = "1" />
 				<pattr name = "gridsizeX" value = "0.05" />
 				<pattr name = "gridsizeY" value = "0.05" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Grid_1" />
-				</patcher>
 			</patcher>
-			<patcher name = "Calibrator_1">
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
+			<patcher name = "ViewPort_3">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "erase_color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
 					</patcher>
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "08_SARBeamer_Left.xml" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_1" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Calibrator_2">
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
+			<patcher name = "ViewPort_2">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 2&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_2" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "erase_color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
 					</patcher>
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "08_SARBeamer_Middle.xml" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_2" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Calibrator_3">
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
+			<patcher name = "ViewPort_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "erase_color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
 					</patcher>
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "08_SARBeamer_Right.xml" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_3" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
 				</patcher>
 			</patcher>
 			<patcher name = "Output_1">
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1125" />
-					<pattr name = "lowerRightDesktopY" value = "888" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "725" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
-				</patcher>
 				<pattr name = "clipFar" value = "100." />
 				<pattr name = "clipNear" value = "0.1" />
 				<pattr name = "desktop" value = "0" />
@@ -201,119 +200,121 @@
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_1">
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+				</patcher>
 				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
+					<pattr name = "antialias" value = "0" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
 				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1125" />
+					<pattr name = "lowerRightDesktopY" value = "888" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "725" />
 				</patcher>
 			</patcher>
-			<patcher name = "ViewPort_2">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
+			<patcher name = "Calibrator_3">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 2&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
-				</patcher>
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_2" />
+					<pattr name = "vpl_titleEdit" value = "Calibrator_3" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "08_SARBeamer_Right.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "ViewPort_3">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
+			<patcher name = "Calibrator_2">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
-				</patcher>
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
+					<pattr name = "vpl_titleEdit" value = "Calibrator_2" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "08_SARBeamer_Middle.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "Calibrator_1">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Calibrator_1" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "08_SARBeamer_Left.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
 				</patcher>
 			</patcher>
 		</patcher>

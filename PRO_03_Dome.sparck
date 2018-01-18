@@ -2,11 +2,11 @@
 	"_enable" : 1,
 	"Window" : 	{
 		"_type" : "Window",
-		"Output_1" : 		{
+		"Window_1" : 		{
 			"_type" : "Window",
 			"_version" : 1,
 			"_id" : 1,
-			"_name" : "Output_1",
+			"_name" : "Window_1",
 			"_title" : "Output_1",
 			"_nodespace" : "root",
 			"_level" : 0,
@@ -353,96 +353,57 @@
 	}
 ,
 	"SpatialSoftedge" : 	{
-		"MultiAugmented_1" : 		{
+		"_type" : "SpatialSoftedge",
+		"SpatialSoftedge_1" : 		{
 			"_type" : "SpatialSoftedge",
-			"_version" : 1,
+			"_version" : 2,
 			"_id" : 1,
-			"_name" : "MultiAugmented_1",
-			"_title" : "MultiAugmented_1",
+			"_name" : "SpatialSoftedge_1",
+			"_title" : "SpatialSoftedge_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 215, 14, 395, 283 ],
+			"_rect" : [ 208, 13, 388, 280 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "SpatialSoftedge"
+
 	}
 ,
 	"BlendSoftedge" : 	{
+		"_type" : "BlendSoftedge",
 		"BlendSoftedge_1" : 		{
 			"_type" : "BlendSoftedge",
-			"_version" : 1,
+			"_version" : 2,
 			"_id" : 1,
 			"_name" : "BlendSoftedge_1",
 			"_title" : "BlendSoftedge_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 405, 14, 585, 150 ],
+			"_rect" : [ 406, 21, 586, 101 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "BlendSoftedge"
+
 	}
 ,
 	"MeshWarp" : 	{
-		"Warp2d_1" : 		{
-			"_type" : "MeshWarp",
-			"_version" : 1,
-			"_id" : 1,
-			"_name" : "Warp2d_1",
-			"_title" : "Warp2d_1",
-			"_nodespace" : "root::1",
-			"_level" : 1,
-			"_rect" : [ 179, 175, 359, 275 ],
-			"_nodespace.idx" : 1,
-			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
-		}
-,
 		"_type" : "MeshWarp",
-		"Warp2d_2" : 		{
+		"MeshWarp_6" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
-			"_id" : 2,
-			"_name" : "Warp2d_2",
-			"_title" : "Warp2d_2",
-			"_nodespace" : "root::2",
+			"_id" : 6,
+			"_name" : "MeshWarp_6",
+			"_title" : "Warp2d_6",
+			"_nodespace" : "root::6",
 			"_level" : 1,
-			"_rect" : [ 237, 218, 417, 318 ],
-			"_nodespace.idx" : 2,
-			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
+			"_rect" : [ 228, 181, 408, 281 ],
+			"_nodespace.idx" : 6,
+			"_connection_0" : [ "Beamer_6", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_3" : 		{
-			"_type" : "MeshWarp",
-			"_version" : 1,
-			"_id" : 3,
-			"_name" : "Warp2d_3",
-			"_title" : "Warp2d_3",
-			"_nodespace" : "root::3",
-			"_level" : 1,
-			"_rect" : [ 228, 201, 408, 301 ],
-			"_nodespace.idx" : 3,
-			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
-		}
-,
-		"Warp2d_4" : 		{
-			"_type" : "MeshWarp",
-			"_version" : 1,
-			"_id" : 4,
-			"_name" : "Warp2d_4",
-			"_title" : "Warp2d_4",
-			"_nodespace" : "root::4",
-			"_level" : 1,
-			"_rect" : [ 231, 206, 411, 306 ],
-			"_nodespace.idx" : 4,
-			"_connection_0" : [ "Beamer_4", 2, "texture", 2, "texture", 1 ]
-		}
-,
-		"Warp2d_5" : 		{
+		"MeshWarp_5" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 5,
-			"_name" : "Warp2d_5",
+			"_name" : "MeshWarp_5",
 			"_title" : "Warp2d_5",
 			"_nodespace" : "root::5",
 			"_level" : 1,
@@ -451,17 +412,56 @@
 			"_connection_0" : [ "Beamer_5", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_6" : 		{
+		"MeshWarp_4" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
-			"_id" : 6,
-			"_name" : "Warp2d_6",
-			"_title" : "Warp2d_6",
-			"_nodespace" : "root::6",
+			"_id" : 4,
+			"_name" : "MeshWarp_4",
+			"_title" : "Warp2d_4",
+			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 228, 181, 408, 281 ],
-			"_nodespace.idx" : 6,
-			"_connection_0" : [ "Beamer_6", 2, "texture", 2, "texture", 1 ]
+			"_rect" : [ 231, 206, 411, 306 ],
+			"_nodespace.idx" : 4,
+			"_connection_0" : [ "Beamer_4", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"MeshWarp_3" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 3,
+			"_name" : "MeshWarp_3",
+			"_title" : "Warp2d_3",
+			"_nodespace" : "root::3",
+			"_level" : 1,
+			"_rect" : [ 228, 201, 408, 301 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"MeshWarp_2" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "MeshWarp_2",
+			"_title" : "Warp2d_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 237, 218, 417, 318 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"MeshWarp_1" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "MeshWarp_1",
+			"_title" : "Warp2d_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 179, 175, 359, 275 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
 		}
 
 	}
@@ -480,18 +480,6 @@
 		}
 ,
 		"_type" : "Canvas",
-		"Canvas_2" : 		{
-			"_type" : "Canvas",
-			"_version" : 1,
-			"_id" : 2,
-			"_name" : "Canvas_2",
-			"_title" : "SoftEdgeCanvas",
-			"_nodespace" : "root",
-			"_level" : 0,
-			"_rect" : [ 599, 334, 779, 416 ],
-			"_nodespace.idx" : 2
-		}
-,
 		"Canvas_3" : 		{
 			"_type" : "Canvas",
 			"_version" : 1,
@@ -503,6 +491,18 @@
 			"_rect" : [ 217, 437, 397, 519 ],
 			"_nodespace.idx" : 3,
 			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"Canvas_2" : 		{
+			"_type" : "Canvas",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "Canvas_2",
+			"_title" : "SoftEdgeCanvas",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 606, 342, 786, 424 ],
+			"_nodespace.idx" : 2
 		}
 
 	}

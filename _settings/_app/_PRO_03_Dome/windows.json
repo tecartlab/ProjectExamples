@@ -2,7 +2,7 @@
 	"bs_gui_win_workspace_WorkSpace" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 551, 138, 1409, 663 ],
+			"_rect" : [ 550, 131, 1407, 666 ],
 			"_visible" : 1
 		}
 
@@ -101,7 +101,7 @@
 	"bs_gui_win_workspace_subnode_1" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 190, 155, 640, 642 ],
+			"_rect" : [ 156, 121, 674, 676 ],
 			"_visible" : 0
 		}
 
@@ -408,6 +408,34 @@
 		"_pin" : 0,
 		"_type" : "Camera",
 		"_slotsize" : 22
+	}
+,
+	"bs_gui_win_SpatialSoftedge_1_P_Light" : 	{
+		"_pin" : 1,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_BlendSoftedge_1_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_BlendSoftedge_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65
 	}
 
 }

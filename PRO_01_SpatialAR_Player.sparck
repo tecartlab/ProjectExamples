@@ -275,7 +275,7 @@
 			"_title" : "HeadCapture",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 491, 247, 671, 328 ],
+			"_rect" : [ 488, 272, 668, 353 ],
 			"_nodespace.idx" : 3,
 			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
 		}
@@ -284,18 +284,18 @@
 ,
 	"SpatialSoftedge" : 	{
 		"_type" : "SpatialSoftedge",
-		"SpatialSoftedge_2" : 		{
+		"SpatialSoftedge_1" : 		{
 			"_type" : "SpatialSoftedge",
-			"_version" : 1,
-			"_id" : 2,
-			"_name" : "SpatialSoftedge_2",
-			"_title" : "HeadAugment",
+			"_version" : 2,
+			"_id" : 1,
+			"_name" : "SpatialSoftedge_1",
+			"_title" : "SpatialSoftedge",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 491, 356, 671, 625 ],
-			"_nodespace.idx" : 2,
-			"_connection_0" : [ "SceneCapture_3", 2, "texture", 2, "texture", 1 ],
-			"_connection_1" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
+			"_rect" : [ 481, 383, 661, 650 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ],
+			"_connection_1" : [ "SceneCapture_3", 2, "texture", 2, "texture", 1 ]
 		}
 
 	}
@@ -364,7 +364,7 @@
 			"_title" : "BackGroundCam",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 434, 78, 614, 236 ],
+			"_rect" : [ 434, 78, 614, 262 ],
 			"_nodespace.idx" : 2,
 			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
 		}
@@ -377,7 +377,7 @@
 			"_title" : "HeadCam",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 490, 84, 670, 242 ],
+			"_rect" : [ 490, 84, 670, 268 ],
 			"_nodespace.idx" : 3,
 			"_connection_0" : [ "sub-inlet_4", 2, "properties", 1, "properties", -1 ]
 		}
@@ -479,7 +479,7 @@
 			"_title" : "BrainLookAt_TFM",
 			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 270, 360, 450, 491 ],
+			"_rect" : [ 270, 359, 450, 490 ],
 			"_nodespace.idx" : 5
 		}
 ,

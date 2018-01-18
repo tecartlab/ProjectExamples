@@ -42,21 +42,27 @@
 				</patcher>
 			</patcher>
 			<patcher name = "ViewPort_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
+				</patcher>
 				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "depth_enable" value = "1" />
@@ -69,16 +75,13 @@
 					<pattr name = "scaleY" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
 				</patcher>
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
-				</patcher>
 				<pattr name = "enable" value = "1" />
 				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
 				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 			</patcher>
 			<patcher name = "Video_1">
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_1" />
 				</patcher>
 				<patcher name = "property">
 					<pattr name = "autostart" value = "1" />
@@ -98,255 +101,1232 @@
 					<pattr name = "unique" value = "0" />
 					<pattr name = "vol" value = "0." />
 				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
+				</patcher>
 				<pattr name = "enable" value = "1" />
 			</patcher>
-			<patcher name = "Grid_1">
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "select..." />
+			<patcher name = "Output_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Output_1" />
+				</patcher>
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "layer" value = "10" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0." />
-					<pattr name = "publishTfm" value = "0" />
-					<pattr name = "rotationX" value = "0." />
-					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "2." />
-					<pattr name = "scaleY" value = "2." />
-					<pattr name = "scaleZ" value = "2." />
+					<pattr name = "antialias" value = "0" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
 				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupShady" value = "0 0 0" />
-					<pattr name = "groupStage" value = "0 0 1" />
-					<pattr name = "groupTwo" value = "0 0 0" />
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1427" />
+					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "720" />
 				</patcher>
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
 				<pattr name = "enable" value = "1" />
-				<pattr name = "gridsizeX" value = "0.1" />
-				<pattr name = "gridsizeY" value = "0.1" />
+				<pattr name = "lowerRightX" value = "420" />
+				<pattr name = "lowerRightY" value = "340" />
+				<pattr name = "splitColumns" value = "&quot;1 column&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "100" />
+				<pattr name = "upperLeftY" value = "100" />
 			</patcher>
-			<patcher name = "BoxMapProjection_1">
-				<patcher name = "cameraSelection">
-					<pattr name = "address" value = "BoxMapCamera_1" />
+			<patcher name = "LedStrips">
+				<patcher name = "node_workspace">
+					<pattr name = "toggle" value = "1" />
+					<patcher name = "LedStrip_8">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_8" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "315." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_7">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_7" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "270." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_6">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_6" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "225." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1 5 1 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_5">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_5" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "180." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_4">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_4" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "135." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_3">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_3" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "90." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_2">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_2" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "45." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "LedStrip_1">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "LedStrip_1" />
+						</patcher>
+						<patcher name = "strip">
+							<pattr name = "fileName" value = "07/gazebo.xml" />
+						</patcher>
+						<patcher name = "property">
+							<pattr name = "fileWatch" value = "0" />
+							<pattr name = "layer" value = "0" />
+							<pattr name = "ledsize" value = "0.005" />
+							<pattr name = "positionX" value = "0." />
+							<pattr name = "positionY" value = "0." />
+							<pattr name = "positionZ" value = "0." />
+							<pattr name = "rotationX" value = "0." />
+							<pattr name = "rotationY" value = "0." />
+							<pattr name = "rotationZ" value = "0." />
+							<pattr name = "scaleX" value = "1." />
+							<pattr name = "scaleY" value = "1." />
+							<pattr name = "scaleZ" value = "1." />
+							<pattr name = "show_unused_segmts" value = "0" />
+							<patcher name = "transformnode">
+								<pattr name = "address" value = "&lt;none&gt;" />
+							</patcher>
+							<patcher name = "renderGroup">
+								<pattr name = "groupOne" value = "0 0 0" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "6 0 1" />
+							</patcher>
+							<patcher name = "color">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0.5" />
+								<pattr name = "green" value = "0.5" />
+								<pattr name = "red" value = "0.5" />
+							</patcher>
+							<patcher name = "setscene4preview">
+								<pattr name = "groupOne" value = "2 0 1" />
+								<pattr name = "groupShady" value = "0 0 0" />
+								<pattr name = "groupStage" value = "0 0 0" />
+								<pattr name = "groupTwo" value = "0 0 0" />
+							</patcher>
+							<patcher name = "shader">
+								<pattr name = "address" value = "BoxMapProjection_1" />
+							</patcher>
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[0]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_A" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[1]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_B" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[2]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_C" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[3]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_D" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[4]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_E" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[5]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_F" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[6]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_G" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[7]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_H" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[8]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_I" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[9]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_J" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[10]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "LEDStripe_K" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[11]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[12]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[13]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[14]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+						<patcher name = "_bs.node.pop.ledstrip.body[15]">
+							<pattr name = "ledinset" value = "0" />
+							<pattr name = "ledoffset" value = "0" />
+							<pattr name = "ledstepdistance" value = "50." />
+							<pattr name = "segmentName" value = "off" />
+						</patcher>
+					</patcher>
+					<patcher name = "nodeSelector">
+						<patcher name = "bs.vpl.node.util.select">
+							<patcher name = "bs.file.select">
+								<pattr name = "fileName" value = "usernodes..." />
+							</patcher>
+						</patcher>
+					</patcher>
 				</patcher>
-				<pattr name = "collada" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "texture" value = "multi" />
-				<pattr name = "toStage" value = "Textured" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "LedStrips" />
+				</patcher>
 			</patcher>
-			<patcher name = "BoxMapCamera_1">
-				<patcher name = "property">
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "1." />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
-				</patcher>
-				<patcher name = "parentTransformation">
-					<pattr name = "address" value = "select..." />
-				</patcher>
-				<pattr name = "backView" value = "1" />
-				<pattr name = "bottomView" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "frontView" value = "1" />
-				<pattr name = "frustumFar" value = "3." />
-				<pattr name = "frustumNear" value = "0.1" />
-				<pattr name = "leftView" value = "1" />
-				<pattr name = "onstage" value = "1" />
-				<pattr name = "rightView" value = "1" />
-				<pattr name = "topView" value = "1" />
-			</patcher>
-			<patcher name = "BoxRender">
-				<patcher name = "renderGroupShady">
-					<pattr name = "groupShady" value = "0 0 0" />
-				</patcher>
-				<patcher name = "erasecolor">
-					<pattr name = "alpha" value = "1." />
-					<pattr name = "blue" value = "0." />
-					<pattr name = "green" value = "0." />
-					<pattr name = "red" value = "0." />
-				</patcher>
-				<patcher name = "shader">
-					<pattr name = "address" value = "&lt;none&gt;" />
-				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 1" />
-					<pattr name = "groupStage" value = "0 0 0" />
-					<pattr name = "groupTwo" value = "0 0 0" />
-				</patcher>
-				<patcher name = "cameraSelection">
-					<pattr name = "address" value = "BoxMapCamera_1" />
-				</patcher>
-				<pattr name = "capture" value = "0" />
-				<pattr name = "dimX" value = "512" />
+			<patcher name = "TextureStitcher_1">
+				<pattr name = "dimX" value = "3072" />
 				<pattr name = "dimY" value = "512" />
 				<pattr name = "enable" value = "1" />
-				<pattr name = "rendercontext" value = "0" />
-				<pattr name = "renderpass" value = "passA" />
-			</patcher>
-			<patcher name = "BoxLEDSetup">
-				<patcher name = "renderGroupShady">
-					<pattr name = "groupShady" value = "0 0 0" />
+				<pattr name = "renderpass" value = "0" />
+				<pattr name = "size" value = "5" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "TextureStitcher_1" />
 				</patcher>
-				<patcher name = "erasecolor">
-					<pattr name = "alpha" value = "1." />
-					<pattr name = "blue" value = "0." />
-					<pattr name = "green" value = "0." />
-					<pattr name = "red" value = "0." />
-				</patcher>
-				<patcher name = "shader">
-					<pattr name = "address" value = "&lt;none&gt;" />
-				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupStage" value = "0 0 0" />
-					<pattr name = "groupTwo" value = "6 0 1" />
-				</patcher>
-				<patcher name = "cameraSelection">
-					<pattr name = "address" value = "BoxMapCamera_1" />
-				</patcher>
-				<pattr name = "capture" value = "0" />
-				<pattr name = "dimX" value = "2048" />
-				<pattr name = "dimY" value = "2048" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "rendercontext" value = "0" />
-				<pattr name = "renderpass" value = "manualA" />
-			</patcher>
-			<patcher name = "PixelPusher_1">
-				<patcher name = "stripSelection8">
-					<pattr name = "address" value = "LedStrip_8" />
-				</patcher>
-				<patcher name = "stripSelection7">
-					<pattr name = "address" value = "LedStrip_7" />
-				</patcher>
-				<patcher name = "stripSelection6">
-					<pattr name = "address" value = "LedStrip_6" />
-				</patcher>
-				<patcher name = "stripSelection5">
-					<pattr name = "address" value = "LedStrip_5" />
-				</patcher>
-				<patcher name = "stripSelection4">
-					<pattr name = "address" value = "LedStrip_4" />
-				</patcher>
-				<patcher name = "stripSelection3">
-					<pattr name = "address" value = "LedStrip_3" />
-				</patcher>
-				<patcher name = "stripSelection2">
-					<pattr name = "address" value = "LedStrip_2" />
-				</patcher>
-				<patcher name = "stripSelection1">
-					<pattr name = "address" value = "LedStrip_1" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autothrottle" value = "0" />
-					<pattr name = "extradelay" value = "0" />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "u484017212" value = "" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "pixelPusherId" value = "&lt;empty&gt;" />
-				<pattr name = "pixelPusherName" value = "" />
-			</patcher>
-			<patcher name = "RenderCanvas">
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "&lt;none&gt;" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "shader">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<pattr name = "animenable" value = "0" />
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "cache_mode" value = "displaylist" />
-					<pattr name = "cull_face" value = "2" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "displaylist" value = "0" />
-					<pattr name = "drawgroup" value = "0" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "0" />
-					<pattr name = "nodeaxes" value = "0" />
-					<pattr name = "normalize" value = "0" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0." />
-					<pattr name = "publishTfm" value = "0" />
-					<pattr name = "rotationX" value = "0." />
-					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "2." />
-					<pattr name = "scaleY" value = "2." />
-					<pattr name = "scaleZ" value = "2." />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 1" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-				</patcher>
-				<patcher name = "model">
-					<pattr name = "fileName" value = "03/Dome.obj" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
 			</patcher>
 			<patcher name = "Gazebo">
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "&lt;none&gt;" />
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Gazebo" />
+				</patcher>
+				<patcher name = "model">
+					<pattr name = "fileName" value = "07/gazebo.obj" />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "shader">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "material">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "mat_emission">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
-					</patcher>
-					<patcher name = "mat_ambient">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.5" />
-						<pattr name = "green" value = "0.5" />
-						<pattr name = "red" value = "0.5" />
-					</patcher>
-					<patcher name = "mat_specular">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.5" />
-						<pattr name = "green" value = "0.5" />
-						<pattr name = "red" value = "0.5" />
-					</patcher>
-					<patcher name = "mat_diffuse">
-						<pattr name = "alpha" value = "0.204435" />
-						<pattr name = "blue" value = "0.498039" />
-						<pattr name = "green" value = "0.560784" />
-						<pattr name = "red" value = "0.960784" />
-					</patcher>
 					<pattr name = "animenable" value = "0" />
 					<pattr name = "antialias" value = "0" />
 					<pattr name = "auto_material" value = "0" />
@@ -358,7 +1338,7 @@
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "displaylist" value = "1" />
-					<pattr name = "drawboudns" value = "0" />
+					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
 					<pattr name = "layer" value = "10" />
@@ -391,1189 +1371,276 @@
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
+					<patcher name = "mat_diffuse">
+						<pattr name = "alpha" value = "0.204435" />
+						<pattr name = "blue" value = "0.498039" />
+						<pattr name = "green" value = "0.560784" />
+						<pattr name = "red" value = "0.960784" />
+					</patcher>
+					<patcher name = "mat_specular">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.5" />
+						<pattr name = "green" value = "0.5" />
+						<pattr name = "red" value = "0.5" />
+					</patcher>
+					<patcher name = "mat_ambient">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.5" />
+						<pattr name = "green" value = "0.5" />
+						<pattr name = "red" value = "0.5" />
+					</patcher>
+					<patcher name = "mat_emission">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
+					<patcher name = "material">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "shader">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+				</patcher>
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+			</patcher>
+			<patcher name = "RenderCanvas">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "RenderCanvas" />
 				</patcher>
 				<patcher name = "model">
-					<pattr name = "fileName" value = "07/gazebo.obj" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-			</patcher>
-			<patcher name = "Output_1">
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1427" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "720" />
+					<pattr name = "fileName" value = "03/Dome.obj" />
 				</patcher>
 				<patcher name = "property">
+					<pattr name = "animenable" value = "0" />
 					<pattr name = "antialias" value = "0" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "cache_mode" value = "displaylist" />
+					<pattr name = "cull_face" value = "2" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "displaylist" value = "0" />
+					<pattr name = "drawbounds" value = "0" />
+					<pattr name = "drawgroup" value = "0" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "layer" value = "0" />
+					<pattr name = "nodeaxes" value = "0" />
+					<pattr name = "normalize" value = "0" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0." />
+					<pattr name = "publishTfm" value = "0" />
+					<pattr name = "rotationX" value = "0." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "2." />
+					<pattr name = "scaleY" value = "2." />
+					<pattr name = "scaleZ" value = "2." />
+					<pattr name = "smooth_shading" value = "1" />
+					<pattr name = "smoothing_angle" value = "89." />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 1" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "shader">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
 				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "420" />
-				<pattr name = "lowerRightY" value = "340" />
-				<pattr name = "splitColumns" value = "&quot;1 column&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "100" />
-				<pattr name = "upperLeftY" value = "100" />
 			</patcher>
-			<patcher name = "TextureStitcher_1">
-				<pattr name = "dimX" value = "3072" />
+			<patcher name = "PixelPusher_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "pixelPusherId" value = "&lt;empty&gt;" />
+				<pattr name = "pixelPusherName" value = "" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "PixelPusher_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "u986014147" value = "" />
+					<pattr name = "autothrottle" value = "0" />
+					<pattr name = "extradelay" value = "0" />
+					<pattr name = "renderpass" value = "passA" />
+				</patcher>
+				<patcher name = "stripSelection1">
+					<pattr name = "address" value = "LedStrip_1" />
+				</patcher>
+				<patcher name = "stripSelection2">
+					<pattr name = "address" value = "LedStrip_2" />
+				</patcher>
+				<patcher name = "stripSelection3">
+					<pattr name = "address" value = "LedStrip_3" />
+				</patcher>
+				<patcher name = "stripSelection4">
+					<pattr name = "address" value = "LedStrip_4" />
+				</patcher>
+				<patcher name = "stripSelection5">
+					<pattr name = "address" value = "LedStrip_5" />
+				</patcher>
+				<patcher name = "stripSelection6">
+					<pattr name = "address" value = "LedStrip_6" />
+				</patcher>
+				<patcher name = "stripSelection7">
+					<pattr name = "address" value = "LedStrip_7" />
+				</patcher>
+				<patcher name = "stripSelection8">
+					<pattr name = "address" value = "LedStrip_8" />
+				</patcher>
+			</patcher>
+			<patcher name = "BoxLEDSetup">
+				<pattr name = "capture" value = "0" />
+				<pattr name = "dimX" value = "2048" />
+				<pattr name = "dimY" value = "2048" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "rendercontext" value = "0" />
+				<pattr name = "renderpass" value = "manualA" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "BoxLEDSetup" />
+				</patcher>
+				<patcher name = "cameraSelection">
+					<pattr name = "address" value = "BoxMapCamera_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 0" />
+					<pattr name = "groupStage" value = "0 0 0" />
+					<pattr name = "groupTwo" value = "6 0 1" />
+				</patcher>
+				<patcher name = "shader">
+					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+				<patcher name = "erasecolor">
+					<pattr name = "alpha" value = "1." />
+					<pattr name = "blue" value = "0." />
+					<pattr name = "green" value = "0." />
+					<pattr name = "red" value = "0." />
+				</patcher>
+				<patcher name = "renderGroupShady">
+					<pattr name = "groupShady" value = "0 0 0" />
+				</patcher>
+			</patcher>
+			<patcher name = "BoxRender">
+				<pattr name = "capture" value = "0" />
+				<pattr name = "dimX" value = "512" />
 				<pattr name = "dimY" value = "512" />
 				<pattr name = "enable" value = "1" />
-				<pattr name = "renderpass" value = "0" />
-				<pattr name = "size" value = "5" />
+				<pattr name = "rendercontext" value = "0" />
+				<pattr name = "renderpass" value = "passA" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "BoxRender" />
+				</patcher>
+				<patcher name = "cameraSelection">
+					<pattr name = "address" value = "BoxMapCamera_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 1" />
+					<pattr name = "groupStage" value = "0 0 0" />
+					<pattr name = "groupTwo" value = "0 0 0" />
+				</patcher>
+				<patcher name = "shader">
+					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+				<patcher name = "erasecolor">
+					<pattr name = "alpha" value = "1." />
+					<pattr name = "blue" value = "0." />
+					<pattr name = "green" value = "0." />
+					<pattr name = "red" value = "0." />
+				</patcher>
+				<patcher name = "renderGroupShady">
+					<pattr name = "groupShady" value = "0 0 0" />
+				</patcher>
 			</patcher>
-			<patcher name = "LedStrips">
-				<patcher name = "node_workspace">
-					<pattr name = "toggle" value = "1" />
-					<patcher name = "nodeSelector">
-						<patcher name = "bs.vpl.node.util.select">
-							<patcher name = "bs.file.select">
-								<pattr name = "fileName" value = "usernodes..." />
-							</patcher>
-						</patcher>
-					</patcher>
-					<patcher name = "LedStrip_1">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "0." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_2">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "45." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_3">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "90." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_4">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "135." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_5">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "180." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_6">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1 5 1 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "225." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_7">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_K" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_J" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_I" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_H" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_G" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_F" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_E" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_D" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_C" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_B" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "270." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
-					<patcher name = "LedStrip_8">
-						<patcher name = "_bs.node.pop.ledstrip.body[15]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[14]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[13]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[12]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[11]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[10]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[9]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[8]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[7]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[6]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[5]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[4]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[3]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[2]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[1]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "off" />
-						</patcher>
-						<patcher name = "_bs.node.pop.ledstrip.body[0]">
-							<pattr name = "ledinset" value = "0" />
-							<pattr name = "ledoffset" value = "0" />
-							<pattr name = "ledstepdistance" value = "50." />
-							<pattr name = "segmentName" value = "LEDStripe_A" />
-						</patcher>
-						<patcher name = "property">
-							<patcher name = "shader">
-								<pattr name = "address" value = "BoxMapProjection_1" />
-							</patcher>
-							<patcher name = "setscene4preview">
-								<pattr name = "groupOne" value = "2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "0 0 0" />
-							</patcher>
-							<patcher name = "color">
-								<pattr name = "alpha" value = "1." />
-								<pattr name = "blue" value = "0.5" />
-								<pattr name = "green" value = "0.5" />
-								<pattr name = "red" value = "0.5" />
-							</patcher>
-							<pattr name = "fileWatch" value = "0" />
-							<pattr name = "layer" value = "0" />
-							<pattr name = "ledsize" value = "0.005" />
-							<pattr name = "positionX" value = "0." />
-							<pattr name = "positionY" value = "0." />
-							<pattr name = "positionZ" value = "0." />
-							<pattr name = "rotationX" value = "0." />
-							<pattr name = "rotationY" value = "0." />
-							<pattr name = "rotationZ" value = "315." />
-							<pattr name = "scaleX" value = "1." />
-							<pattr name = "scaleY" value = "1." />
-							<pattr name = "scaleZ" value = "1." />
-							<pattr name = "show_unused_segmts" value = "0" />
-							<patcher name = "renderGroup">
-								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
-								<pattr name = "groupStage" value = "0 0 0" />
-								<pattr name = "groupTwo" value = "6 0 1" />
-							</patcher>
-							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
-							</patcher>
-						</patcher>
-						<patcher name = "strip">
-							<pattr name = "fileName" value = "07/gazebo.xml" />
-						</patcher>
-						<pattr name = "enable" value = "1" />
-					</patcher>
+			<patcher name = "BoxMapCamera_1">
+				<pattr name = "backView" value = "1" />
+				<pattr name = "bottomView" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "frontView" value = "1" />
+				<pattr name = "frustumFar" value = "3." />
+				<pattr name = "frustumNear" value = "0.1" />
+				<pattr name = "leftView" value = "1" />
+				<pattr name = "onstage" value = "1" />
+				<pattr name = "rightView" value = "1" />
+				<pattr name = "topView" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "BoxMapCamera_1" />
+				</patcher>
+				<patcher name = "parentTransformation">
+					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "1." />
+					<pattr name = "rotationX" value = "90." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "scaleZ" value = "1." />
+				</patcher>
+			</patcher>
+			<patcher name = "BoxMapProjection_1">
+				<pattr name = "collada" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "texture" value = "multi" />
+				<pattr name = "toStage" value = "Textured" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "BoxMapProjection_1" />
+				</patcher>
+				<patcher name = "cameraSelection">
+					<pattr name = "address" value = "BoxMapCamera_1" />
+				</patcher>
+			</patcher>
+			<patcher name = "Grid_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "gridsizeX" value = "0.1" />
+				<pattr name = "gridsizeY" value = "0.1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Grid_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 0" />
+					<pattr name = "groupShady" value = "0 0 0" />
+					<pattr name = "groupStage" value = "0 0 1" />
+					<pattr name = "groupTwo" value = "0 0 0" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "layer" value = "10" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0." />
+					<pattr name = "publishTfm" value = "0" />
+					<pattr name = "rotationX" value = "0." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "2." />
+					<pattr name = "scaleY" value = "2." />
+					<pattr name = "scaleZ" value = "2." />
+					<pattr name = "showAxis" value = "1" />
+				</patcher>
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
 			</patcher>
 		</patcher>
@@ -1582,10 +1649,10 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "544" />
-				<pattr name = "lowerRightDesktopY" value = "634" />
-				<pattr name = "upperLeftDesktopX" value = "4" />
-				<pattr name = "upperLeftDesktopY" value = "349" />
+				<pattr name = "lowerRightDeskopX" value = "465" />
+				<pattr name = "lowerRightDesktopY" value = "473" />
+				<pattr name = "upperLeftDesktopX" value = "8" />
+				<pattr name = "upperLeftDesktopY" value = "129" />
 			</patcher>
 		</patcher>
 	</slot>

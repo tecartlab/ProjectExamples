@@ -88,7 +88,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -97,7 +97,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
@@ -106,7 +106,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -145,7 +145,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -154,7 +154,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
@@ -163,7 +163,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -202,7 +202,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -211,7 +211,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
@@ -220,7 +220,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -268,7 +268,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
@@ -277,7 +277,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -316,7 +316,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -325,7 +325,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
@@ -334,7 +334,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -367,7 +367,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -402,7 +402,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -437,7 +437,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -472,7 +472,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -507,7 +507,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -542,7 +542,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -577,7 +577,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -612,7 +612,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
@@ -653,7 +653,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -662,7 +662,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -690,7 +690,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 				<pattr name = "enable" value = "1" />
@@ -710,7 +710,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -719,7 +719,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -747,7 +747,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 				<pattr name = "enable" value = "1" />
@@ -767,7 +767,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -776,7 +776,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -804,7 +804,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 				<pattr name = "enable" value = "1" />
@@ -824,7 +824,7 @@
 						<pattr name = "red" value = "0.612" />
 					</patcher>
 					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
@@ -833,7 +833,7 @@
 						<pattr name = "red" value = "1." />
 					</patcher>
 					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -861,7 +861,7 @@
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
 					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 				<pattr name = "enable" value = "1" />

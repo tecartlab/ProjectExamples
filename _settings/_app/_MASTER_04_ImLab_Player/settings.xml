@@ -41,25 +41,40 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "QueScript_1">
-				<patcher name = "script">
-					<pattr name = "fileName" value = "05_ImLab.que" />
+			<patcher name = "Output_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Output_1" />
+				</patcher>
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "oscSendNode">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "debug" value = "0" />
-					<pattr name = "editor" value = "Brackets" />
-					<pattr name = "fileWatch" value = "1" />
-					<pattr name = "update_mode" value = "automatic" />
-					<pattr name = "updatefreq" value = "1" />
+					<pattr name = "antialias" value = "0" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
 				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "QueScript_1" />
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1417" />
+					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "625" />
 				</patcher>
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
 				<pattr name = "enable" value = "1" />
+				<pattr name = "lowerRightX" value = "0" />
+				<pattr name = "lowerRightY" value = "720" />
+				<pattr name = "splitColumns" value = "&quot;4 cols&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "-5120" />
+				<pattr name = "upperLeftY" value = "0" />
 			</patcher>
 			<patcher name = "Grid_1">
 				<patcher name = "vpl_nodelogic">
@@ -86,7 +101,7 @@
 					<pattr name = "showAxis" value = "1" />
 				</patcher>
 				<patcher name = "transformnode">
-					<pattr name = "address" value = "select..." />
+					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
 				<pattr name = "enable" value = "1" />
 				<pattr name = "gridsizeX" value = "1." />
@@ -121,7 +136,7 @@
 							<pattr name = "scaleZ" value = "1." />
 							<pattr name = "transform_reset" value = "2" />
 							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
@@ -130,7 +145,7 @@
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
 							<patcher name = "portal">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "color">
 								<pattr name = "alpha" value = "1." />
@@ -139,7 +154,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "render2viewport">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "erase_color">
 								<pattr name = "alpha" value = "1." />
@@ -181,7 +196,7 @@
 							<pattr name = "scaleZ" value = "1." />
 							<pattr name = "transform_reset" value = "2" />
 							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
@@ -190,7 +205,7 @@
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
 							<patcher name = "portal">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "color">
 								<pattr name = "alpha" value = "1." />
@@ -199,7 +214,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "render2viewport">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "erase_color">
 								<pattr name = "alpha" value = "1." />
@@ -241,7 +256,7 @@
 							<pattr name = "scaleZ" value = "1." />
 							<pattr name = "transform_reset" value = "2" />
 							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
@@ -250,7 +265,7 @@
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
 							<patcher name = "portal">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "color">
 								<pattr name = "alpha" value = "1." />
@@ -259,7 +274,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "render2viewport">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "erase_color">
 								<pattr name = "alpha" value = "1." />
@@ -301,7 +316,7 @@
 							<pattr name = "scaleZ" value = "1." />
 							<pattr name = "transform_reset" value = "2" />
 							<patcher name = "transformnode">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
@@ -310,7 +325,7 @@
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
 							<patcher name = "portal">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "color">
 								<pattr name = "alpha" value = "1." />
@@ -319,7 +334,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "render2viewport">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "erase_color">
 								<pattr name = "alpha" value = "1." />
@@ -391,7 +406,7 @@
 							</patcher>
 						</patcher>
 						<patcher name = "transformnode">
-							<pattr name = "address" value = "select..." />
+							<pattr name = "address" value = "&lt;none&gt;" />
 						</patcher>
 					</patcher>
 					<patcher name = "Canvas_3">
@@ -450,7 +465,7 @@
 							</patcher>
 						</patcher>
 						<patcher name = "transformnode">
-							<pattr name = "address" value = "select..." />
+							<pattr name = "address" value = "&lt;none&gt;" />
 						</patcher>
 					</patcher>
 					<patcher name = "Canvas_2">
@@ -509,7 +524,7 @@
 							</patcher>
 						</patcher>
 						<patcher name = "transformnode">
-							<pattr name = "address" value = "select..." />
+							<pattr name = "address" value = "&lt;none&gt;" />
 						</patcher>
 					</patcher>
 					<patcher name = "Canvas_1">
@@ -568,7 +583,7 @@
 							</patcher>
 						</patcher>
 						<patcher name = "transformnode">
-							<pattr name = "address" value = "select..." />
+							<pattr name = "address" value = "&lt;none&gt;" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_4">
@@ -599,7 +614,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "effect">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "warpingModel">
 								<pattr name = "fileName" value = "select..." />
@@ -637,7 +652,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "effect">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "warpingModel">
 								<pattr name = "fileName" value = "select..." />
@@ -675,7 +690,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "effect">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "warpingModel">
 								<pattr name = "fileName" value = "select..." />
@@ -713,7 +728,7 @@
 								<pattr name = "red" value = "1." />
 							</patcher>
 							<patcher name = "effect">
-								<pattr name = "address" value = "select..." />
+								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
 							<patcher name = "warpingModel">
 								<pattr name = "fileName" value = "select..." />
@@ -863,6 +878,26 @@
 					<pattr name = "vpl_titleEdit" value = "subnode_1" />
 				</patcher>
 			</patcher>
+			<patcher name = "QueScript_1">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "QueScript_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "debug" value = "0" />
+					<pattr name = "editor" value = "Brackets" />
+					<pattr name = "fileWatch" value = "1" />
+					<pattr name = "update_mode" value = "automatic" />
+					<pattr name = "updatefreq" value = "1" />
+					<patcher name = "oscSendNode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+				</patcher>
+				<patcher name = "script">
+					<pattr name = "fileName" value = "05_ImLab.que" />
+				</patcher>
+			</patcher>
 			<patcher name = "RayMarcher_1">
 				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
@@ -884,7 +919,7 @@
 					<pattr name = "speed" value = "1." />
 					<pattr name = "useTime" value = "1" />
 					<patcher name = "cameraSelection">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 				<patcher name = "camera0">
@@ -920,51 +955,16 @@
 					<pattr name = "scaleZ" value = "1." />
 				</patcher>
 			</patcher>
-			<patcher name = "Output_1">
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "0" />
-				<pattr name = "lowerRightY" value = "720" />
-				<pattr name = "splitColumns" value = "&quot;4 cols&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "-5120" />
-				<pattr name = "upperLeftY" value = "0" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Output_1" />
-				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1417" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "625" />
-				</patcher>
-			</patcher>
 		</patcher>
 		<patcher name = "_settings">
 			<pattr name = "preferences" value = "1" />
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "548" />
+				<pattr name = "lowerRightDeskopX" value = "546" />
 				<pattr name = "lowerRightDesktopY" value = "594" />
 				<pattr name = "upperLeftDesktopX" value = "6" />
-				<pattr name = "upperLeftDesktopY" value = "337" />
+				<pattr name = "upperLeftDesktopY" value = "339" />
 			</patcher>
 		</patcher>
 	</slot>

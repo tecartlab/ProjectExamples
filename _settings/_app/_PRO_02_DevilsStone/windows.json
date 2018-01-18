@@ -72,7 +72,7 @@
 	"bs_gui_win_workspace_WorkSpace" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 550, 129, 1432, 676 ],
+			"_rect" : [ 550, 129, 1432, 667 ],
 			"_visible" : 1
 		}
 
@@ -540,6 +540,34 @@
 		"_pin" : 0,
 		"_type" : "Capture",
 		"_slotsize" : 43
+	}
+,
+	"bs_gui_win_SpatialSoftedge_1_P_Light" : 	{
+		"_pin" : 1,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_BlendSoftedge_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65
+	}
+,
+	"bs_gui_win_BlendSoftedge_1_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 
 }

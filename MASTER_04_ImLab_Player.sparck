@@ -1,19 +1,19 @@
 {
 	"_enable" : 1,
 	"Window" : 	{
-		"Output_1" : 		{
+		"_type" : "Window",
+		"Window_1" : 		{
 			"_type" : "Window",
 			"_version" : 1,
 			"_id" : 1,
-			"_name" : "Output_1",
+			"_name" : "Window_1",
 			"_title" : "Output_1",
 			"_nodespace" : "root",
 			"_level" : 0,
 			"_rect" : [ 15, 34, 195, 156 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "Window"
+
 	}
 ,
 	"Grid" : 	{
@@ -209,11 +209,12 @@
 	}
 ,
 	"MeshWarp" : 	{
-		"Warp2d_1" : 		{
+		"_type" : "MeshWarp",
+		"MeshWarp_1" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 1,
-			"_name" : "Warp2d_1",
+			"_name" : "MeshWarp_1",
 			"_title" : "Warp2d_1",
 			"_nodespace" : "root::1",
 			"_level" : 1,
@@ -222,12 +223,11 @@
 			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"_type" : "MeshWarp",
-		"Warp2d_2" : 		{
+		"MeshWarp_2" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 2,
-			"_name" : "Warp2d_2",
+			"_name" : "MeshWarp_2",
 			"_title" : "Warp2d_2",
 			"_nodespace" : "root::1",
 			"_level" : 1,
@@ -236,11 +236,11 @@
 			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_3" : 		{
+		"MeshWarp_3" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 3,
-			"_name" : "Warp2d_3",
+			"_name" : "MeshWarp_3",
 			"_title" : "Warp2d_3",
 			"_nodespace" : "root::1",
 			"_level" : 1,
@@ -249,11 +249,11 @@
 			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_4" : 		{
+		"MeshWarp_4" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 4,
-			"_name" : "Warp2d_4",
+			"_name" : "MeshWarp_4",
 			"_title" : "Warp2d_4",
 			"_nodespace" : "root::1",
 			"_level" : 1,

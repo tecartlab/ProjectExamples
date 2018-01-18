@@ -215,17 +215,6 @@
 
 	}
 ,
-	"bs_gui_win_HeadAugment_P_Light" : 	{
-		"_pin" : 0,
-		"_type" : "Light",
-		"_slotsize" : 65,
-		"Main" : 		{
-			"_visible" : 0,
-			"_slotted" : 0
-		}
-
-	}
-,
 	"bs_gui_win_Head_Canvas_P_Canvas" : 	{
 		"_pin" : 1,
 		"_type" : "Canvas",
@@ -744,6 +733,28 @@
 		"_pin" : 0,
 		"_type" : "Script",
 		"_slotsize" : 25,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_HeadAugment_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_SpatialSoftedge_P_Light" : 	{
+		"_pin" : 1,
+		"_type" : "Light",
+		"_slotsize" : 65,
 		"Main" : 		{
 			"_visible" : 0,
 			"_slotted" : 0

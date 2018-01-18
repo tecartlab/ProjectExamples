@@ -41,344 +41,231 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Window_1">
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1436" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "725" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
-				</patcher>
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
+			<patcher name = "ViewPort_5">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "420" />
-				<pattr name = "lowerRightY" value = "340" />
-				<pattr name = "splitColumns" value = "&quot;5 cols&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "100" />
-				<pattr name = "upperLeftY" value = "100" />
+				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Window_1" />
+					<pattr name = "vpl_titleEdit" value = "ViewPort_5" />
 				</patcher>
-			</patcher>
-			<patcher name = "MeshWarp_1">
-				<patcher name = "lattice">
-					<pattr name = "fileName" value = "select..." />
-				</patcher>
-				<patcher name = "mesh">
-					<pattr name = "fileName" value = "castle/Part1.obj" />
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Window_1" />
 				</patcher>
 				<patcher name = "property">
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.662745" />
-						<pattr name = "green" value = "0.666667" />
-						<pattr name = "red" value = "0.65098" />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "warp" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "displaylist" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "MeshWarp_5" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "ViewPort_4">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 2&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_4" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Window_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "2.4" />
+					<pattr name = "outputMesh" value = "warp" />
+					<pattr name = "positionX" value = "0." />
 					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0.69" />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 1" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "MeshWarp_1" />
-				</patcher>
-			</patcher>
-			<patcher name = "MeshWarp_2">
-				<patcher name = "lattice">
-					<pattr name = "fileName" value = "select..." />
-				</patcher>
-				<patcher name = "mesh">
-					<pattr name = "fileName" value = "castle/Part2.obj" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.662745" />
-						<pattr name = "green" value = "0.666667" />
-						<pattr name = "red" value = "0.65098" />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "displaylist" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "MeshWarp_4" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "ViewPort_3">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Window_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "0.799" />
+					<pattr name = "outputMesh" value = "warp" />
+					<pattr name = "positionX" value = "0." />
 					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0.9" />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 1" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "MeshWarp_2" />
-				</patcher>
-			</patcher>
-			<patcher name = "MeshWarp_3">
-				<patcher name = "lattice">
-					<pattr name = "fileName" value = "select..." />
-				</patcher>
-				<patcher name = "mesh">
-					<pattr name = "fileName" value = "castle/Part3.obj" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.662745" />
-						<pattr name = "green" value = "0.666667" />
-						<pattr name = "red" value = "0.65098" />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "displaylist" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "MeshWarp_3" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "ViewPort_2">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 4&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_2" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Window_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "-0.78" />
+					<pattr name = "outputMesh" value = "warp" />
+					<pattr name = "positionX" value = "0." />
 					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0.662" />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 1" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "MeshWarp_3" />
-				</patcher>
-			</patcher>
-			<patcher name = "MeshWarp_4">
-				<patcher name = "lattice">
-					<pattr name = "fileName" value = "select..." />
-				</patcher>
-				<patcher name = "mesh">
-					<pattr name = "fileName" value = "castle/Part4.obj" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.662745" />
-						<pattr name = "green" value = "0.666667" />
-						<pattr name = "red" value = "0.65098" />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "displaylist" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "MeshWarp_2" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "ViewPort_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 5&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
+				</patcher>
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Window_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "-2.248" />
+					<pattr name = "outputMesh" value = "warp" />
+					<pattr name = "positionX" value = "0." />
 					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "1.06" />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 1" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "MeshWarp_4" />
-				</patcher>
-			</patcher>
-			<patcher name = "MeshWarp_5">
-				<patcher name = "lattice">
-					<pattr name = "fileName" value = "select..." />
-				</patcher>
-				<patcher name = "mesh">
-					<pattr name = "fileName" value = "castle/Part5.obj" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0.662745" />
-						<pattr name = "green" value = "0.666667" />
-						<pattr name = "red" value = "0.65098" />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "color">
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<patcher name = "portal">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "axes" value = "0" />
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "displaylist" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "poly_mode_backface" value = "0" />
-					<pattr name = "poly_mode_frontface" value = "0" />
-					<pattr name = "positionX" value = "-3.8" />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "1.15" />
-					<pattr name = "rotationX" value = "90." />
-					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "scaleZ" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 1" />
-						<pattr name = "groupTwo" value = "0 0 0" />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
 					</patcher>
-					<patcher name = "transformnode">
-						<pattr name = "address" value = "select..." />
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "MeshWarp_1" />
 					</patcher>
 				</patcher>
+			</patcher>
+			<patcher name = "Grid_1">
 				<pattr name = "enable" value = "1" />
+				<pattr name = "gridsizeX" value = "0.05" />
+				<pattr name = "gridsizeY" value = "0.05" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "MeshWarp_5" />
+					<pattr name = "vpl_titleEdit" value = "Grid_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 0" />
+					<pattr name = "groupShady" value = "0 0 0" />
+					<pattr name = "groupStage" value = "0 0 1" />
+					<pattr name = "groupTwo" value = "0 0 0" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "layer" value = "10" />
+					<pattr name = "positionX" value = "-0.87" />
+					<pattr name = "positionY" value = "-0.06" />
+					<pattr name = "positionZ" value = "-0.1" />
+					<pattr name = "publishTfm" value = "0" />
+					<pattr name = "rotationX" value = "0." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "5." />
+					<pattr name = "scaleY" value = "0.5" />
+					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "showAxis" value = "1" />
+				</patcher>
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
 			</patcher>
 			<patcher name = "Video_1">
-				<patcher name = "video">
-					<pattr name = "fileName" value = "castle/MLOVE_H264_AAC.mov" />
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_1" />
 				</patcher>
 				<patcher name = "property">
 					<pattr name = "autostart" value = "1" />
@@ -398,229 +285,343 @@
 					<pattr name = "unique" value = "0" />
 					<pattr name = "vol" value = "1." />
 				</patcher>
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_1" />
+				<patcher name = "video">
+					<pattr name = "fileName" value = "castle/MLOVE_H264_AAC.mov" />
 				</patcher>
 			</patcher>
-			<patcher name = "Grid_1">
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "select..." />
+			<patcher name = "MeshWarp_5">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "MeshWarp_5" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "layer" value = "10" />
-					<pattr name = "positionX" value = "-0.87" />
-					<pattr name = "positionY" value = "-0.06" />
-					<pattr name = "positionZ" value = "-0.1" />
-					<pattr name = "publishTfm" value = "0" />
-					<pattr name = "rotationX" value = "0." />
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "0" />
+					<pattr name = "cache_mode" value = "displaylist" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "-3.8" />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "1.15" />
+					<pattr name = "rotationX" value = "90." />
 					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "5." />
-					<pattr name = "scaleY" value = "0.5" />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
 					<pattr name = "scaleZ" value = "1." />
-				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupShady" value = "0 0 0" />
-					<pattr name = "groupStage" value = "0 0 1" />
-					<pattr name = "groupTwo" value = "0 0 0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "gridsizeX" value = "0.05" />
-				<pattr name = "gridsizeY" value = "0.05" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Grid_1" />
-				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_1">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "MeshWarp_1" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "warp" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 5&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Window_1" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
-				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_2">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "MeshWarp_2" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "warp" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 4&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Window_1" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_2" />
-				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_3">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "MeshWarp_3" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "warp" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Window_1" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
-				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_4">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "MeshWarp_4" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "select..." />
-					</patcher>
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "warp" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 2&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Window_1" />
-				</patcher>
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_4" />
-				</patcher>
-			</patcher>
-			<patcher name = "ViewPort_5">
-				<patcher name = "property">
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "MeshWarp_5" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "effect">
+					<patcher name = "transformnode">
 						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<patcher name = "meshColor">
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "portal">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
 						<pattr name = "green" value = "1." />
 						<pattr name = "red" value = "1." />
 					</patcher>
-					<pattr name = "blend_enable" value = "1" />
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.662745" />
+						<pattr name = "green" value = "0.666667" />
+						<pattr name = "red" value = "0.65098" />
+					</patcher>
+				</patcher>
+				<patcher name = "mesh">
+					<pattr name = "fileName" value = "castle/Part5.obj" />
+				</patcher>
+				<patcher name = "lattice">
+					<pattr name = "fileName" value = "select..." />
+				</patcher>
+			</patcher>
+			<patcher name = "MeshWarp_4">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "MeshWarp_4" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "0" />
+					<pattr name = "cache_mode" value = "displaylist" />
 					<pattr name = "depth_enable" value = "1" />
 					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "warp" />
-					<pattr name = "positionX" value = "0." />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "-2.248" />
 					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "1.06" />
+					<pattr name = "rotationX" value = "90." />
+					<pattr name = "rotationY" value = "0." />
 					<pattr name = "rotationZ" value = "0." />
 					<pattr name = "scaleX" value = "1." />
 					<pattr name = "scaleY" value = "1." />
+					<pattr name = "scaleZ" value = "1." />
 					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "transformnode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "portal">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.662745" />
+						<pattr name = "green" value = "0.666667" />
+						<pattr name = "red" value = "0.65098" />
+					</patcher>
 				</patcher>
+				<patcher name = "mesh">
+					<pattr name = "fileName" value = "castle/Part4.obj" />
+				</patcher>
+				<patcher name = "lattice">
+					<pattr name = "fileName" value = "select..." />
+				</patcher>
+			</patcher>
+			<patcher name = "MeshWarp_3">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Window_1" />
-				</patcher>
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_5" />
+					<pattr name = "vpl_titleEdit" value = "MeshWarp_3" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "0" />
+					<pattr name = "cache_mode" value = "displaylist" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "-0.78" />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0.662" />
+					<pattr name = "rotationX" value = "90." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "transformnode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "portal">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.662745" />
+						<pattr name = "green" value = "0.666667" />
+						<pattr name = "red" value = "0.65098" />
+					</patcher>
+				</patcher>
+				<patcher name = "mesh">
+					<pattr name = "fileName" value = "castle/Part3.obj" />
+				</patcher>
+				<patcher name = "lattice">
+					<pattr name = "fileName" value = "select..." />
+				</patcher>
+			</patcher>
+			<patcher name = "MeshWarp_2">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "MeshWarp_2" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "0" />
+					<pattr name = "cache_mode" value = "displaylist" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "0.799" />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0.9" />
+					<pattr name = "rotationX" value = "90." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "transformnode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "portal">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.662745" />
+						<pattr name = "green" value = "0.666667" />
+						<pattr name = "red" value = "0.65098" />
+					</patcher>
+				</patcher>
+				<patcher name = "mesh">
+					<pattr name = "fileName" value = "castle/Part2.obj" />
+				</patcher>
+				<patcher name = "lattice">
+					<pattr name = "fileName" value = "select..." />
+				</patcher>
+			</patcher>
+			<patcher name = "MeshWarp_1">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "MeshWarp_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "axes" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "0" />
+					<pattr name = "cache_mode" value = "displaylist" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "poly_mode_backface" value = "0" />
+					<pattr name = "poly_mode_frontface" value = "0" />
+					<pattr name = "positionX" value = "2.4" />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0.69" />
+					<pattr name = "rotationX" value = "90." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "scaleZ" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "transformnode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupShady" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "portal">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0.662745" />
+						<pattr name = "green" value = "0.666667" />
+						<pattr name = "red" value = "0.65098" />
+					</patcher>
+				</patcher>
+				<patcher name = "mesh">
+					<pattr name = "fileName" value = "castle/Part1.obj" />
+				</patcher>
+				<patcher name = "lattice">
+					<pattr name = "fileName" value = "select..." />
+				</patcher>
+			</patcher>
+			<patcher name = "Window_1">
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "lowerRightX" value = "420" />
+				<pattr name = "lowerRightY" value = "340" />
+				<pattr name = "splitColumns" value = "&quot;5 cols&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "100" />
+				<pattr name = "upperLeftY" value = "100" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Window_1" />
+				</patcher>
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "antialias" value = "0" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
+				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1436" />
+					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "725" />
 				</patcher>
 			</patcher>
 		</patcher>
@@ -629,7 +630,7 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "543" />
+				<pattr name = "lowerRightDeskopX" value = "545" />
 				<pattr name = "lowerRightDesktopY" value = "695" />
 				<pattr name = "upperLeftDesktopX" value = "5" />
 				<pattr name = "upperLeftDesktopY" value = "410" />

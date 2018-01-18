@@ -77,7 +77,7 @@
 			"_title" : "Canvas_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 17, 462, 197, 544 ],
+			"_rect" : [ 22, 401, 202, 483 ],
 			"_nodespace.idx" : 1,
 			"_connection_0" : [ "Video_1", 2, "texture", 2, "texture", 1 ]
 		}
@@ -91,7 +91,7 @@
 			"_title" : "MaskShaded",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 436, 457, 616, 539 ],
+			"_rect" : [ 436, 425, 616, 507 ],
 			"_nodespace.idx" : 2
 		}
 
@@ -263,83 +263,57 @@
 	}
 ,
 	"Window" : 	{
-		"Output_1" : 		{
+		"_type" : "Window",
+		"Window_1" : 		{
 			"_type" : "Window",
 			"_version" : 1,
 			"_id" : 1,
-			"_name" : "Output_1",
+			"_name" : "Window_1",
 			"_title" : "Output_1",
 			"_nodespace" : "root",
 			"_level" : 0,
 			"_rect" : [ 11, 18, 191, 140 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "Window"
+
 	}
 ,
 	"SpatialSoftedge" : 	{
-		"MultiAugmented_1" : 		{
+		"_type" : "SpatialSoftedge",
+		"SpatialSoftedge_1" : 		{
 			"_type" : "SpatialSoftedge",
-			"_version" : 1,
+			"_version" : 2,
 			"_id" : 1,
-			"_name" : "MultiAugmented_1",
-			"_title" : "MultiAugmented_1",
+			"_name" : "SpatialSoftedge_1",
+			"_title" : "SpatialSoftedge_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 425, 19, 605, 288 ],
+			"_rect" : [ 431, 16, 611, 283 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "SpatialSoftedge"
+
 	}
 ,
 	"MeshWarp" : 	{
-		"Warp2d_1" : 		{
-			"_type" : "MeshWarp",
-			"_version" : 1,
-			"_id" : 1,
-			"_name" : "Warp2d_1",
-			"_title" : "Warp2d_2",
-			"_nodespace" : "root::2",
-			"_level" : 1,
-			"_rect" : [ 333, 128, 513, 228 ],
-			"_nodespace.idx" : 1,
-			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
-		}
-,
 		"_type" : "MeshWarp",
-		"Warp2d_2" : 		{
+		"MeshWarp_5" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
-			"_id" : 2,
-			"_name" : "Warp2d_2",
-			"_title" : "Warp2d_1",
-			"_nodespace" : "root::1",
+			"_id" : 5,
+			"_name" : "MeshWarp_5",
+			"_title" : "Warp2d_5",
+			"_nodespace" : "root::5",
 			"_level" : 1,
-			"_rect" : [ 347, 107, 527, 207 ],
-			"_nodespace.idx" : 2,
-			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
+			"_rect" : [ 337, 99, 517, 199 ],
+			"_nodespace.idx" : 5,
+			"_connection_0" : [ "Beamer_5", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_3" : 		{
-			"_type" : "MeshWarp",
-			"_version" : 1,
-			"_id" : 3,
-			"_name" : "Warp2d_3",
-			"_title" : "Warp2d_3",
-			"_nodespace" : "root::3",
-			"_level" : 1,
-			"_rect" : [ 360, 106, 540, 206 ],
-			"_nodespace.idx" : 3,
-			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
-		}
-,
-		"Warp2d_4" : 		{
+		"MeshWarp_4" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
 			"_id" : 4,
-			"_name" : "Warp2d_4",
+			"_name" : "MeshWarp_4",
 			"_title" : "Warp2d_4",
 			"_nodespace" : "root::4",
 			"_level" : 1,
@@ -348,35 +322,61 @@
 			"_connection_0" : [ "Beamer_4", 2, "texture", 2, "texture", 1 ]
 		}
 ,
-		"Warp2d_5" : 		{
+		"MeshWarp_3" : 		{
 			"_type" : "MeshWarp",
 			"_version" : 1,
-			"_id" : 5,
-			"_name" : "Warp2d_5",
-			"_title" : "Warp2d_5",
-			"_nodespace" : "root::5",
+			"_id" : 3,
+			"_name" : "MeshWarp_3",
+			"_title" : "Warp2d_3",
+			"_nodespace" : "root::3",
 			"_level" : 1,
-			"_rect" : [ 337, 99, 517, 199 ],
-			"_nodespace.idx" : 5,
-			"_connection_0" : [ "Beamer_5", 2, "texture", 2, "texture", 1 ]
+			"_rect" : [ 360, 106, 540, 206 ],
+			"_nodespace.idx" : 3,
+			"_connection_0" : [ "Beamer_3", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"MeshWarp_1" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "MeshWarp_1",
+			"_title" : "Warp2d_2",
+			"_nodespace" : "root::2",
+			"_level" : 1,
+			"_rect" : [ 333, 128, 513, 228 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "Beamer_1", 2, "texture", 2, "texture", 1 ]
+		}
+,
+		"MeshWarp_2" : 		{
+			"_type" : "MeshWarp",
+			"_version" : 1,
+			"_id" : 2,
+			"_name" : "MeshWarp_2",
+			"_title" : "Warp2d_1",
+			"_nodespace" : "root::1",
+			"_level" : 1,
+			"_rect" : [ 347, 107, 527, 207 ],
+			"_nodespace.idx" : 2,
+			"_connection_0" : [ "Beamer_2", 2, "texture", 2, "texture", 1 ]
 		}
 
 	}
 ,
 	"BlendSoftedge" : 	{
+		"_type" : "BlendSoftedge",
 		"BlendSoftedge_1" : 		{
 			"_type" : "BlendSoftedge",
-			"_version" : 1,
+			"_version" : 2,
 			"_id" : 1,
 			"_name" : "BlendSoftedge_1",
 			"_title" : "BlendSoftedge_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 429, 298, 609, 434 ],
+			"_rect" : [ 435, 326, 615, 406 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "BlendSoftedge"
+
 	}
 ,
 	"Beamer" : 	{
@@ -453,7 +453,7 @@
 			"_title" : "Video_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 15, 347, 195, 429 ],
+			"_rect" : [ 26, 309, 206, 391 ],
 			"_nodespace.idx" : 1
 		}
 

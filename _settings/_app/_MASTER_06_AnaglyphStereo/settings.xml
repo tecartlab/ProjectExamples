@@ -422,7 +422,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 			</patcher>
@@ -460,7 +460,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 			</patcher>
@@ -498,7 +498,7 @@
 						<pattr name = "fileName" value = "select..." />
 					</patcher>
 					<patcher name = "warpSelection">
-						<pattr name = "address" value = "select..." />
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 			</patcher>

@@ -261,19 +261,19 @@
 	}
 ,
 	"Window" : 	{
-		"Output_1" : 		{
+		"_type" : "Window",
+		"Window_1" : 		{
 			"_type" : "Window",
 			"_version" : 1,
 			"_id" : 1,
-			"_name" : "Output_1",
+			"_name" : "Window_1",
 			"_title" : "Output_1",
 			"_nodespace" : "root",
 			"_level" : 0,
 			"_rect" : [ 213, 65, 393, 187 ],
 			"_nodespace.idx" : 1
 		}
-,
-		"_type" : "Window"
+
 	}
 ,
 	"TextureStitcher" : 	{
