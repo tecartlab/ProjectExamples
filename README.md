@@ -6,6 +6,7 @@ Welcome to the SPARCK Project Examples. In this document you will find some note
 Changelog:
 ==========
 
+	build 19	- updated for Sparck b19
 	build 18	- updated for Sparck b18
 	build 15	- adaptations to the breaks introduced with Sparck b15
 	build 11	- initial release

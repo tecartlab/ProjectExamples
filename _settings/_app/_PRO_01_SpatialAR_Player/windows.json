@@ -761,5 +761,16 @@
 		}
 
 	}
+,
+	"bs_gui_win_TextureProjection_1_P_Light" : 	{
+		"_pin" : 0,
+		"_type" : "Light",
+		"_slotsize" : 65,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
 
 }

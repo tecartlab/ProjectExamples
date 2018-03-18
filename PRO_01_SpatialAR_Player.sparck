@@ -386,18 +386,17 @@
 ,
 	"TextureProjection" : 	{
 		"_type" : "TextureProjection",
-		"TextureProjection_2" : 		{
+		"TextureProjection_1" : 		{
 			"_type" : "TextureProjection",
-			"_version" : 1,
-			"_id" : 2,
-			"_name" : "TextureProjection_2",
-			"_title" : "TextureProjection_2",
+			"_version" : 2,
+			"_id" : 1,
+			"_name" : "TextureProjection_1",
+			"_title" : "TextureProjection_1",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 436, 346, 616, 443 ],
-			"_nodespace.idx" : 2,
-			"_connection_0" : [ "SceneCapture_5", 2, "texture", 2, "texture", 1 ],
-			"_connection_1" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
+			"_rect" : [ 440, 343, 620, 528 ],
+			"_nodespace.idx" : 1,
+			"_connection_0" : [ "SceneCapture_5", 2, "texture", 3, "texture", 1 ]
 		}
 
 	}
@@ -530,7 +529,7 @@
 			"_title" : "sub-outlet_1",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 312, 450, 522, 494 ],
+			"_rect" : [ 217, 371, 427, 415 ],
 			"_nodespace.idx" : 1,
 			"_connection_0" : [ "SceneCapture_5", 2, "texture", 2, "type", -1 ]
 		}

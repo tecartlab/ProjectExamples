@@ -46,12 +46,12 @@
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "sub-inlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u363022572" value = "" />
+							<pattr name = "u544036946" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-outlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u665022455" value = "" />
+							<pattr name = "u949036829" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_1">
@@ -141,12 +141,12 @@
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "sub-inlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u943020603" value = "" />
+							<pattr name = "u948035135" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-outlet_5">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u100020486" value = "" />
+							<pattr name = "u756011796" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_2">
@@ -236,12 +236,12 @@
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "sub-inlet_3">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u646018646" value = "" />
+							<pattr name = "u556033338" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-outlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u411018529" value = "" />
+							<pattr name = "u309033221" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "ViewPort_3">
@@ -331,12 +331,12 @@
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "sub-inlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u926016664" value = "" />
+							<pattr name = "u898031551" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-outlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u341016547" value = "" />
+							<pattr name = "u690011337" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "LookAtBackground">
@@ -358,7 +358,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Bkgn_LookAt">
-						<pattr name = "u479016061" value = "" />
+						<pattr name = "u824030955" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass2" />
@@ -374,23 +374,6 @@
 							<pattr name = "address" value = "O_CAP_TFM" />
 						</patcher>
 					</patcher>
-					<patcher name = "TextureProjection_2">
-						<pattr name = "collada" value = "0" />
-						<pattr name = "enable" value = "1" />
-						<pattr name = "projectionMode" value = "1" />
-						<patcher name = "vpl_nodelogic">
-							<pattr name = "vpl_titleEdit" value = "TextureProjection_2" />
-						</patcher>
-						<patcher name = "offColor">
-							<pattr name = "alpha" value = "1." />
-							<pattr name = "blue" value = "0." />
-							<pattr name = "green" value = "0." />
-							<pattr name = "red" value = "0." />
-						</patcher>
-						<patcher name = "camera">
-							<pattr name = "address" value = "BackGroundCam" />
-						</patcher>
-					</patcher>
 					<patcher name = "BackGroundCam">
 						<pattr name = "adapt" value = "1" />
 						<pattr name = "adaptReference" value = "0.74" />
@@ -402,7 +385,6 @@
 						<pattr name = "nearFrustum" value = "0.1" />
 						<pattr name = "onstage" value = "1" />
 						<pattr name = "optics" value = "fov" />
-						<pattr name = "projectionMode" value = "0" />
 						<pattr name = "ratio" value = "1." />
 						<pattr name = "rightFrustum" value = "0.05" />
 						<pattr name = "rotation" value = "0." />
@@ -473,7 +455,7 @@
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
 							<patcher name = "shader">
-								<pattr name = "address" value = "TextureProjection_2" />
+								<pattr name = "address" value = "TextureProjection_1" />
 							</patcher>
 							<patcher name = "color">
 								<pattr name = "alpha" value = "1." />
@@ -532,6 +514,85 @@
 							</patcher>
 						</patcher>
 					</patcher>
+					<patcher name = "TextureProjection_1">
+						<patcher name = "beamerD">
+							<pattr name = "address" value = "&lt;none&gt;" />
+						</patcher>
+						<patcher name = "beamerF">
+							<pattr name = "address" value = "&lt;none&gt;" />
+						</patcher>
+						<patcher name = "beamerE">
+							<pattr name = "address" value = "&lt;none&gt;" />
+						</patcher>
+						<patcher name = "beamerC">
+							<pattr name = "address" value = "&lt;none&gt;" />
+						</patcher>
+						<patcher name = "beamerB">
+							<pattr name = "address" value = "&lt;none&gt;" />
+						</patcher>
+						<patcher name = "beamerA">
+							<pattr name = "address" value = "BackGroundCam" />
+						</patcher>
+						<patcher name = "property">
+							<patcher name = "details">
+								<pattr name = "angleFalloff_A" value = "0.1" />
+								<pattr name = "angleFalloff_B" value = "0.1" />
+								<pattr name = "angleFalloff_C" value = "0.1" />
+								<pattr name = "angleFalloff_D" value = "0.5" />
+								<pattr name = "angleFalloff_E" value = "0.5" />
+								<pattr name = "angleFalloff_F" value = "0.5" />
+								<pattr name = "angleLimit_A" value = "1." />
+								<pattr name = "angleLimit_B" value = "1." />
+								<pattr name = "angleLimit_C" value = "1." />
+								<pattr name = "angleLimit_D" value = "1." />
+								<pattr name = "angleLimit_E" value = "1." />
+								<pattr name = "angleLimit_F" value = "1." />
+								<pattr name = "bevelCurve_A" value = "1." />
+								<pattr name = "bevelCurve_B" value = "1." />
+								<pattr name = "bevelCurve_C" value = "1." />
+								<pattr name = "bevelCurve_D" value = "1." />
+								<pattr name = "bevelCurve_E" value = "1." />
+								<pattr name = "bevelCurve_F" value = "1." />
+								<pattr name = "bevelRound_A" value = "0" />
+								<pattr name = "bevelRound_B" value = "0" />
+								<pattr name = "bevelRound_C" value = "0" />
+								<pattr name = "bevelRound_D" value = "0" />
+								<pattr name = "bevelRound_E" value = "0" />
+								<pattr name = "bevelRound_F" value = "0" />
+								<pattr name = "bevelSize_A" value = "0." />
+								<pattr name = "bevelSize_B" value = "0." />
+								<pattr name = "bevelSize_C" value = "0." />
+								<pattr name = "bevelSize_D" value = "0." />
+								<pattr name = "bevelSize_E" value = "0." />
+								<pattr name = "bevelSize_F" value = "0." />
+							</patcher>
+							<patcher name = "offColor">
+								<pattr name = "alpha" value = "1." />
+								<pattr name = "blue" value = "0." />
+								<pattr name = "green" value = "0." />
+								<pattr name = "red" value = "0." />
+							</patcher>
+							<pattr name = "angleFalloff" value = "0.5" />
+							<pattr name = "angleLimit" value = "0." />
+							<pattr name = "angleMode" value = "0" />
+							<pattr name = "back_blend" value = "1" />
+							<pattr name = "bevelCurve" value = "0." />
+							<pattr name = "bevelRound" value = "0" />
+							<pattr name = "bevelSize" value = "0." />
+							<pattr name = "blend_spread" value = "0." />
+							<pattr name = "collada" value = "0" />
+							<pattr name = "distance_influence" value = "0." />
+							<pattr name = "interpolation_correction" value = "0." />
+							<pattr name = "projectionMode" value = "1" />
+							<pattr name = "toStage" value = "Textured" />
+							<pattr name = "useDetailSettings" value = "0" />
+						</patcher>
+						<pattr name = "enable" value = "1" />
+						<pattr name = "shader" value = "single" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "TextureProjection_1" />
+						</patcher>
+					</patcher>
 				</patcher>
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "BackGround" />
@@ -542,12 +603,12 @@
 					<pattr name = "toggle" value = "1" />
 					<patcher name = "sub-inlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u278013513" value = "" />
+							<pattr name = "u929028655" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-outlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u318013396" value = "" />
+							<pattr name = "u580028538" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "Brain_TFM">
@@ -605,7 +666,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Head_LookAt">
-						<pattr name = "u816012514" value = "" />
+						<pattr name = "u730027666" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass1" />
@@ -632,7 +693,6 @@
 						<pattr name = "nearFrustum" value = "0.01" />
 						<pattr name = "onstage" value = "1" />
 						<pattr name = "optics" value = "fov" />
-						<pattr name = "projectionMode" value = "0" />
 						<pattr name = "ratio" value = "1." />
 						<pattr name = "rightFrustum" value = "0.05" />
 						<pattr name = "rotation" value = "0." />
@@ -1033,8 +1093,8 @@
 				<pattr name = "positionX" value = "0." />
 				<pattr name = "positionY" value = "0." />
 				<pattr name = "positionZ" value = "0." />
-				<pattr name = "rotationX" value = "-20." />
-				<pattr name = "rotationY" value = "2.605712" />
+				<pattr name = "rotationX" value = "10.4" />
+				<pattr name = "rotationY" value = "17.794287" />
 				<pattr name = "rotationZ" value = "0." />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
@@ -1071,7 +1131,7 @@
 				<pattr name = "positionZ" value = "0." />
 				<pattr name = "rotationX" value = "0." />
 				<pattr name = "rotationY" value = "0." />
-				<pattr name = "rotationZ" value = "360." />
+				<pattr name = "rotationZ" value = "237.6" />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
 				<pattr name = "scaleZ" value = "1." />
@@ -1284,10 +1344,10 @@
 					<pattr name = "sync" value = "0" />
 				</patcher>
 				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "718" />
+					<pattr name = "lowerRightDeskopX" value = "811" />
 					<pattr name = "lowerRightDesktopY" value = "884" />
 					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "629" />
+					<pattr name = "upperLeftDesktopY" value = "635" />
 				</patcher>
 			</patcher>
 		</patcher>
