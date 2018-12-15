@@ -156,7 +156,7 @@
 	"bs_gui_win_workspace_subnode_4" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 647, 118, 1304, 620 ],
+			"_rect" : [ 324, 241, 981, 825 ],
 			"_visible" : 0
 		}
 

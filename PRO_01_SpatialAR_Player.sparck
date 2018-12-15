@@ -262,7 +262,7 @@
 			"_title" : "BGCapture",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 436, 244, 616, 325 ],
+			"_rect" : [ 437, 259, 617, 340 ],
 			"_nodespace.idx" : 5,
 			"_connection_0" : [ "sub-inlet_6", 2, "properties", 1, "properties", -1 ]
 		}
@@ -394,7 +394,7 @@
 			"_title" : "TextureProjection_1",
 			"_nodespace" : "root::4",
 			"_level" : 1,
-			"_rect" : [ 440, 343, 620, 528 ],
+			"_rect" : [ 437, 358, 617, 543 ],
 			"_nodespace.idx" : 1,
 			"_connection_0" : [ "SceneCapture_5", 2, "texture", 3, "texture", 1 ]
 		}
@@ -591,7 +591,7 @@
 ,
 	"" : 	{
 		"sub-outlet_1" : 		{
-			"_iolets" : 2
+			"_iolets" : 1
 		}
 ,
 		"sub-outlet_2" : 		{

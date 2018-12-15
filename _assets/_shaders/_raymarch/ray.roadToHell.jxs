@@ -8,26 +8,42 @@
 	<param name="sprk_globalTime" type="float" default="0." />
 	<param name="sprk_scale" type="float" default="1." />
 
-    <!-- COMMENT: add here your own parameters... 
-    
-    copy and modify the following line outsite of this comment section:
+	<!-- COMMENT: add here your own parameters...
 
-	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
-	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
-    
-    you can use parameters of the following types:
-    
-        TYPES       GUI     OSC
+	copy and modify the following lines outside of this comment section:
 
-        -int        y       y
-        -float      y       y   
-        -vec2       y       y
-        -vec3       y       y
-        -vec4       y       y
-        -mat3       -       y
-        -mat4       -       y
+	<param name="myVeryOwnFloat" type="float" default="1." description="@desc=this_text_will_be_shown_inside_the_hint"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 2. 0." description="@desc=don't_.use_spaces!|@min=0.0|@max=1.0|@gui=0"/>
 
-    ...Dont forget to bind it the shader: END OF COMMENT-->
+	copy and modify the following lines outside of this comment section:
+
+	you can use parameters of the following types:
+
+			TYPES       GUI     QUE
+
+			-int        y       y
+			-float      y       y
+			-vec2       y       y
+			-vec3       y       y
+			-vec4       y       y
+			-mat3       -       y
+			-mat4       -       y
+
+	GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the GUI
+	QUE: These parameters can be sent to this shader via OSC or QueScript.
+
+Inside description is is possible to pass on additional parameters. The character SPACE (' ') and COMMA (',') are not
+permitted and will break the parsing. Use UNDERSCORE ('_') to separate words. Use ('|') to separate parameter pairs.
+
+	param name="myFloat" type="float" default="0.5" description="@desc=a_simple_float|@min=0.0|@max=1.0"
+
+	@desc=descriptive_text 		you can use the following special characters: !?.:>+-[]()
+	@desc0=descriptive_text		for value0
+	@min=0.0									minimum float value for the GUI
+	@max=1.0									maximum float value for the GUI
+	@gui=0/1									show inside the GUI (default = 1)
+
+	...Don't forget to bind it to the shader: END OF COMMENT-->
 
 	<language name="glsl" version="1.2">
 		<bind param="sprk_screenMatrix" program="vp" />
@@ -41,7 +57,7 @@
 
         <bind param="myVeryOwnFloat" program="fp" />
         <bind param="myVeryOwnVec3" program="fp" />
-       
+
         ...until here.-->
 
 		<program name="vp" type="vertex">
@@ -62,14 +78,14 @@ void main(void)
 {
 	// perform standard transform on vertex (general approach)
 	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-	
+
 	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
-	
+
 	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
 	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
 }
 
-]]>		
+]]>
 		</program>
 		<program name="fp" type="fragment">
 <![CDATA[
@@ -155,9 +171,9 @@ void main(){
 	//vec2 position=(fragCoord.xy/iResolution.xy);
 	//vec2 p=-1.0+2.0*position;
 	//vec3 dir=normalize(vec3(p*vec2(1.77,1.0),1.0));		// screen ratio (x,y) fov (z)
-	
+
 	vec3 dir=sprk_ray;
-	
+
 	vec3 ray=vec3(ground_x,ground_y,ground_z-speed*2.5) - sprk_viewPos;
 	float t=0.0;
 	const int ray_n=96;
@@ -179,6 +195,6 @@ void main(){
 
 
 ]]>
-		</program>		
+		</program>
 	</language>
 </jittershader>

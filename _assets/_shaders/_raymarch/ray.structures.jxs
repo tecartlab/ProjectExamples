@@ -8,29 +8,42 @@
 	<param name="sprk_globalTime" type="float" default="0." />
 	<param name="sprk_scale" type="float" default="1." />
 
-    <!-- COMMENT: add here your own parameters... 
-    
-    copy and modify the following lines outsite of this comment section:
+	<!-- COMMENT: add here your own parameters...
 
-	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
-	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
-    
-    you can use parameters of the following types:
-    
-        TYPES       GUI     QUE
+	copy and modify the following lines outside of this comment section:
 
-        -int        y       y
-        -float      y       y   
-        -vec2       y       y
-        -vec3       y       y
-        -vec4       y       y
-        -mat3       -       y
-        -mat4       -       y
+	<param name="myVeryOwnFloat" type="float" default="1." description="@desc=this_text_will_be_shown_inside_the_hint"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 2. 0." description="@desc=don't_.use_spaces!|@min=0.0|@max=1.0|@gui=0"/>
 
-    GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the userinterface
-    QUE: These parameters can be sent to this shader via OSC or QueScript.
-    
-    ...Dont forget to bind it the shader: END OF COMMENT-->
+	copy and modify the following lines outside of this comment section:
+
+	you can use parameters of the following types:
+
+			TYPES       GUI     QUE
+
+			-int        y       y
+			-float      y       y
+			-vec2       y       y
+			-vec3       y       y
+			-vec4       y       y
+			-mat3       -       y
+			-mat4       -       y
+
+	GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the GUI
+	QUE: These parameters can be sent to this shader via OSC or QueScript.
+
+Inside description is is possible to pass on additional parameters. The character SPACE (' ') and COMMA (',') are not
+permitted and will break the parsing. Use UNDERSCORE ('_') to separate words. Use ('|') to separate parameter pairs.
+
+	param name="myFloat" type="float" default="0.5" description="@desc=a_simple_float|@min=0.0|@max=1.0"
+
+	@desc=descriptive_text 		you can use the following special characters: !?.:>+-[]()
+	@desc0=descriptive_text		for value0
+	@min=0.0									minimum float value for the GUI
+	@max=1.0									maximum float value for the GUI
+	@gui=0/1									show inside the GUI (default = 1)
+
+	...Don't forget to bind it to the shader: END OF COMMENT-->
 
 	<language name="glsl" version="1.2">
 		<bind param="sprk_screenMatrix" program="vp" />
@@ -43,10 +56,10 @@
         <!-- COMMENT: bind your own parameters here to the vertex shader (vp) and/or fragment shader (fp)
 
         copy and modify the following lines outsite of this comment section:
-        
+
         <bind param="myVeryOwnFloat" program="fp" />
         <bind param="myVeryOwnVec3" program="fp" />
-       
+
         ...until here.-->
 
 		<program name="vp" type="vertex">
@@ -67,14 +80,14 @@ void main(void)
 {
 	// perform standard transform on vertex (general approach)
 	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-	
+
 	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
-	
+
 	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
 	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
 }
 
-]]>		
+]]>
 		</program>
 		<program name="fp" type="fragment">
 <![CDATA[
@@ -107,7 +120,7 @@ varying vec3 sprk_worldPos;			// vertex world position
 uniform float myVeryOwnFloat;
 uniform vec3 myVeryOwnVec3;
 
-// If your old shader code came from shadertoy.com and used mouse interaction, 
+// If your old shader code came from shadertoy.com and used mouse interaction,
 // these values will usually lead to good results
 // since we dont need them anymore they can be static.
 
@@ -153,22 +166,22 @@ float scene1(vec3 p)
 
 void main()
 {
-	    
+
     // =================  DO NOT CHANGE THIS CODE  =============================
 	vec4 sprk_vl_raw = vec4(sprk_worldPos - sprk_viewPos - sprk_worldRefPos, 1);
 	vec3 sprk_vl_dir = (sprk_rotMatrix * sprk_vl_raw).xyz;
 	vec3 sprk_ray    = normalize(sprk_vl_dir) * sprk_scale;
     // =================  DO NOT CHANGE THIS CODE  =============================
-    
+
     // usefull variables that are controlled by the RayMarching Node are:
- 
+
     //  sprk_ray        (vec3) -> it is THE RAY
     //  sprk_viewPos;   (vec3) -> the world postion of your eye
     //  sprk_worldPos   (vec3) -> the place where the ray hits the canvas.
     //  sprk_rotMatrix  (mat4) -> rotates the ray around itself
     //  sprk_scale      (float)-> scales the ray
     //  sprk_globalTime (float)-> the global time in seconds
- 
+
  	vec3 dir=sprk_ray;
 
     vec3 ray=vec3(ground_x,ground_y,ground_z)+sprk_viewPos * 0.5;
@@ -192,6 +205,6 @@ void main()
 
 
 ]]>
-		</program>		
+		</program>
 	</language>
 </jittershader>

@@ -8,29 +8,42 @@
 	<param name="sprk_globalTime" type="float" default="0." />
 	<param name="sprk_scale" type="float" default="1." />
 
-    <!-- COMMENT: add here your own parameters... 
-    
-    copy and modify the following lines outsite of this comment section:
+	<!-- COMMENT: add here your own parameters...
 
-	<param name="myVeryOwnFloat" type="float" default="1." description="this text will be shown inside the GUI"/>
-	<param name="myVeryOwnVec3" type="vec3" default="0. 0. 0." description="this text will be shown inside the GUI"/>
-    
-    you can use parameters of the following types:
-    
-        TYPES       GUI     QUE
+	copy and modify the following lines outside of this comment section:
 
-        -int        y       y
-        -float      y       y   
-        -vec2       y       y
-        -vec3       y       y
-        -vec4       y       y
-        -mat3       -       y
-        -mat4       -       y
+	<param name="myVeryOwnFloat" type="float" default="1." description="@desc=this_text_will_be_shown_inside_the_hint"/>
+	<param name="myVeryOwnVec3" type="vec3" default="0. 2. 0." description="@desc=don't_.use_spaces!|@min=0.0|@max=1.0|@gui=0"/>
 
-    GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the userinterface
-    QUE: These parameters can be sent to this shader via OSC or QueScript.
-    
-    ...Dont forget to bind it the shader: END OF COMMENT-->
+	copy and modify the following lines outside of this comment section:
+
+	you can use parameters of the following types:
+
+			TYPES       GUI     QUE
+
+			-int        y       y
+			-float      y       y
+			-vec2       y       y
+			-vec3       y       y
+			-vec4       y       y
+			-mat3       -       y
+			-mat4       -       y
+
+	GUI: The RayMarching Node will scan the parameters and tries to make them accessible through the GUI
+	QUE: These parameters can be sent to this shader via OSC or QueScript.
+
+Inside description is is possible to pass on additional parameters. The character SPACE (' ') and COMMA (',') are not
+permitted and will break the parsing. Use UNDERSCORE ('_') to separate words. Use ('|') to separate parameter pairs.
+
+	param name="myFloat" type="float" default="0.5" description="@desc=a_simple_float|@min=0.0|@max=1.0"
+
+	@desc=descriptive_text 		you can use the following special characters: !?.:>+-[]()
+	@desc0=descriptive_text		for value0
+	@min=0.0									minimum float value for the GUI
+	@max=1.0									maximum float value for the GUI
+	@gui=0/1									show inside the GUI (default = 1)
+
+	...Don't forget to bind it to the shader: END OF COMMENT-->
 
 	<language name="glsl" version="1.2">
 		<bind param="sprk_screenMatrix" program="vp" />
@@ -43,10 +56,10 @@
         <!-- COMMENT: bind your own parameters here to the vertex shader (vp) and/or fragment shader (fp)
 
         copy and modify the following lines outsite of this comment section:
-        
+
         <bind param="myVeryOwnFloat" program="fp" />
         <bind param="myVeryOwnVec3" program="fp" />
-       
+
         ...until here.-->
 
 		<program name="vp" type="vertex">
@@ -67,14 +80,14 @@ void main(void)
 {
 	// perform standard transform on vertex (general approach)
 	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-	
+
 	gl_TexCoord[0]  = gl_TextureMatrix[0] * gl_MultiTexCoord0;
-	
+
 	sprk_normal = normalize(mat3(sprk_screenMatrix) * gl_Normal);
 	sprk_worldPos = vec3(sprk_screenMatrix * gl_Vertex);
 }
 
-]]>		
+]]>
 		</program>
 		<program name="fp" type="fragment">
 <![CDATA[
@@ -110,7 +123,7 @@ varying vec3 sprk_worldPos;			// vertex world position
 uniform float myVeryOwnFloat;
 uniform vec3 myVeryOwnVec3;
 
-// If your old shader code came from shadertoy.com and used mouse interaction, 
+// If your old shader code came from shadertoy.com and used mouse interaction,
 // these values will usually lead to good results
 // since we dont need them anymore they can be static.
 
@@ -162,8 +175,8 @@ vec3 hash3( const vec2 n ) {
 // intersection functions
 //
 
-float intersectPlane( const vec3 ro, const vec3 rd, const float height) {	
-	if (rd.y==0.0) return 500.;	
+float intersectPlane( const vec3 ro, const vec3 rd, const float height) {
+	if (rd.y==0.0) return 500.;
 	float d = -(ro.y - height)/rd.y;
 	if( d > 0. ) {
 		return d;
@@ -197,10 +210,10 @@ void getMovingSpherePosition( const vec2 grid, const vec2 sphereOffset, out vec3
 	// falling?
 	float s = 0.1+hash( grid.x*1.23114+5.342+74.324231*grid.y );
 	float t = 14.*s + time/s;
-	
+
 	float y =  s * MAXHEIGHT * abs( cos( t ) );
 	vec2 offset = grid + sphereOffset;
-	
+
 	center = vec3( offset.x, y, offset.y ) + 0.5*vec3( GRIDSIZE, 2., GRIDSIZE );
 }
 void getSpherePosition( const vec2 grid, const vec2 sphereOffset, out vec3 center ) {
@@ -213,7 +226,7 @@ vec3 getSphereColor( const vec2 grid ) {
 
 vec3 sundir = normalize( vec3(-1.0,0.8,0.2) );
 
-vec3 getBackgroundColor( const vec3 ro, const vec3 rd ) {	
+vec3 getBackgroundColor( const vec3 ro, const vec3 rd ) {
 	return vec3( 0.8, 0.9, 1.0 ) * (1.8 * (rd.y+0.5) );
 }
 
@@ -221,19 +234,19 @@ vec3 getBackgroundColor( const vec3 ro, const vec3 rd ) {
 vec3 traceRec( const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 normal, out float dist, out int material) {
 	dist = MAXDISTANCE;
 	float distcheck;
-	
+
 	vec3 sphereCenter, col;
 
-	material = 0;	
+	material = 0;
 	col = getBackgroundColor(ro, rd);
-	
+
 	if( (distcheck = intersectPlane( ro,  rd, 0.)) < MAXDISTANCE ) {
 		dist = distcheck;
 		material = 1;
 		normal = vec3( 0., 1., 0. );
 		col = vec3( 0.5 );
 	}
-	
+
 	// trace grid
 	vec3 pos = floor(ro/GRIDSIZE)*GRIDSIZE;
 	vec3 ri = 1.0/rd;
@@ -241,19 +254,19 @@ vec3 traceRec( const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 nor
 	vec3 dis = (pos-ro + 0.5  * GRIDSIZE + rs*0.5) * ri;
 	vec3 mm = vec3(0.0);
 	vec2 offset;
-	
+
 	for( int i=0; i<RAYCASTSTEPSRECURSIVE; i++ ) {
-		if( material == 2 ) break; {		
-			getSphereOffset( pos.xz, offset );			
-			
-			getMovingSpherePosition( pos.xz, -offset, sphereCenter );			
+		if( material == 2 ) break; {
+			getSphereOffset( pos.xz, offset );
+
+			getMovingSpherePosition( pos.xz, -offset, sphereCenter );
 			if( (distcheck = intersectUnitSphere( ro, rd, sphereCenter )) < dist ) {
 				dist = distcheck;
 				normal = normalize((ro+rd*dist)-sphereCenter);
 				col = getSphereColor(pos.xz);
 				material = 2;
 			}
-			
+
 			getSpherePosition( pos.xz, offset, sphereCenter );
 			if( (distcheck = intersectUnitSphere( ro, rd, sphereCenter )) < dist ) {
 				dist = distcheck;
@@ -261,15 +274,15 @@ vec3 traceRec( const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 nor
 				col = getSphereColor(pos.xz+vec2(1.,2.));
 				material = 2;
 			}
-			
+
 			mm = step(dis.xyz, dis.zyx);
 			dis += mm * rs * ri;
-			pos += mm * rs;	
+			pos += mm * rs;
 		}
 	}
-	
+
 	intersection = ro+rd*dist;
-	
+
 	return col;
 }
 
@@ -277,19 +290,19 @@ vec3 traceRec( const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 nor
 vec3 trace(const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 normal, out float dist, out int material) {
 	dist = MAXDISTANCE;
 	float distcheck;
-	
+
 	vec3 sphereCenter, col, normalcheck;
-	
+
 	material = 0;
 	col = getBackgroundColor(ro, rd);
-	
+
 	if( (distcheck = intersectPlane( ro,  rd, 0.)) < MAXDISTANCE ) {
 		dist = distcheck;
 		material = 1;
 		normal = vec3( 0., 1., 0. );
 		col = vec3( 0.5 );
-	} 
-	
+	}
+
 	// trace grid
 	vec3 pos = floor(ro/GRIDSIZE)*GRIDSIZE;
 	vec3 ri = 1.0/rd;
@@ -297,34 +310,34 @@ vec3 trace(const vec3 ro, const vec3 rd, out vec3 intersection, out vec3 normal,
 	vec3 dis = (pos-ro + 0.5  * GRIDSIZE + rs*0.5) * ri;
 	vec3 mm = vec3(0.0);
 	vec2 offset;
-		
+
 	for( int i=0; i<RAYCASTSTEPS; i++ )	{
 		if( material == 2 ||  distance( ro.xz, pos.xz ) > dist+GRIDSIZE ) break; {
 			getSphereOffset( pos.xz, offset );
-			
-			getMovingSpherePosition( pos.xz, -offset, sphereCenter );			
+
+			getMovingSpherePosition( pos.xz, -offset, sphereCenter );
 			if( (distcheck = intersectUnitSphere( ro, rd, sphereCenter )) < dist ) {
 				dist = distcheck;
 				normal = normalize((ro+rd*dist)-sphereCenter);
 				col = getSphereColor(pos.xz);
 				material = 2;
 			}
-			
+
 			getSpherePosition( pos.xz, offset, sphereCenter );
 			if( (distcheck = intersectUnitSphere( ro, rd, sphereCenter )) < dist ) {
 				dist = distcheck;
 				normal = normalize((ro+rd*dist)-sphereCenter);
 				col = getSphereColor(pos.xz+vec2(1.,2.));
 				material = 2;
-			}		
+			}
 			mm = step(dis.xyz, dis.zyx);
 			dis += mm * rs * ri;
-			pos += mm * rs;		
+			pos += mm * rs;
 		}
 	}
-	
+
 	intersection = ro+rd*dist;
-	
+
 	return col;
 }
 
@@ -333,9 +346,9 @@ vec2 rv2;
 vec3 cosWeightedRandomHemisphereDirection2( const vec3 n ) {
 	vec3  uu = normalize( cross( n, vec3(0.0,1.0,1.0) ) );
 	vec3  vv = cross( uu, n );
-	
+
 	float ra = sqrt(rv2.y);
-	float rx = ra*cos(6.2831*rv2.x); 
+	float rx = ra*cos(6.2831*rv2.x);
 	float ry = ra*sin(6.2831*rv2.x);
 	float rz = sqrt( 1.0-rv2.y );
 	vec3  rr = vec3( rx*uu + ry*vv + rz*n );
@@ -346,55 +359,55 @@ vec3 cosWeightedRandomHemisphereDirection2( const vec3 n ) {
 
 void main() {
     // It should start with the following code block
-    
+
     // =================  DO NOT CHANGE THIS CODE  =============================
 	vec4 sprk_vl_raw = vec4(sprk_worldPos - sprk_viewPos - sprk_worldRefPos, 1);
 	vec3 sprk_vl_dir = (sprk_rotMatrix * sprk_vl_raw).xyz;
 	vec3 sprk_ray    = normalize(sprk_vl_dir) * sprk_scale;
     // =================  DO NOT CHANGE THIS CODE  =============================
-    
+
     // usefull variables that are controlled by the RayMarching Node are:
- 
+
     //  sprk_ray        (vec3) -> it is THE RAY
     //  sprk_viewPos;   (vec3) -> the world postion of your eye
     //  sprk_worldPos   (vec3) -> the place where the ray hits the canvas.
     //  sprk_rotMatrix  (mat4) -> rotates the ray around itself
     //  sprk_scale      (float)-> scales the ray
     //  sprk_globalTime (float)-> the global time in seconds
- 
+
 	//vec2 q = fragCoord.xy/iResolution.xy;
 	//vec2 p = -1.0+2.0*q;
 	//p.x *= iResolution.x/iResolution.y;
-	
+
 	vec2 p = sprk_ray.xy;
-	
+
 	vec3 col = vec3( 0. );
-	
+
 	// raytrace
 	int material;
 	vec3 normal, intersection;
 	float dist;
 	float seed = time+(p.x+iResolution.x*p.y)*1.51269341231;
-	
+
 	for( int j=0; j<SAMPLES; j++ ) {
 		float fj = float(j);
-		
+
 #ifdef MOTIONBLUR
 		time = iGlobalTime + fj/(float(SAMPLES)*TARGETFPS);
 #endif
-		
+
 		rv2 = hash2( 24.4316544311*fj+time+seed );
-		
+
 		vec2 pt = p+rv2/(0.5*iResolution.xy);
-				
-		// camera	
+
+		// camera
 		//vec3 ro = vec3(0.0, 0.0, 0.0);
 		vec3 ro = vec3( cos( 0.232*time) * 10., 6.+3.*cos(0.3*time), GRIDSIZE*(time/SPEED) ) + sprk_viewPos * 10.0;
 		vec3 ta = ro + vec3( -sin( 0.232*time) * 10., -2.0+cos(0.23*time), 10.0 );
 		//vec3 ta = ro;
-		
+
 		float roll = -0.15*sin(0.5*time);
-		
+
 		// camera tx
 		vec3 cw = normalize( ta-ro );
 		vec3 cp = vec3( sin(roll), cos(roll),0.0 );
@@ -405,26 +418,26 @@ void main() {
 		//vec3 cp = vec3( 0.0, 1.0, 0.0 );
 		//vec3 cu = normalize( cross(cw,cp) );
 		//vec3 cv = normalize( cross(cu,cw) );
-	
+
 #ifdef DEPTHOFFIELD
     // create ray with depth of field
 		const float fov = 1.0;
-		
+
         //vec3 er = normalize( vec3( pt.xy, fov ) );
         vec3 er = sprk_ray;
         vec3 rd = er.x*cu + er.y*cv + er.z*cw;
 
         vec3 go = FOCUSBLUR*vec3( (rv2-vec2(0.5))*2., 0.0 );
         vec3 gd = normalize( er*FOCUSDISTANCE - go );
-		
+
         ro += go.x*cu + go.y*cv;
         rd += gd.x*cu + gd.y*cv;
 		rd = normalize(rd);
 #else
-		vec3 rd = normalize( pt.x*cu + pt.y*cv + 1.5*cw );		
-#endif			
+		vec3 rd = normalize( pt.x*cu + pt.y*cv + 1.5*cw );
+#endif
 		vec3 colsample = vec3( 1. );
-		
+
 		// first hit
 		rv2 = hash2( (rv2.x*2.4543263+rv2.y)*(time+1.) );
 		colsample *= trace(ro, rd, intersection, normal, dist, material);
@@ -434,23 +447,23 @@ void main() {
 			if( material != 0 ) {
 				rd = cosWeightedRandomHemisphereDirection2( normal );
 				ro = intersection + EPSILON*rd;
-						
+
 				rv2 = hash2( (rv2.x*2.4543263+rv2.y)*(time+1.)+(float(i+1)*.23) );
-						
+
 				colsample *= traceRec(ro, rd, intersection, normal, dist, material);
 			}
-		}	
-		if( material == 0 ) {			
-			col += colsample;	
+		}
+		if( material == 0 ) {
+			col += colsample;
 		}
 	}
 	col  /= float(SAMPLES);
-	
-	col = pow( col, vec3(0.7) );	
+
+	col = pow( col, vec3(0.7) );
 	col = clamp(col, 0.0, 1.0);
-	// contrast	
- //   col = clamp( col*0.7 + 0.3*col*col*(3.0-2.0*col), 0., 1.); 
-	   
+	// contrast
+ //   col = clamp( col*0.7 + 0.3*col*col*(3.0-2.0*col), 0., 1.);
+
 	// vigneting
 	//col *= 0.25+0.75*pow( 16.0*q.x*q.y*(1.0-q.x)*(1.0-q.y), 0.15 );
 
@@ -460,6 +473,6 @@ void main() {
 
 
 ]]>
-		</program>		
+		</program>
 	</language>
 </jittershader>
