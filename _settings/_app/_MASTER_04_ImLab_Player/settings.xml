@@ -2,7 +2,7 @@
 
 <pattrstorage name = "calibration">
 	<slot number = "1">
-		<pattr name = "_toggleEditor" value = "1" />
+		<pattr name = "_toggleEditor" value = "0" />
 		<pattr name = "mainMetro" value = "&quot;15 hz&quot;" />
 		<pattr name = "mainSwitch" value = "1" />
 		<patcher name = "_windowSlide">
@@ -22,9 +22,9 @@
 				<pattr name = "groupTwo" value = "0 0 1 1 0 1 2 0 1 3 0 1" />
 			</patcher>
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "547" />
-				<pattr name = "lowerRightDesktopY" value = "330" />
-				<pattr name = "upperLeftDesktopX" value = "7" />
+				<pattr name = "lowerRightDeskopX" value = "546" />
+				<pattr name = "lowerRightDesktopY" value = "590" />
+				<pattr name = "upperLeftDesktopX" value = "6" />
 				<pattr name = "upperLeftDesktopY" value = "58" />
 			</patcher>
 		</patcher>
@@ -72,8 +72,8 @@
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
 				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1417" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "lowerRightDeskopX" value = "1420" />
+					<pattr name = "lowerRightDesktopY" value = "886" />
 					<pattr name = "upperLeftDesktopX" value = "5" />
 					<pattr name = "upperLeftDesktopY" value = "625" />
 				</patcher>
@@ -160,7 +160,7 @@
 					<pattr name = "address" value = "BoxMapCamera_1" />
 				</patcher>
 				<patcher name = "parameter">
-					<pattr name = "u678000514" value = "" />
+					<pattr name = "u257009956" value = "" />
 					<patcher name = "A">
 						<pattr name = "val0" value = "0." />
 						<pattr name = "val1" value = "0." />
@@ -585,7 +585,6 @@
 							<pattr name = "cull_face" value = "0" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
-							<pattr name = "displaylist" value = "0" />
 							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
@@ -642,7 +641,6 @@
 							<pattr name = "cull_face" value = "0" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
-							<pattr name = "displaylist" value = "0" />
 							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
@@ -699,7 +697,6 @@
 							<pattr name = "cull_face" value = "0" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
-							<pattr name = "displaylist" value = "0" />
 							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
@@ -756,7 +753,6 @@
 							<pattr name = "cull_face" value = "0" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
-							<pattr name = "displaylist" value = "0" />
 							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />

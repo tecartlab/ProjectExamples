@@ -180,7 +180,7 @@
 					<pattr name = "vpl_titleEdit" value = "PixelPusher_1" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "u465010157" value = "" />
+					<pattr name = "u688004137" value = "" />
 					<pattr name = "autothrottle" value = "0" />
 					<pattr name = "extradelay" value = "0" />
 					<pattr name = "renderpass" value = "passA" />
@@ -254,7 +254,6 @@
 					<pattr name = "cull_face" value = "2" />
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "displaylist" value = "0" />
 					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
@@ -402,10 +401,10 @@
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
 				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1427" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "lowerRightDeskopX" value = "1407" />
+					<pattr name = "lowerRightDesktopY" value = "886" />
 					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "720" />
+					<pattr name = "upperLeftDesktopY" value = "725" />
 				</patcher>
 				<patcher name = "_orbiter">
 					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
