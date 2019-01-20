@@ -29,7 +29,12 @@
 	"bs_gui_win_Calibrator_1_P_Beamer" : 	{
 		"_pin" : 0,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_Calibrator_1_C_BeamerSetup" : 	{
@@ -53,7 +58,12 @@
 	"bs_gui_win_Calibrator_2_P_Beamer" : 	{
 		"_pin" : 0,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_Calibrator_2_C_BeamerSetup" : 	{
@@ -70,7 +80,12 @@
 	"bs_gui_win_Calibrator_3_P_Beamer" : 	{
 		"_pin" : 0,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_Calibrator_3_C_BeamerSetup" : 	{
@@ -87,7 +102,12 @@
 	"bs_gui_win_Calibrator_4_P_Beamer" : 	{
 		"_pin" : 0,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_Calibrator_4_C_BeamerSetup" : 	{

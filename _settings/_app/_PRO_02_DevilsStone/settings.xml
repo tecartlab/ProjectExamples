@@ -9,7 +9,6 @@
 			<pattr name = "showSettings" value = "0" />
 		</patcher>
 		<patcher name = "3DViewer">
-			<pattr name = "_drawtocontext" value = "0" />
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position 0.704314 0.904808 3.459415" />
@@ -22,14 +21,11 @@
 				<pattr name = "groupStage" value = "0 0 1" />
 				<pattr name = "groupTwo" value = "0 0 0" />
 			</patcher>
-			<patcher name = "_setgroupshady">
-				<pattr name = "groupShady" value = "0 0 0" />
-			</patcher>
 			<patcher name = "_storePosition">
 				<pattr name = "lowerRightDeskopX" value = "546" />
-				<pattr name = "lowerRightDesktopY" value = "362" />
+				<pattr name = "lowerRightDesktopY" value = "366" />
 				<pattr name = "upperLeftDesktopX" value = "7" />
-				<pattr name = "upperLeftDesktopY" value = "48" />
+				<pattr name = "upperLeftDesktopY" value = "52" />
 			</patcher>
 		</patcher>
 		<patcher name = "node_workspace">
@@ -41,41 +37,6 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Output_1">
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Output_1" />
-				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1430" />
-					<pattr name = "lowerRightDesktopY" value = "872" />
-					<pattr name = "upperLeftDesktopX" value = "6" />
-					<pattr name = "upperLeftDesktopY" value = "693" />
-				</patcher>
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "420" />
-				<pattr name = "lowerRightY" value = "340" />
-				<pattr name = "splitColumns" value = "&quot;5 cols&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "100" />
-				<pattr name = "upperLeftY" value = "100" />
-			</patcher>
 			<patcher name = "Canvas_1">
 				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
@@ -85,16 +46,14 @@
 					<pattr name = "fileName" value = "02/DevilsStone.obj" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "animenable" value = "0" />
 					<pattr name = "antialias" value = "0" />
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
 					<pattr name = "blend_enable" value = "0" />
-					<pattr name = "cache_mode" value = "vertexarray" />
+					<pattr name = "cache_mode" value = "displaylist" />
 					<pattr name = "cull_face" value = "0" />
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "displaylist" value = "0" />
 					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
@@ -117,7 +76,6 @@
 					<pattr name = "smoothing_angle" value = "89." />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 1" />
-						<pattr name = "groupShady" value = "0 0 0" />
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
@@ -144,7 +102,6 @@
 					<pattr name = "fileName" value = "02/DevilsStone.obj" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "animenable" value = "0" />
 					<pattr name = "antialias" value = "0" />
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
@@ -153,7 +110,6 @@
 					<pattr name = "cull_face" value = "0" />
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "displaylist" value = "0" />
 					<pattr name = "drawbounds" value = "0" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
@@ -176,7 +132,6 @@
 					<pattr name = "smoothing_angle" value = "89." />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 1 1" />
-						<pattr name = "groupShady" value = "0 0 0" />
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
@@ -192,6 +147,41 @@
 				</patcher>
 				<patcher name = "transformnode">
 					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+			</patcher>
+			<patcher name = "Output_1">
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "lowerRightX" value = "420" />
+				<pattr name = "lowerRightY" value = "340" />
+				<pattr name = "splitColumns" value = "&quot;5 cols&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "100" />
+				<pattr name = "upperLeftY" value = "100" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Output_1" />
+				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1430" />
+					<pattr name = "lowerRightDesktopY" value = "872" />
+					<pattr name = "upperLeftDesktopX" value = "6" />
+					<pattr name = "upperLeftDesktopY" value = "693" />
+				</patcher>
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "antialias" value = "0" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "SpatialSoftedge_1">
@@ -214,7 +204,9 @@
 					<pattr name = "blend_spread" value = "0.03" />
 					<pattr name = "collada" value = "0" />
 					<pattr name = "distance_influence" value = "0." />
+					<pattr name = "gradient_reset" value = "0." />
 					<pattr name = "interpolation_correction" value = "0." />
+					<pattr name = "passOn_label" value = "0." />
 					<pattr name = "projectionMode" value = "2" />
 					<pattr name = "toStage" value = "Textured" />
 					<pattr name = "useDetailSettings" value = "0" />
@@ -336,7 +328,6 @@
 				</patcher>
 				<patcher name = "renderGroup">
 					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupShady" value = "0 0 0" />
 					<pattr name = "groupStage" value = "0 0 1" />
 					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
@@ -386,7 +377,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "manualA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
@@ -401,9 +391,6 @@
 							</patcher>
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
-							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
 							</patcher>
 						</patcher>
 					</patcher>
@@ -476,7 +463,6 @@
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -571,7 +557,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "manualA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
@@ -586,9 +571,6 @@
 							</patcher>
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
-							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
 							</patcher>
 						</patcher>
 					</patcher>
@@ -661,7 +643,6 @@
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -756,7 +737,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "manualA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
@@ -771,9 +751,6 @@
 							</patcher>
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
-							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
 							</patcher>
 						</patcher>
 					</patcher>
@@ -846,7 +823,6 @@
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -941,7 +917,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "manualA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
@@ -956,9 +931,6 @@
 							</patcher>
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
-							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
 							</patcher>
 						</patcher>
 					</patcher>
@@ -1031,7 +1003,6 @@
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -1126,7 +1097,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "manualA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 1 1" />
@@ -1141,9 +1111,6 @@
 							</patcher>
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
-							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
 							</patcher>
 						</patcher>
 					</patcher>
@@ -1216,7 +1183,6 @@
 							</patcher>
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 0" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -1289,10 +1255,10 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "545" />
-				<pattr name = "lowerRightDesktopY" value = "695" />
-				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "410" />
+				<pattr name = "lowerRightDeskopX" value = "544" />
+				<pattr name = "lowerRightDesktopY" value = "667" />
+				<pattr name = "upperLeftDesktopX" value = "6" />
+				<pattr name = "upperLeftDesktopY" value = "394" />
 			</patcher>
 		</patcher>
 	</slot>

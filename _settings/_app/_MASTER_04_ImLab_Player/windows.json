@@ -317,7 +317,12 @@
 	"bs_gui_win_QueScript_1_PB_ProgressBar" : 	{
 		"_pin" : 0,
 		"_type" : "ProgressBar",
-		"_slotsize" : 25
+		"_slotsize" : 25,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_QueScript_1_P_Script" : 	{

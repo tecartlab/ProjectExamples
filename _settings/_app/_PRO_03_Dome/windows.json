@@ -101,7 +101,7 @@
 	"bs_gui_win_workspace_subnode_1" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 156, 121, 674, 676 ],
+			"_rect" : [ 491, 154, 1009, 709 ],
 			"_visible" : 0
 		}
 
@@ -132,9 +132,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_1_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_1_P_Viewport" : 	{
@@ -172,9 +177,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_2_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_2_P_Viewport" : 	{
@@ -207,9 +217,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_3_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_3_P_Viewport" : 	{
@@ -242,9 +257,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_4_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_4_P_Viewport" : 	{
@@ -277,9 +297,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_5_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_5_P_Viewport" : 	{
@@ -312,9 +337,14 @@
 	}
 ,
 	"bs_gui_win_Beamer_6_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_ViewPort_6_P_Viewport" : 	{
@@ -401,7 +431,12 @@
 	"bs_gui_win_SceneCapture_6_P_Capture" : 	{
 		"_pin" : 0,
 		"_type" : "Capture",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_RayMarcher_1_P_Camera" : 	{

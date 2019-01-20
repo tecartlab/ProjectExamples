@@ -9,7 +9,6 @@
 			<pattr name = "showSettings" value = "1" />
 		</patcher>
 		<patcher name = "3DViewer">
-			<pattr name = "_drawtocontext" value = "0" />
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position 0.116736 0.531112 1.000351" />
@@ -21,9 +20,6 @@
 				<pattr name = "groupOne" value = "0 0 0" />
 				<pattr name = "groupStage" value = "0 0 1" />
 				<pattr name = "groupTwo" value = "0 0 0" />
-			</patcher>
-			<patcher name = "_setgroupshady">
-				<pattr name = "groupShady" value = "0 0 1" />
 			</patcher>
 			<patcher name = "_storePosition">
 				<pattr name = "lowerRightDeskopX" value = "545" />
@@ -41,45 +37,17 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "ViewPort_1">
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
-				</patcher>
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
-				</patcher>
-				<patcher name = "property">
-					<patcher name = "meshColor">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "&lt;none&gt;" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "&lt;none&gt;" />
-					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-			</patcher>
 			<patcher name = "Output_1">
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "lowerRightX" value = "0" />
+				<pattr name = "lowerRightY" value = "720" />
+				<pattr name = "splitColumns" value = "&quot;4 cols&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "-5120" />
+				<pattr name = "upperLeftY" value = "0" />
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
@@ -103,24 +71,16 @@
 					<pattr name = "upperLeftDesktopX" value = "5" />
 					<pattr name = "upperLeftDesktopY" value = "643" />
 				</patcher>
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
-				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "0" />
-				<pattr name = "lowerRightY" value = "720" />
-				<pattr name = "splitColumns" value = "&quot;4 cols&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "-5120" />
-				<pattr name = "upperLeftY" value = "0" />
 			</patcher>
 			<patcher name = "Grid_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "gridsizeX" value = "1." />
+				<pattr name = "gridsizeY" value = "1." />
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Grid_1" />
 				</patcher>
 				<patcher name = "renderGroup">
 					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupShady" value = "0 0 0" />
 					<pattr name = "groupStage" value = "0 0 1" />
 					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
@@ -141,54 +101,141 @@
 				<patcher name = "transformnode">
 					<pattr name = "address" value = "&lt;none&gt;" />
 				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "gridsizeX" value = "1." />
-				<pattr name = "gridsizeY" value = "1." />
 			</patcher>
-			<patcher name = "ViewPort_4">
+			<patcher name = "Calibrator_1">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 4&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_4" />
+					<pattr name = "vpl_titleEdit" value = "Calibrator_1" />
 				</patcher>
-				<patcher name = "outputSelection">
-					<pattr name = "address" value = "Output_1" />
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "05_ImLabBeamer1.xml" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-					<patcher name = "meshColor">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "effect">
-						<pattr name = "address" value = "&lt;none&gt;" />
-					</patcher>
-					<patcher name = "warpingModel">
-						<pattr name = "fileName" value = "select..." />
-					</patcher>
-					<patcher name = "warpSelection">
-						<pattr name = "address" value = "&lt;none&gt;" />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "ViewPort_3">
+			<patcher name = "Calibrator_2">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Calibrator_2" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "05_ImLabBeamer2.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "Calibrator_3">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Calibrator_3" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "05_ImLabBeamer3.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "Calibrator_4">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Calibrator_4" />
+				</patcher>
+				<patcher name = "_transformationRig">
+					<pattr name = "Beamer" value = "1" />
+				</patcher>
+				<patcher name = "beamer">
+					<pattr name = "fileName" value = "05_ImLabBeamer4.xml" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "activestereo" value = "0" />
+					<pattr name = "colorschmeme" value = "2" />
+					<pattr name = "dimX" value = "1920" />
+					<pattr name = "dimY" value = "1080" />
+					<pattr name = "iconstage" value = "1" />
+					<pattr name = "modelrender" value = "2" />
+					<pattr name = "modelstage" value = "2" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 1" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "erase_color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "0." />
+						<pattr name = "green" value = "0." />
+						<pattr name = "red" value = "0." />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "ViewPort_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
 				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
+					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
 				</patcher>
 				<patcher name = "outputSelection">
 					<pattr name = "address" value = "Output_1" />
@@ -259,131 +306,79 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Calibrator_4">
+			<patcher name = "ViewPort_3">
 				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 3&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_4" />
+					<pattr name = "vpl_titleEdit" value = "ViewPort_3" />
 				</patcher>
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
-				</patcher>
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "05_ImLabBeamer4.xml" />
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "erase_color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
+					</patcher>
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Calibrator_3">
+			<patcher name = "ViewPort_4">
 				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 4&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_3" />
+					<pattr name = "vpl_titleEdit" value = "ViewPort_4" />
 				</patcher>
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
-				</patcher>
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "05_ImLabBeamer3.xml" />
+				<patcher name = "outputSelection">
+					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "erase_color">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
+					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
 					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "Calibrator_2">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_2" />
-				</patcher>
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
-				</patcher>
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "05_ImLabBeamer2.xml" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
+					<patcher name = "effect">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+					<patcher name = "warpingModel">
+						<pattr name = "fileName" value = "select..." />
 					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "Calibrator_1">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Calibrator_1" />
-				</patcher>
-				<patcher name = "_transformationRig">
-					<pattr name = "Beamer" value = "1" />
-				</patcher>
-				<patcher name = "beamer">
-					<pattr name = "fileName" value = "05_ImLabBeamer1.xml" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "activestereo" value = "0" />
-					<pattr name = "colorschmeme" value = "2" />
-					<pattr name = "dimX" value = "1920" />
-					<pattr name = "dimY" value = "1080" />
-					<pattr name = "iconstage" value = "1" />
-					<pattr name = "modelrender" value = "2" />
-					<pattr name = "modelstage" value = "2" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "erase_color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "0." />
-						<pattr name = "green" value = "0." />
-						<pattr name = "red" value = "0." />
+					<patcher name = "warpSelection">
+						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
 				</patcher>
 			</patcher>

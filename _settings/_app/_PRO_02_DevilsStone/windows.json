@@ -320,7 +320,7 @@
 	}
 ,
 	"bs_gui_win_Beamer_1_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
 		"_slotsize" : 43,
 		"Main" : 		{
@@ -364,7 +364,7 @@
 	}
 ,
 	"bs_gui_win_Beamer_3_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
 		"_slotsize" : 43,
 		"Main" : 		{
@@ -386,7 +386,7 @@
 	}
 ,
 	"bs_gui_win_Beamer_4_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
 		"_slotsize" : 43,
 		"Main" : 		{
@@ -408,7 +408,7 @@
 	}
 ,
 	"bs_gui_win_Beamer_5_P_Beamer" : 	{
-		"_pin" : 0,
+		"_pin" : 1,
 		"_type" : "Beamer",
 		"_slotsize" : 43,
 		"Main" : 		{
@@ -515,7 +515,12 @@
 	"bs_gui_win_SceneCapture_1_P_Capture" : 	{
 		"_pin" : 0,
 		"_type" : "Capture",
-		"_slotsize" : 43
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
 	}
 ,
 	"bs_gui_win_SceneCapture_2_P_Capture" : 	{

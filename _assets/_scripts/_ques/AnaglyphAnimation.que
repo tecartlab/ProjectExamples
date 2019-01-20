@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <script>
+	<play name="Rotate"/>
 	<que name="Rotate" loop="no">
 		<print>set to HD</print>
 		<anim name="simpleRamp" duration="10s" loop="normal">

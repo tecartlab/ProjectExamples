@@ -174,7 +174,7 @@
 			"_title" : "BoxRender",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 408, 139, 588, 320 ],
+			"_rect" : [ 408, 139, 588, 244 ],
 			"_nodespace.idx" : 1
 		}
 ,
@@ -187,7 +187,7 @@
 			"_title" : "BoxLEDSetup",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 594, 138, 774, 319 ],
+			"_rect" : [ 594, 138, 774, 243 ],
 			"_nodespace.idx" : 2
 		}
 

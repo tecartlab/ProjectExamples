@@ -185,5 +185,27 @@
 		"_type" : "Canvas",
 		"_slotsize" : 45
 	}
+,
+	"bs_gui_win_BoxLEDSetup_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
+,
+	"bs_gui_win_BoxRender_P_Capture" : 	{
+		"_pin" : 0,
+		"_type" : "Capture",
+		"_slotsize" : 43,
+		"Main" : 		{
+			"_visible" : 0,
+			"_slotted" : 0
+		}
+
+	}
 
 }
