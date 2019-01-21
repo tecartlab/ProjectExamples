@@ -9,7 +9,6 @@
 			<pattr name = "showSettings" value = "0" />
 		</patcher>
 		<patcher name = "3DViewer">
-			<pattr name = "_drawtocontext" value = "0" />
 			<pattr name = "_enable" value = "0" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
@@ -22,14 +21,11 @@
 				<pattr name = "groupStage" value = "0 0 1" />
 				<pattr name = "groupTwo" value = "0 0 0" />
 			</patcher>
-			<patcher name = "_setgroupshady">
-				<pattr name = "groupShady" value = "0 0 0" />
-			</patcher>
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "545" />
-				<pattr name = "lowerRightDesktopY" value = "382" />
-				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "48" />
+				<pattr name = "lowerRightDeskopX" value = "668" />
+				<pattr name = "lowerRightDesktopY" value = "125" />
+				<pattr name = "upperLeftDesktopX" value = "630" />
+				<pattr name = "upperLeftDesktopY" value = "105" />
 			</patcher>
 		</patcher>
 		<patcher name = "node_workspace">
@@ -41,7 +37,45 @@
 					</patcher>
 				</patcher>
 			</patcher>
+			<patcher name = "Output_1">
+				<pattr name = "clipFar" value = "100." />
+				<pattr name = "clipNear" value = "0.1" />
+				<pattr name = "desktop" value = "0" />
+				<pattr name = "enable" value = "1" />
+				<pattr name = "lowerRightX" value = "420" />
+				<pattr name = "lowerRightY" value = "340" />
+				<pattr name = "splitColumns" value = "&quot;1 column&quot;" />
+				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
+				<pattr name = "upperLeftX" value = "100" />
+				<pattr name = "upperLeftY" value = "100" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Output_1" />
+				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1430" />
+					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "507" />
+				</patcher>
+				<patcher name = "_orbiter">
+					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
+					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
+					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "antialias" value = "1" />
+					<pattr name = "border" value = "1" />
+					<pattr name = "esc" value = "1" />
+					<pattr name = "floating" value = "0" />
+					<pattr name = "interact" value = "0" />
+					<pattr name = "sync" value = "0" />
+				</patcher>
+			</patcher>
 			<patcher name = "ViewPort_1">
+				<pattr name = "enable" value = "1" />
+				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
+				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "ViewPort_1" />
 				</patcher>
@@ -49,6 +83,16 @@
 					<pattr name = "address" value = "Output_1" />
 				</patcher>
 				<patcher name = "property">
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "depth_enable" value = "1" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "outputMesh" value = "default" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "1." />
+					<pattr name = "scaleY" value = "1." />
+					<pattr name = "transform_reset" value = "0" />
 					<patcher name = "meshColor">
 						<pattr name = "alpha" value = "1." />
 						<pattr name = "blue" value = "1." />
@@ -64,160 +108,12 @@
 					<patcher name = "warpSelection">
 						<pattr name = "address" value = "&lt;none&gt;" />
 					</patcher>
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "outputMesh" value = "default" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "1." />
-					<pattr name = "scaleY" value = "1." />
-					<pattr name = "transform_reset" value = "0" />
-				</patcher>
-				<pattr name = "enable" value = "1" />
-				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
-				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-			</patcher>
-			<patcher name = "Video_5">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_5" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "72" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
 				</patcher>
 			</patcher>
-			<patcher name = "Video_4">
+			<patcher name = "CornerPin_1">
 				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_4" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "36" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/WaterSunStreaks.mp4" />
-				</patcher>
-			</patcher>
-			<patcher name = "Video_3">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_3" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "46" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractRedStreacks.mp4" />
-				</patcher>
-			</patcher>
-			<patcher name = "Video_2">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_2" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "257" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractLightWaveRed.mp4" />
-				</patcher>
-			</patcher>
-			<patcher name = "Video_1">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_1" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "255" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractDarkBlueStreakcs.mp4" />
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_12">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_12" />
+					<pattr name = "vpl_titleEdit" value = "CornerPin_1" />
 				</patcher>
 				<patcher name = "property">
 					<pattr name = "blend" value = "alphablend" />
@@ -227,379 +123,18 @@
 					<pattr name = "drawcorners" value = "0" />
 					<pattr name = "interp" value = "0" />
 					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.533636" />
-					<pattr name = "lower_leftY" value = "0.264816" />
-					<pattr name = "lower_rightX" value = "0.739036" />
-					<pattr name = "lower_rightY" value = "0.454323" />
+					<pattr name = "lower_leftX" value = "0.044534" />
+					<pattr name = "lower_leftY" value = "0.625877" />
+					<pattr name = "lower_rightX" value = "0.282597" />
+					<pattr name = "lower_rightY" value = "0.860783" />
 					<pattr name = "preserve_aspect" value = "0" />
 					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.515509" />
-					<pattr name = "upper_leftY" value = "0.014879" />
-					<pattr name = "upper_rightX" value = "0.700731" />
-					<pattr name = "upper_rightY" value = "0.061783" />
+					<pattr name = "upper_leftX" value = "0.02384" />
+					<pattr name = "upper_leftY" value = "0.319419" />
+					<pattr name = "upper_rightX" value = "0.329157" />
+					<pattr name = "upper_rightY" value = "0.280033" />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_11">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_11" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.327317" />
-					<pattr name = "lower_leftY" value = "0.279898" />
-					<pattr name = "lower_rightX" value = "0.533861" />
-					<pattr name = "lower_rightY" value = "0.262087" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.311203" />
-					<pattr name = "upper_leftY" value = "0.033079" />
-					<pattr name = "upper_rightX" value = "0.51875" />
-					<pattr name = "upper_rightY" value = "0.015267" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_10">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_10" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.025" />
-					<pattr name = "lower_leftY" value = "0.320611" />
-					<pattr name = "lower_rightX" value = "0.327429" />
-					<pattr name = "lower_rightY" value = "0.279865" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0." />
-					<pattr name = "upper_leftY" value = "0.020356" />
-					<pattr name = "upper_rightX" value = "0.3125" />
-					<pattr name = "upper_rightY" value = "0.035623" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_9">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_9" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.740206" />
-					<pattr name = "lower_leftY" value = "0.450382" />
-					<pattr name = "lower_rightX" value = "0.958506" />
-					<pattr name = "lower_rightY" value = "0.516971" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.69917" />
-					<pattr name = "upper_leftY" value = "0.062663" />
-					<pattr name = "upper_rightX" value = "0.981328" />
-					<pattr name = "upper_rightY" value = "0.031332" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_8">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_8" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.264916" />
-					<pattr name = "lower_leftY" value = "0.971326" />
-					<pattr name = "lower_rightX" value = "0.50358" />
-					<pattr name = "lower_rightY" value = "0.97491" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.28401" />
-					<pattr name = "upper_leftY" value = "0.863799" />
-					<pattr name = "upper_rightX" value = "0.491647" />
-					<pattr name = "upper_rightY" value = "0.53405" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_7">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_7" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.024331" />
-					<pattr name = "lower_leftY" value = "0.954386" />
-					<pattr name = "lower_rightX" value = "0.264916" />
-					<pattr name = "lower_rightY" value = "0.97491" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.043749" />
-					<pattr name = "upper_leftY" value = "0.627995" />
-					<pattr name = "upper_rightX" value = "0.28236" />
-					<pattr name = "upper_rightY" value = "0.865082" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_6">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_6" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.688564" />
-					<pattr name = "lower_leftY" value = "0.898246" />
-					<pattr name = "lower_rightX" value = "0.987835" />
-					<pattr name = "lower_rightY" value = "0.957895" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.676399" />
-					<pattr name = "upper_leftY" value = "0.74386" />
-					<pattr name = "upper_rightX" value = "0.93674" />
-					<pattr name = "upper_rightY" value = "0.814035" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_5">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_5" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.503393" />
-					<pattr name = "lower_leftY" value = "0.982456" />
-					<pattr name = "lower_rightX" value = "0.687532" />
-					<pattr name = "lower_rightY" value = "0.905264" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.491701" />
-					<pattr name = "upper_leftY" value = "0.536842" />
-					<pattr name = "upper_rightX" value = "0.677427" />
-					<pattr name = "upper_rightY" value = "0.74386" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_4">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_4" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.675356" />
-					<pattr name = "lower_leftY" value = "0.742959" />
-					<pattr name = "lower_rightX" value = "0.940504" />
-					<pattr name = "lower_rightY" value = "0.814998" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.737368" />
-					<pattr name = "upper_leftY" value = "0.455466" />
-					<pattr name = "upper_rightX" value = "0.96274" />
-					<pattr name = "upper_rightY" value = "0.457616" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
-						<pattr name = "groupStage" value = "0 0 0" />
-						<pattr name = "groupTwo" value = "0 0 0" />
-					</patcher>
-					<patcher name = "color">
-						<pattr name = "alpha" value = "1." />
-						<pattr name = "blue" value = "1." />
-						<pattr name = "green" value = "1." />
-						<pattr name = "red" value = "1." />
-					</patcher>
-					<patcher name = "render2viewport">
-						<pattr name = "address" value = "ViewPort_1" />
-					</patcher>
-				</patcher>
-			</patcher>
-			<patcher name = "CornerPin_3">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_3" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "blend" value = "alphablend" />
-					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "corner_radius" value = "30" />
-					<pattr name = "default_texture" value = "none" />
-					<pattr name = "drawcorners" value = "0" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.489779" />
-					<pattr name = "lower_leftY" value = "0.534858" />
-					<pattr name = "lower_rightX" value = "0.677204" />
-					<pattr name = "lower_rightY" value = "0.74345" />
-					<pattr name = "preserve_aspect" value = "0" />
-					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.531316" />
-					<pattr name = "upper_leftY" value = "0.260676" />
-					<pattr name = "upper_rightX" value = "0.736801" />
-					<pattr name = "upper_rightY" value = "0.454721" />
-					<patcher name = "renderGroup">
-						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
@@ -639,7 +174,6 @@
 					<pattr name = "upper_rightY" value = "0.262373" />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
@@ -654,10 +188,10 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "CornerPin_1">
+			<patcher name = "CornerPin_3">
 				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "CornerPin_1" />
+					<pattr name = "vpl_titleEdit" value = "CornerPin_3" />
 				</patcher>
 				<patcher name = "property">
 					<pattr name = "blend" value = "alphablend" />
@@ -667,19 +201,18 @@
 					<pattr name = "drawcorners" value = "0" />
 					<pattr name = "interp" value = "0" />
 					<pattr name = "layer" value = "1" />
-					<pattr name = "lower_leftX" value = "0.044534" />
-					<pattr name = "lower_leftY" value = "0.625877" />
-					<pattr name = "lower_rightX" value = "0.282597" />
-					<pattr name = "lower_rightY" value = "0.860783" />
+					<pattr name = "lower_leftX" value = "0.489779" />
+					<pattr name = "lower_leftY" value = "0.534858" />
+					<pattr name = "lower_rightX" value = "0.677204" />
+					<pattr name = "lower_rightY" value = "0.74345" />
 					<pattr name = "preserve_aspect" value = "0" />
 					<pattr name = "smooth_shading" value = "0" />
-					<pattr name = "upper_leftX" value = "0.02384" />
-					<pattr name = "upper_leftY" value = "0.319419" />
-					<pattr name = "upper_rightX" value = "0.329157" />
-					<pattr name = "upper_rightY" value = "0.280033" />
+					<pattr name = "upper_leftX" value = "0.531316" />
+					<pattr name = "upper_leftY" value = "0.260676" />
+					<pattr name = "upper_rightX" value = "0.736801" />
+					<pattr name = "upper_rightY" value = "0.454721" />
 					<patcher name = "renderGroup">
 						<pattr name = "groupOne" value = "0 0 0" />
-						<pattr name = "groupShady" value = "0 0 0" />
 						<pattr name = "groupStage" value = "0 0 0" />
 						<pattr name = "groupTwo" value = "0 0 0" />
 					</patcher>
@@ -694,39 +227,490 @@
 					</patcher>
 				</patcher>
 			</patcher>
-			<patcher name = "Output_1">
-				<pattr name = "clipFar" value = "100." />
-				<pattr name = "clipNear" value = "0.1" />
-				<pattr name = "desktop" value = "0" />
+			<patcher name = "CornerPin_4">
 				<pattr name = "enable" value = "1" />
-				<pattr name = "lowerRightX" value = "420" />
-				<pattr name = "lowerRightY" value = "340" />
-				<pattr name = "splitColumns" value = "&quot;1 column&quot;" />
-				<pattr name = "splitRows" value = "&quot;1 row&quot;" />
-				<pattr name = "upperLeftX" value = "100" />
-				<pattr name = "upperLeftY" value = "100" />
 				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Output_1" />
-				</patcher>
-				<patcher name = "_orbiter">
-					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
-					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
-					<pattr name = "orbitThreePosition" value = "position 0. 0. 3." />
-					<pattr name = "orbitTwoQuat" value = "quat 0. 0. 0. 1." />
+					<pattr name = "vpl_titleEdit" value = "CornerPin_4" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "antialias" value = "1" />
-					<pattr name = "border" value = "1" />
-					<pattr name = "esc" value = "1" />
-					<pattr name = "floating" value = "0" />
-					<pattr name = "interact" value = "0" />
-					<pattr name = "sync" value = "0" />
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.675356" />
+					<pattr name = "lower_leftY" value = "0.742959" />
+					<pattr name = "lower_rightX" value = "0.940504" />
+					<pattr name = "lower_rightY" value = "0.814998" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.737368" />
+					<pattr name = "upper_leftY" value = "0.455466" />
+					<pattr name = "upper_rightX" value = "0.96274" />
+					<pattr name = "upper_rightY" value = "0.457616" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
 				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1430" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "507" />
+			</patcher>
+			<patcher name = "CornerPin_5">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_5" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.503393" />
+					<pattr name = "lower_leftY" value = "0.982456" />
+					<pattr name = "lower_rightX" value = "0.687532" />
+					<pattr name = "lower_rightY" value = "0.905264" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.491701" />
+					<pattr name = "upper_leftY" value = "0.536842" />
+					<pattr name = "upper_rightX" value = "0.677427" />
+					<pattr name = "upper_rightY" value = "0.74386" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_6">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_6" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.688564" />
+					<pattr name = "lower_leftY" value = "0.898246" />
+					<pattr name = "lower_rightX" value = "0.987835" />
+					<pattr name = "lower_rightY" value = "0.957895" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.676399" />
+					<pattr name = "upper_leftY" value = "0.74386" />
+					<pattr name = "upper_rightX" value = "0.93674" />
+					<pattr name = "upper_rightY" value = "0.814035" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_7">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_7" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.024331" />
+					<pattr name = "lower_leftY" value = "0.954386" />
+					<pattr name = "lower_rightX" value = "0.264916" />
+					<pattr name = "lower_rightY" value = "0.97491" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.043749" />
+					<pattr name = "upper_leftY" value = "0.627995" />
+					<pattr name = "upper_rightX" value = "0.28236" />
+					<pattr name = "upper_rightY" value = "0.865082" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_8">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_8" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.264916" />
+					<pattr name = "lower_leftY" value = "0.971326" />
+					<pattr name = "lower_rightX" value = "0.50358" />
+					<pattr name = "lower_rightY" value = "0.97491" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.28401" />
+					<pattr name = "upper_leftY" value = "0.863799" />
+					<pattr name = "upper_rightX" value = "0.491647" />
+					<pattr name = "upper_rightY" value = "0.53405" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_9">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_9" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.740206" />
+					<pattr name = "lower_leftY" value = "0.450382" />
+					<pattr name = "lower_rightX" value = "0.958506" />
+					<pattr name = "lower_rightY" value = "0.516971" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.69917" />
+					<pattr name = "upper_leftY" value = "0.062663" />
+					<pattr name = "upper_rightX" value = "0.981328" />
+					<pattr name = "upper_rightY" value = "0.031332" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_10">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_10" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.025" />
+					<pattr name = "lower_leftY" value = "0.320611" />
+					<pattr name = "lower_rightX" value = "0.327429" />
+					<pattr name = "lower_rightY" value = "0.279865" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0." />
+					<pattr name = "upper_leftY" value = "0.020356" />
+					<pattr name = "upper_rightX" value = "0.3125" />
+					<pattr name = "upper_rightY" value = "0.035623" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_11">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_11" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.327317" />
+					<pattr name = "lower_leftY" value = "0.279898" />
+					<pattr name = "lower_rightX" value = "0.533861" />
+					<pattr name = "lower_rightY" value = "0.262087" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.311203" />
+					<pattr name = "upper_leftY" value = "0.033079" />
+					<pattr name = "upper_rightX" value = "0.51875" />
+					<pattr name = "upper_rightY" value = "0.015267" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "CornerPin_12">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "CornerPin_12" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "blend" value = "alphablend" />
+					<pattr name = "blend_enable" value = "1" />
+					<pattr name = "corner_radius" value = "30" />
+					<pattr name = "default_texture" value = "none" />
+					<pattr name = "drawcorners" value = "0" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "layer" value = "1" />
+					<pattr name = "lower_leftX" value = "0.533636" />
+					<pattr name = "lower_leftY" value = "0.264816" />
+					<pattr name = "lower_rightX" value = "0.739036" />
+					<pattr name = "lower_rightY" value = "0.454323" />
+					<pattr name = "preserve_aspect" value = "0" />
+					<pattr name = "smooth_shading" value = "0" />
+					<pattr name = "upper_leftX" value = "0.515509" />
+					<pattr name = "upper_leftY" value = "0.014879" />
+					<pattr name = "upper_rightX" value = "0.700731" />
+					<pattr name = "upper_rightY" value = "0.061783" />
+					<patcher name = "renderGroup">
+						<pattr name = "groupOne" value = "0 0 0" />
+						<pattr name = "groupStage" value = "0 0 0" />
+						<pattr name = "groupTwo" value = "0 0 0" />
+					</patcher>
+					<patcher name = "color">
+						<pattr name = "alpha" value = "1." />
+						<pattr name = "blue" value = "1." />
+						<pattr name = "green" value = "1." />
+						<pattr name = "red" value = "1." />
+					</patcher>
+					<patcher name = "render2viewport">
+						<pattr name = "address" value = "ViewPort_1" />
+					</patcher>
+				</patcher>
+			</patcher>
+			<patcher name = "Video_1">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "255" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractDarkBlueStreakcs.mp4" />
+				</patcher>
+			</patcher>
+			<patcher name = "Video_2">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_2" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "257" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractLightWaveRed.mp4" />
+				</patcher>
+			</patcher>
+			<patcher name = "Video_3">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_3" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "46" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractRedStreacks.mp4" />
+				</patcher>
+			</patcher>
+			<patcher name = "Video_4">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_4" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "36" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/WaterSunStreaks.mp4" />
+				</patcher>
+			</patcher>
+			<patcher name = "Video_5">
+				<pattr name = "enable" value = "1" />
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_5" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "72" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
 				</patcher>
 			</patcher>
 		</patcher>
@@ -735,10 +719,10 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "465" />
-				<pattr name = "lowerRightDesktopY" value = "473" />
-				<pattr name = "upperLeftDesktopX" value = "8" />
-				<pattr name = "upperLeftDesktopY" value = "129" />
+				<pattr name = "lowerRightDeskopX" value = "464" />
+				<pattr name = "lowerRightDesktopY" value = "472" />
+				<pattr name = "upperLeftDesktopX" value = "7" />
+				<pattr name = "upperLeftDesktopY" value = "128" />
 			</patcher>
 		</patcher>
 	</slot>
