@@ -51,6 +51,12 @@
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1430" />
+					<pattr name = "lowerRightDesktopY" value = "885" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "643" />
+				</patcher>
 				<patcher name = "_orbiter">
 					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
 					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
@@ -64,12 +70,6 @@
 					<pattr name = "floating" value = "0" />
 					<pattr name = "interact" value = "0" />
 					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1430" />
-					<pattr name = "lowerRightDesktopY" value = "885" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "643" />
 				</patcher>
 			</patcher>
 			<patcher name = "Grid_1">
@@ -389,9 +389,9 @@
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
 				<pattr name = "lowerRightDeskopX" value = "545" />
-				<pattr name = "lowerRightDesktopY" value = "613" />
+				<pattr name = "lowerRightDesktopY" value = "611" />
 				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "358" />
+				<pattr name = "upperLeftDesktopY" value = "356" />
 			</patcher>
 		</patcher>
 	</slot>

@@ -3,27 +3,23 @@
 <pattrstorage name = "calibration">
 	<slot number = "1">
 		<pattr name = "_toggleEditor" value = "0" />
-		<pattr name = "mainMetro" value = "&quot;20 hz&quot;" />
+		<pattr name = "mainMetro" value = "&quot;60 hz&quot;" />
 		<pattr name = "mainSwitch" value = "1" />
 		<patcher name = "_windowSlide">
 			<pattr name = "showSettings" value = "1" />
 		</patcher>
 		<patcher name = "3DViewer">
-			<pattr name = "_drawtocontext" value = "0" />
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
-				<pattr name = "orbitOnePosition" value = "position -0.00692 0.053737 0.048626" />
-				<pattr name = "orbitOneQuat" value = "quat 0. 0. -0.069757 0.997553" />
-				<pattr name = "orbitThreePosition" value = "position 0. 0. 1.800002" />
-				<pattr name = "orbitTwoQuat" value = "quat 0.573563 0. 0. 0.819132" />
+				<pattr name = "orbitOnePosition" value = "position -0.00647 0.022945 0.065978" />
+				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.017451 0.99983" />
+				<pattr name = "orbitThreePosition" value = "position 0. 0. 0.550003" />
+				<pattr name = "orbitTwoQuat" value = "quat 0.573559 0. 0. 0.819126" />
 			</patcher>
 			<patcher name = "_setgroupstage">
-				<pattr name = "groupOne" value = "0 0 1 1 0 1" />
+				<pattr name = "groupOne" value = "0 0 1 3 0 1 6 1 1" />
 				<pattr name = "groupStage" value = "0 0 1" />
 				<pattr name = "groupTwo" value = "0 0 0" />
-			</patcher>
-			<patcher name = "_setgroupshady">
-				<pattr name = "groupShady" value = "0 0 0" />
 			</patcher>
 			<patcher name = "_storePosition">
 				<pattr name = "lowerRightDeskopX" value = "547" />
@@ -55,6 +51,12 @@
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Output_1" />
 				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "811" />
+					<pattr name = "lowerRightDesktopY" value = "884" />
+					<pattr name = "upperLeftDesktopX" value = "5" />
+					<pattr name = "upperLeftDesktopY" value = "635" />
+				</patcher>
 				<patcher name = "_orbiter">
 					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
 					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
@@ -68,12 +70,6 @@
 					<pattr name = "floating" value = "0" />
 					<pattr name = "interact" value = "0" />
 					<pattr name = "sync" value = "0" />
-				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "811" />
-					<pattr name = "lowerRightDesktopY" value = "884" />
-					<pattr name = "upperLeftDesktopX" value = "5" />
-					<pattr name = "upperLeftDesktopY" value = "635" />
 				</patcher>
 			</patcher>
 			<patcher name = "Output_2">
@@ -90,6 +86,12 @@
 				<patcher name = "vpl_nodelogic">
 					<pattr name = "vpl_titleEdit" value = "Output_2" />
 				</patcher>
+				<patcher name = "_storePosition">
+					<pattr name = "lowerRightDeskopX" value = "1404" />
+					<pattr name = "lowerRightDesktopY" value = "884" />
+					<pattr name = "upperLeftDesktopX" value = "817" />
+					<pattr name = "upperLeftDesktopY" value = "635" />
+				</patcher>
 				<patcher name = "_orbiter">
 					<pattr name = "orbitOnePosition" value = "position 0. 0. 0." />
 					<pattr name = "orbitOneQuat" value = "quat 0. 0. 0. 1." />
@@ -104,12 +106,6 @@
 					<pattr name = "interact" value = "0" />
 					<pattr name = "sync" value = "0" />
 				</patcher>
-				<patcher name = "_storePosition">
-					<pattr name = "lowerRightDeskopX" value = "1404" />
-					<pattr name = "lowerRightDesktopY" value = "884" />
-					<pattr name = "upperLeftDesktopX" value = "817" />
-					<pattr name = "upperLeftDesktopY" value = "635" />
-				</patcher>
 			</patcher>
 			<patcher name = "BG_Grid">
 				<pattr name = "enable" value = "1" />
@@ -120,7 +116,6 @@
 				</patcher>
 				<patcher name = "renderGroup">
 					<pattr name = "groupOne" value = "6 0 1" />
-					<pattr name = "groupShady" value = "0 0 0" />
 					<pattr name = "groupStage" value = "0 0 0" />
 					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
@@ -151,7 +146,6 @@
 				</patcher>
 				<patcher name = "renderGroup">
 					<pattr name = "groupOne" value = "1 0 1" />
-					<pattr name = "groupShady" value = "0 0 0" />
 					<pattr name = "groupStage" value = "0 0 1" />
 					<pattr name = "groupTwo" value = "0 0 0" />
 				</patcher>
@@ -256,7 +250,7 @@
 				<pattr name = "positionZ" value = "0." />
 				<pattr name = "rotationX" value = "0." />
 				<pattr name = "rotationY" value = "0." />
-				<pattr name = "rotationZ" value = "135.936005" />
+				<pattr name = "rotationZ" value = "231.551987" />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
 				<pattr name = "scaleZ" value = "1." />
@@ -290,8 +284,8 @@
 				<pattr name = "positionX" value = "0." />
 				<pattr name = "positionY" value = "0." />
 				<pattr name = "positionZ" value = "0." />
-				<pattr name = "rotationX" value = "8.736" />
-				<pattr name = "rotationY" value = "18.342859" />
+				<pattr name = "rotationX" value = "15.2" />
+				<pattr name = "rotationY" value = "7.98857" />
 				<pattr name = "rotationZ" value = "0." />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
@@ -347,7 +341,6 @@
 							<pattr name = "axes" value = "0" />
 							<pattr name = "blend" value = "alphablend" />
 							<pattr name = "blend_enable" value = "0" />
-							<pattr name = "cache_mode" value = "displaylist" />
 							<pattr name = "cull_face" value = "0" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
@@ -381,7 +374,6 @@
 							<pattr name = "verbose" value = "0" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "6 1 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -444,7 +436,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "passA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "6 0 1 6 1 1" />
@@ -460,14 +451,11 @@
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
-							</patcher>
 						</patcher>
 					</patcher>
 					<patcher name = "SpatialSoftedge">
 						<pattr name = "enable" value = "1" />
-						<pattr name = "shader" value = "projection.angle.fast" />
+						<pattr name = "shader" value = "bake.projection" />
 						<pattr name = "uvTexture" value = "black" />
 						<patcher name = "vpl_nodelogic">
 							<pattr name = "vpl_titleEdit" value = "SpatialSoftedge" />
@@ -477,11 +465,12 @@
 							<pattr name = "angleLimit" value = "0.17" />
 							<pattr name = "angleMode" value = "0" />
 							<pattr name = "back_blend" value = "0" />
+							<pattr name = "bakeTexDim" value = "2" />
 							<pattr name = "bevelCurve" value = "1." />
 							<pattr name = "bevelRound" value = "1" />
 							<pattr name = "bevelSize" value = "0." />
-							<pattr name = "blend_luminance" value = "0.68" />
-							<pattr name = "blend_power" value = "2.1" />
+							<pattr name = "blend_luminance" value = "0.5" />
+							<pattr name = "blend_power" value = "1." />
 							<pattr name = "blend_spread" value = "0.024" />
 							<pattr name = "collada" value = "0" />
 							<pattr name = "distance_influence" value = "0." />
@@ -489,7 +478,7 @@
 							<pattr name = "interpolation_correction" value = "0." />
 							<pattr name = "passOn_label" value = "0." />
 							<pattr name = "projectionMode" value = "2" />
-							<pattr name = "toStage" value = "Colored" />
+							<pattr name = "toStage" value = "BeamerA" />
 							<pattr name = "useDetailSettings" value = "0" />
 							<patcher name = "offColor">
 								<pattr name = "alpha" value = "1." />
@@ -530,7 +519,7 @@
 								<pattr name = "bevelSize_F" value = "0." />
 							</patcher>
 							<patcher name = "gradientgraph">
-								<pattr name = "values" value = "101. 0. 1. 0. 0. 0 12.722649 0.311111 0 21.628502 0.438889 0 31.297707 0.511111 0 41.984734 0.561111 0 53.19 0.588889 0 100. 1. 0 linear" />
+								<pattr name = "values" value = "101. 0. 1. 0. 0. 0 100. 1. 0 linear" />
 							</patcher>
 						</patcher>
 						<patcher name = "beamerA">
@@ -554,6 +543,9 @@
 						<patcher name = "camera0">
 							<pattr name = "address" value = "HeadCam" />
 						</patcher>
+						<patcher name = "canvas">
+							<pattr name = "address" value = "Head_Canvas" />
+						</patcher>
 					</patcher>
 					<patcher name = "Head_Canvas">
 						<pattr name = "enable" value = "1" />
@@ -564,9 +556,6 @@
 							<pattr name = "fileName" value = "08/Face_lores.obj" />
 						</patcher>
 						<patcher name = "property">
-							<pattr name = "animenable" value = "0" />
-							<pattr name = "antialias" value = "0" />
-							<pattr name = "axes" value = "0" />
 							<pattr name = "blend" value = "alphablend" />
 							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "cache_mode" value = "displaylist" />
@@ -574,11 +563,9 @@
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
-							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
-							<pattr name = "nodeaxes" value = "0" />
 							<pattr name = "normalize" value = "0" />
 							<pattr name = "poly_mode_backface" value = "0" />
 							<pattr name = "poly_mode_frontface" value = "0" />
@@ -596,7 +583,6 @@
 							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "1 0 1 2 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -623,21 +609,16 @@
 							<pattr name = "fileName" value = "08/Face_lores.obj" />
 						</patcher>
 						<patcher name = "property">
-							<pattr name = "animenable" value = "0" />
-							<pattr name = "antialias" value = "0" />
-							<pattr name = "axes" value = "0" />
 							<pattr name = "blend" value = "alphablend" />
 							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "cache_mode" value = "displaylist" />
-							<pattr name = "cull_face" value = "0" />
+							<pattr name = "cull_face" value = "1" />
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
-							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
-							<pattr name = "nodeaxes" value = "0" />
 							<pattr name = "normalize" value = "0" />
 							<pattr name = "poly_mode_backface" value = "0" />
 							<pattr name = "poly_mode_frontface" value = "1" />
@@ -655,7 +636,6 @@
 							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "3 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -709,7 +689,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Head_LookAt">
-						<pattr name = "u037020337" value = "" />
+						<pattr name = "u862036009" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass1" />
@@ -729,7 +709,7 @@
 						<pattr name = "enable" value = "1" />
 						<pattr name = "positionX" value = "0." />
 						<pattr name = "positionY" value = "0." />
-						<pattr name = "positionZ" value = "0." />
+						<pattr name = "positionZ" value = "-0.0515" />
 						<pattr name = "rotationX" value = "0." />
 						<pattr name = "rotationY" value = "0." />
 						<pattr name = "rotationZ" value = "0." />
@@ -764,11 +744,11 @@
 					<patcher name = "Brain_TFM">
 						<pattr name = "enable" value = "1" />
 						<pattr name = "positionX" value = "0." />
-						<pattr name = "positionY" value = "-0.102" />
-						<pattr name = "positionZ" value = "0.019" />
+						<pattr name = "positionY" value = "0.066" />
+						<pattr name = "positionZ" value = "0.069" />
 						<pattr name = "rotationX" value = "0." />
 						<pattr name = "rotationY" value = "0." />
-						<pattr name = "rotationZ" value = "0." />
+						<pattr name = "rotationZ" value = "180." />
 						<pattr name = "scaleX" value = "0.9" />
 						<pattr name = "scaleY" value = "0.9" />
 						<pattr name = "scaleZ" value = "0.9" />
@@ -781,12 +761,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u576021192" value = "" />
+							<pattr name = "u619002282" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u909021344" value = "" />
+							<pattr name = "u429013628" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -822,7 +802,6 @@
 							<pattr name = "flipHorizontal" value = "0" />
 							<pattr name = "flipVertical" value = "0" />
 							<pattr name = "onstage" value = "0" />
-							<pattr name = "rendercontext" value = "0" />
 							<pattr name = "renderpass" value = "passA" />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "6 0 1" />
@@ -838,9 +817,6 @@
 							<patcher name = "shader">
 								<pattr name = "address" value = "&lt;none&gt;" />
 							</patcher>
-							<patcher name = "renderGroupShady">
-								<pattr name = "groupShady" value = "0 0 0" />
-							</patcher>
 						</patcher>
 					</patcher>
 					<patcher name = "BackgroundCanvas">
@@ -852,9 +828,6 @@
 							<pattr name = "fileName" value = "08/TableBackGround.obj" />
 						</patcher>
 						<patcher name = "property">
-							<pattr name = "animenable" value = "0" />
-							<pattr name = "antialias" value = "0" />
-							<pattr name = "axes" value = "0" />
 							<pattr name = "blend" value = "alphablend" />
 							<pattr name = "blend_enable" value = "0" />
 							<pattr name = "cache_mode" value = "displaylist" />
@@ -862,11 +835,9 @@
 							<pattr name = "default_texture" value = "none" />
 							<pattr name = "depth_enable" value = "1" />
 							<pattr name = "displaylist" value = "0" />
-							<pattr name = "drawbounds" value = "0" />
 							<pattr name = "drawgroup" value = "0" />
 							<pattr name = "fileWatch" value = "0" />
 							<pattr name = "layer" value = "0" />
-							<pattr name = "nodeaxes" value = "0" />
 							<pattr name = "normalize" value = "0" />
 							<pattr name = "poly_mode_backface" value = "0" />
 							<pattr name = "poly_mode_frontface" value = "0" />
@@ -884,7 +855,6 @@
 							<pattr name = "smoothing_angle" value = "89." />
 							<patcher name = "renderGroup">
 								<pattr name = "groupOne" value = "0 0 1" />
-								<pattr name = "groupShady" value = "0 0 0" />
 								<pattr name = "groupStage" value = "0 0 0" />
 								<pattr name = "groupTwo" value = "0 0 0" />
 							</patcher>
@@ -1018,7 +988,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Bkgn_LookAt">
-						<pattr name = "u590024891" value = "" />
+						<pattr name = "u727057193" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass2" />
@@ -1054,12 +1024,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u425025365" value = "" />
+							<pattr name = "u584010728" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u061025517" value = "" />
+							<pattr name = "u082020646" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1149,12 +1119,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u575027314" value = "" />
+							<pattr name = "u042047291" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_3">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u022027466" value = "" />
+							<pattr name = "u995047449" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1244,12 +1214,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_5">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u893029241" value = "" />
+							<pattr name = "u219070352" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u075029393" value = "" />
+							<pattr name = "u376070504" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1339,12 +1309,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u543031180" value = "" />
+							<pattr name = "u691072139" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u254031332" value = "" />
+							<pattr name = "u271072291" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
