@@ -91,7 +91,7 @@
 			"_title" : "MaskShaded",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 436, 425, 616, 507 ],
+			"_rect" : [ 435, 385, 615, 467 ],
 			"_nodespace.idx" : 2
 		}
 
@@ -373,7 +373,7 @@
 			"_title" : "BlendSoftedge_1",
 			"_nodespace" : "root",
 			"_level" : 0,
-			"_rect" : [ 435, 326, 615, 406 ],
+			"_rect" : [ 435, 297, 615, 377 ],
 			"_nodespace.idx" : 1
 		}
 
@@ -473,6 +473,42 @@
 		}
 ,
 		"_type" : "Grid"
+	}
+,
+	"Monitor" : 	{
+		"_type" : "Monitor"
+	}
+,
+	"TfmNode" : 	{
+		"TfmNode_1" : 		{
+			"_type" : "TfmNode",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "TfmNode_1",
+			"_title" : "StoneTFM",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 624, 126, 804, 257 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "TfmNode"
+	}
+,
+	"QueScript" : 	{
+		"QueScript_1" : 		{
+			"_type" : "QueScript",
+			"_version" : 1,
+			"_id" : 1,
+			"_name" : "QueScript_1",
+			"_title" : "QueScript_1",
+			"_nodespace" : "root",
+			"_level" : 0,
+			"_rect" : [ 625, 20, 805, 119 ],
+			"_nodespace.idx" : 1
+		}
+,
+		"_type" : "QueScript"
 	}
 
 }

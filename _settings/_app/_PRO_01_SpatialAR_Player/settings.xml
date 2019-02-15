@@ -4,7 +4,7 @@
 	<slot number = "1">
 		<pattr name = "_toggleEditor" value = "0" />
 		<pattr name = "mainMetro" value = "&quot;60 hz&quot;" />
-		<pattr name = "mainSwitch" value = "1" />
+		<pattr name = "mainSwitch" value = "0" />
 		<patcher name = "_windowSlide">
 			<pattr name = "showSettings" value = "1" />
 		</patcher>
@@ -17,7 +17,7 @@
 				<pattr name = "orbitTwoQuat" value = "quat 0.573559 0. 0. 0.819126" />
 			</patcher>
 			<patcher name = "_setgroupstage">
-				<pattr name = "groupOne" value = "0 0 1 3 0 1 6 1 1" />
+				<pattr name = "groupOne" value = "0 0 1 2 0 1 6 1 1" />
 				<pattr name = "groupStage" value = "0 0 1" />
 				<pattr name = "groupTwo" value = "0 0 0" />
 			</patcher>
@@ -250,7 +250,7 @@
 				<pattr name = "positionZ" value = "0." />
 				<pattr name = "rotationX" value = "0." />
 				<pattr name = "rotationY" value = "0." />
-				<pattr name = "rotationZ" value = "231.551987" />
+				<pattr name = "rotationZ" value = "41.04" />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
 				<pattr name = "scaleZ" value = "1." />
@@ -284,8 +284,8 @@
 				<pattr name = "positionX" value = "0." />
 				<pattr name = "positionY" value = "0." />
 				<pattr name = "positionZ" value = "0." />
-				<pattr name = "rotationX" value = "15.2" />
-				<pattr name = "rotationY" value = "7.98857" />
+				<pattr name = "rotationX" value = "-13.12" />
+				<pattr name = "rotationY" value = "-3.12" />
 				<pattr name = "rotationZ" value = "0." />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
@@ -478,7 +478,7 @@
 							<pattr name = "interpolation_correction" value = "0." />
 							<pattr name = "passOn_label" value = "0." />
 							<pattr name = "projectionMode" value = "2" />
-							<pattr name = "toStage" value = "BeamerA" />
+							<pattr name = "toStage" value = "Textured" />
 							<pattr name = "useDetailSettings" value = "0" />
 							<patcher name = "offColor">
 								<pattr name = "alpha" value = "1." />
@@ -689,7 +689,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Head_LookAt">
-						<pattr name = "u862036009" value = "" />
+						<pattr name = "u716020175" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass1" />
@@ -761,12 +761,18 @@
 					</patcher>
 					<patcher name = "sub-outlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u619002282" value = "" />
+							<pattr name = "u692021056" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u429013628" value = "" />
+							<pattr name = "u609021208" value = "" />
+						</patcher>
+					</patcher>
+					<patcher name = "Monitor_1">
+						<pattr name = "enable" value = "1" />
+						<patcher name = "vpl_nodelogic">
+							<pattr name = "vpl_titleEdit" value = "Monitor_1" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -988,7 +994,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Bkgn_LookAt">
-						<pattr name = "u727057193" value = "" />
+						<pattr name = "u051024845" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass2" />
@@ -1024,12 +1030,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u584010728" value = "" />
+							<pattr name = "u241025340" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u082020646" value = "" />
+							<pattr name = "u951025492" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1119,12 +1125,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u042047291" value = "" />
+							<pattr name = "u990027297" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_3">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u995047449" value = "" />
+							<pattr name = "u188027449" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1214,12 +1220,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_5">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u219070352" value = "" />
+							<pattr name = "u481029232" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u376070504" value = "" />
+							<pattr name = "u636029384" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1309,12 +1315,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u691072139" value = "" />
+							<pattr name = "u259031179" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u271072291" value = "" />
+							<pattr name = "u967031331" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
