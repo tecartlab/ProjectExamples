@@ -147,5 +147,11 @@
 		}
 
 	}
+,
+	"bs_gui_win_MeshWarp_P_Canvas" : 	{
+		"_pin" : 0,
+		"_type" : "Canvas",
+		"_slotsize" : 65
+	}
 
 }

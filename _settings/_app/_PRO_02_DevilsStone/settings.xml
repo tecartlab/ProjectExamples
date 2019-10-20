@@ -3,7 +3,7 @@
 <pattrstorage name = "calibration">
 	<slot number = "1">
 		<pattr name = "_toggleEditor" value = "0" />
-		<pattr name = "mainMetro" value = "&quot;30 hz&quot;" />
+		<pattr name = "mainMetro" value = "&quot;20 hz&quot;" />
 		<pattr name = "mainSwitch" value = "1" />
 		<patcher name = "_windowSlide">
 			<pattr name = "showSettings" value = "1" />
@@ -12,9 +12,9 @@
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position 0.704314 0.904808 3.459415" />
-				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.999941 -0.008726" />
+				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.199363 0.979903" />
 				<pattr name = "orbitThreePosition" value = "position 0. 0. 17.85" />
-				<pattr name = "orbitTwoQuat" value = "quat 0.47715 0. 0. 0.878797" />
+				<pattr name = "orbitTwoQuat" value = "quat 0.4848 0. 0. 0.874599" />
 			</patcher>
 			<patcher name = "_setgroupstage">
 				<pattr name = "groupOne" value = "0 1 1" />
@@ -354,7 +354,7 @@
 				<pattr name = "positionZ" value = "0." />
 				<pattr name = "rotationX" value = "0." />
 				<pattr name = "rotationY" value = "0." />
-				<pattr name = "rotationZ" value = "281.376007" />
+				<pattr name = "rotationZ" value = "162.575989" />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
 				<pattr name = "scaleZ" value = "1." />

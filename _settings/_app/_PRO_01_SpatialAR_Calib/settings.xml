@@ -318,10 +318,10 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "545" />
-				<pattr name = "lowerRightDesktopY" value = "629" />
-				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "358" />
+				<pattr name = "lowerRightDeskopX" value = "546" />
+				<pattr name = "lowerRightDesktopY" value = "687" />
+				<pattr name = "upperLeftDesktopX" value = "6" />
+				<pattr name = "upperLeftDesktopY" value = "405" />
 			</patcher>
 		</patcher>
 	</slot>

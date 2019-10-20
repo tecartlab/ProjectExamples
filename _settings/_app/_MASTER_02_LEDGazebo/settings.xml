@@ -12,9 +12,9 @@
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position 0.326512 0.344983 0.599764" />
-				<pattr name = "orbitOneQuat" value = "quat 0. 0. -0.374605 0.927183" />
-				<pattr name = "orbitThreePosition" value = "position 0. 0. 2.25" />
-				<pattr name = "orbitTwoQuat" value = "quat 0.566404 0. 0. 0.824123" />
+				<pattr name = "orbitOneQuat" value = "quat 0. 0. -0.317302 0.948321" />
+				<pattr name = "orbitThreePosition" value = "position 0. 0. 1.499999" />
+				<pattr name = "orbitTwoQuat" value = "quat 0.68835 0. 0. 0.72537" />
 			</patcher>
 			<patcher name = "_setgroupstage">
 				<pattr name = "groupOne" value = "0 0 1 1 0 1 2 0 1" />
@@ -36,6 +36,63 @@
 						<pattr name = "fileName" value = "usernodes..." />
 					</patcher>
 				</patcher>
+			</patcher>
+			<patcher name = "Video_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Video_1" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "autostart" value = "1" />
+					<pattr name = "cache_size" value = "0.1" />
+					<pattr name = "colorMode" value = "argb" />
+					<pattr name = "fileWatch" value = "0" />
+					<pattr name = "frame" value = "70" />
+					<pattr name = "frameendtrigger" value = "0" />
+					<pattr name = "framereport" value = "1" />
+					<pattr name = "interp" value = "0" />
+					<pattr name = "loop" value = "normal" />
+					<pattr name = "loopreport" value = "0" />
+					<pattr name = "rate" value = "1." />
+					<pattr name = "renderpass" value = "passA" />
+					<pattr name = "timeendtrigger" value = "0" />
+					<pattr name = "timereport" value = "0" />
+					<pattr name = "unique" value = "0" />
+					<pattr name = "vol" value = "0." />
+				</patcher>
+				<patcher name = "video">
+					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
+				</patcher>
+				<pattr name = "enable" value = "1" />
+			</patcher>
+			<patcher name = "Grid_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "Grid_1" />
+				</patcher>
+				<patcher name = "renderGroup">
+					<pattr name = "groupOne" value = "0 0 0" />
+					<pattr name = "groupStage" value = "0 0 1" />
+					<pattr name = "groupTwo" value = "0 0 0" />
+				</patcher>
+				<patcher name = "property">
+					<pattr name = "layer" value = "10" />
+					<pattr name = "positionX" value = "0." />
+					<pattr name = "positionY" value = "0." />
+					<pattr name = "positionZ" value = "0." />
+					<pattr name = "publishTfm" value = "0" />
+					<pattr name = "rotationX" value = "0." />
+					<pattr name = "rotationY" value = "0." />
+					<pattr name = "rotationZ" value = "0." />
+					<pattr name = "scaleX" value = "2." />
+					<pattr name = "scaleY" value = "2." />
+					<pattr name = "scaleZ" value = "2." />
+					<pattr name = "showAxis" value = "1" />
+				</patcher>
+				<patcher name = "transformnode">
+					<pattr name = "address" value = "&lt;none&gt;" />
+				</patcher>
+				<pattr name = "enable" value = "1" />
+				<pattr name = "gridsizeX" value = "0.1" />
+				<pattr name = "gridsizeY" value = "0.1" />
 			</patcher>
 			<patcher name = "ViewPort_1">
 				<patcher name = "vpl_nodelogic">
@@ -74,36 +131,6 @@
 				<pattr name = "enable" value = "1" />
 				<pattr name = "viewportCol" value = "&quot;column 1&quot;" />
 				<pattr name = "viewportRow" value = "&quot;row 1&quot;" />
-			</patcher>
-			<patcher name = "Grid_1">
-				<pattr name = "enable" value = "1" />
-				<pattr name = "gridsizeX" value = "0.1" />
-				<pattr name = "gridsizeY" value = "0.1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Grid_1" />
-				</patcher>
-				<patcher name = "renderGroup">
-					<pattr name = "groupOne" value = "0 0 0" />
-					<pattr name = "groupStage" value = "0 0 1" />
-					<pattr name = "groupTwo" value = "0 0 0" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "layer" value = "10" />
-					<pattr name = "positionX" value = "0." />
-					<pattr name = "positionY" value = "0." />
-					<pattr name = "positionZ" value = "0." />
-					<pattr name = "publishTfm" value = "0" />
-					<pattr name = "rotationX" value = "0." />
-					<pattr name = "rotationY" value = "0." />
-					<pattr name = "rotationZ" value = "0." />
-					<pattr name = "scaleX" value = "2." />
-					<pattr name = "scaleY" value = "2." />
-					<pattr name = "scaleZ" value = "2." />
-					<pattr name = "showAxis" value = "1" />
-				</patcher>
-				<patcher name = "transformnode">
-					<pattr name = "address" value = "&lt;none&gt;" />
-				</patcher>
 			</patcher>
 			<patcher name = "BoxMapProjection_1">
 				<pattr name = "collada" value = "0" />
@@ -218,7 +245,6 @@
 					<pattr name = "vpl_titleEdit" value = "PixelPusher_1" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "u992025012" value = "" />
 					<pattr name = "autothrottle" value = "0" />
 					<pattr name = "extradelay" value = "0" />
 					<pattr name = "renderpass" value = "passA" />
@@ -248,33 +274,6 @@
 					<pattr name = "address" value = "LedStrip_8" />
 				</patcher>
 			</patcher>
-			<patcher name = "Video_1">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "Video_1" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "autostart" value = "1" />
-					<pattr name = "cache_size" value = "0.1" />
-					<pattr name = "colorMode" value = "argb" />
-					<pattr name = "fileWatch" value = "0" />
-					<pattr name = "frame" value = "70" />
-					<pattr name = "frameendtrigger" value = "0" />
-					<pattr name = "framereport" value = "1" />
-					<pattr name = "interp" value = "0" />
-					<pattr name = "loop" value = "normal" />
-					<pattr name = "loopreport" value = "0" />
-					<pattr name = "rate" value = "1." />
-					<pattr name = "renderpass" value = "passA" />
-					<pattr name = "timeendtrigger" value = "0" />
-					<pattr name = "timereport" value = "0" />
-					<pattr name = "unique" value = "0" />
-					<pattr name = "vol" value = "0." />
-				</patcher>
-				<patcher name = "video">
-					<pattr name = "fileName" value = "01/AbstractBlueStreaks.mp4" />
-				</patcher>
-			</patcher>
 			<patcher name = "RenderCanvas">
 				<pattr name = "enable" value = "1" />
 				<patcher name = "vpl_nodelogic">
@@ -284,19 +283,16 @@
 					<pattr name = "fileName" value = "03/Dome.obj" />
 				</patcher>
 				<patcher name = "property">
-					<pattr name = "antialias" value = "0" />
-					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
 					<pattr name = "blend_enable" value = "1" />
 					<pattr name = "cache_mode" value = "displaylist" />
 					<pattr name = "cull_face" value = "2" />
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
-					<pattr name = "drawbounds" value = "0" />
+					<pattr name = "displaylist" value = "1" />
 					<pattr name = "drawgroup" value = "0" />
 					<pattr name = "fileWatch" value = "0" />
 					<pattr name = "layer" value = "0" />
-					<pattr name = "nodeaxes" value = "0" />
 					<pattr name = "normalize" value = "0" />
 					<pattr name = "poly_mode_backface" value = "0" />
 					<pattr name = "poly_mode_frontface" value = "0" />
@@ -346,7 +342,6 @@
 					<pattr name = "axes" value = "0" />
 					<pattr name = "blend" value = "alphablend" />
 					<pattr name = "blend_enable" value = "1" />
-					<pattr name = "cache_mode" value = "displaylist" />
 					<pattr name = "cull_face" value = "0" />
 					<pattr name = "default_texture" value = "none" />
 					<pattr name = "depth_enable" value = "1" />
@@ -1626,10 +1621,10 @@
 		</patcher>
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
-				<pattr name = "lowerRightDeskopX" value = "544" />
+				<pattr name = "lowerRightDeskopX" value = "545" />
 				<pattr name = "lowerRightDesktopY" value = "695" />
 				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "408" />
+				<pattr name = "upperLeftDesktopY" value = "410" />
 			</patcher>
 		</patcher>
 	</slot>

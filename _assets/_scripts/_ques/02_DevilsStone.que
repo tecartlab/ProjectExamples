@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<script>
+	<play name="RotateStone"/>
+	<que name="RotateStone" loop="no">
+		<anim duration="10s" loop="normal" name="rotStone">
+			<track name="tk1">0. 1.</track>
+			<send>/sparck/node ::StoneTFM::rotationZ {tk1 * 360.}</send>
+		</anim>
+		<wait anim="rotStone"/>
+	</que>
+</script>

@@ -3,8 +3,8 @@
 <pattrstorage name = "calibration">
 	<slot number = "1">
 		<pattr name = "_toggleEditor" value = "0" />
-		<pattr name = "mainMetro" value = "&quot;60 hz&quot;" />
-		<pattr name = "mainSwitch" value = "0" />
+		<pattr name = "mainMetro" value = "&quot;20 hz&quot;" />
+		<pattr name = "mainSwitch" value = "1" />
 		<patcher name = "_windowSlide">
 			<pattr name = "showSettings" value = "1" />
 		</patcher>
@@ -12,9 +12,9 @@
 			<pattr name = "_enable" value = "1" />
 			<patcher name = "_orbiter">
 				<pattr name = "orbitOnePosition" value = "position -0.00647 0.022945 0.065978" />
-				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.017451 0.99983" />
-				<pattr name = "orbitThreePosition" value = "position 0. 0. 0.550003" />
-				<pattr name = "orbitTwoQuat" value = "quat 0.573559 0. 0. 0.819126" />
+				<pattr name = "orbitOneQuat" value = "quat 0. 0. 0.069754 0.997547" />
+				<pattr name = "orbitThreePosition" value = "position 0. 0. 2.95" />
+				<pattr name = "orbitTwoQuat" value = "quat 0.430498 0. 0. 0.902557" />
 			</patcher>
 			<patcher name = "_setgroupstage">
 				<pattr name = "groupOne" value = "0 0 1 2 0 1 6 1 1" />
@@ -36,6 +36,25 @@
 						<pattr name = "fileName" value = "usernodes..." />
 					</patcher>
 				</patcher>
+			</patcher>
+			<patcher name = "QueScript_1">
+				<patcher name = "vpl_nodelogic">
+					<pattr name = "vpl_titleEdit" value = "QueScript_1" />
+				</patcher>
+				<patcher name = "property">
+					<patcher name = "oscSendNode">
+						<pattr name = "address" value = "&lt;none&gt;" />
+					</patcher>
+					<pattr name = "debug" value = "0" />
+					<pattr name = "editor" value = "Textpad" />
+					<pattr name = "fileWatch" value = "1" />
+					<pattr name = "update_mode" value = "automatic" />
+					<pattr name = "updatefreq" value = "1" />
+				</patcher>
+				<patcher name = "script">
+					<pattr name = "fileName" value = "SAR_ObserverAnim.que" />
+				</patcher>
+				<pattr name = "enable" value = "1" />
 			</patcher>
 			<patcher name = "Output_1">
 				<pattr name = "clipFar" value = "100." />
@@ -250,7 +269,7 @@
 				<pattr name = "positionZ" value = "0." />
 				<pattr name = "rotationX" value = "0." />
 				<pattr name = "rotationY" value = "0." />
-				<pattr name = "rotationZ" value = "41.04" />
+				<pattr name = "rotationZ" value = "164.015991" />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
 				<pattr name = "scaleZ" value = "1." />
@@ -284,8 +303,8 @@
 				<pattr name = "positionX" value = "0." />
 				<pattr name = "positionY" value = "0." />
 				<pattr name = "positionZ" value = "0." />
-				<pattr name = "rotationX" value = "-13.12" />
-				<pattr name = "rotationY" value = "-3.12" />
+				<pattr name = "rotationX" value = "14.432001" />
+				<pattr name = "rotationY" value = "8.194284" />
 				<pattr name = "rotationZ" value = "0." />
 				<pattr name = "scaleX" value = "1." />
 				<pattr name = "scaleY" value = "1." />
@@ -295,25 +314,6 @@
 				</patcher>
 				<patcher name = "parentTransformation">
 					<pattr name = "address" value = "&lt;none&gt;" />
-				</patcher>
-			</patcher>
-			<patcher name = "QueScript_1">
-				<pattr name = "enable" value = "1" />
-				<patcher name = "vpl_nodelogic">
-					<pattr name = "vpl_titleEdit" value = "QueScript_1" />
-				</patcher>
-				<patcher name = "property">
-					<pattr name = "debug" value = "0" />
-					<pattr name = "editor" value = "Textpad" />
-					<pattr name = "fileWatch" value = "1" />
-					<pattr name = "update_mode" value = "automatic" />
-					<pattr name = "updatefreq" value = "1" />
-					<patcher name = "oscSendNode">
-						<pattr name = "address" value = "&lt;none&gt;" />
-					</patcher>
-				</patcher>
-				<patcher name = "script">
-					<pattr name = "fileName" value = "SAR_ObserverAnim.que" />
 				</patcher>
 			</patcher>
 			<patcher name = "Head">
@@ -689,7 +689,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Head_LookAt">
-						<pattr name = "u716020175" value = "" />
+						<pattr name = "u033033509" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass1" />
@@ -761,18 +761,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u692021056" value = "" />
+							<pattr name = "u120034378" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u609021208" value = "" />
-						</patcher>
-					</patcher>
-					<patcher name = "Monitor_1">
-						<pattr name = "enable" value = "1" />
-						<patcher name = "vpl_nodelogic">
-							<pattr name = "vpl_titleEdit" value = "Monitor_1" />
+							<pattr name = "u154034530" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -994,7 +988,7 @@
 						</patcher>
 					</patcher>
 					<patcher name = "Bkgn_LookAt">
-						<pattr name = "u051024845" value = "" />
+						<pattr name = "u201037917" value = "" />
 						<pattr name = "enable" value = "1" />
 						<pattr name = "lookDirection" value = "1" />
 						<pattr name = "transformationpass" value = "pass2" />
@@ -1030,12 +1024,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u241025340" value = "" />
+							<pattr name = "u541038407" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u951025492" value = "" />
+							<pattr name = "u558038559" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1125,12 +1119,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_6">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u990027297" value = "" />
+							<pattr name = "u731040179" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_3">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u188027449" value = "" />
+							<pattr name = "u628040331" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1220,12 +1214,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_5">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u481029232" value = "" />
+							<pattr name = "u969041965" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_2">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u636029384" value = "" />
+							<pattr name = "u085042117" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1315,12 +1309,12 @@
 					</patcher>
 					<patcher name = "sub-outlet_4">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u259031179" value = "" />
+							<pattr name = "u483043761" value = "" />
 						</patcher>
 					</patcher>
 					<patcher name = "sub-inlet_1">
 						<patcher name = "bs.vpl.util.node">
-							<pattr name = "u967031331" value = "" />
+							<pattr name = "u858043913" value = "" />
 						</patcher>
 					</patcher>
 				</patcher>
@@ -1335,9 +1329,9 @@
 		<patcher name = "Editor">
 			<patcher name = "_storePosition">
 				<pattr name = "lowerRightDeskopX" value = "545" />
-				<pattr name = "lowerRightDesktopY" value = "695" />
+				<pattr name = "lowerRightDesktopY" value = "629" />
 				<pattr name = "upperLeftDesktopX" value = "5" />
-				<pattr name = "upperLeftDesktopY" value = "410" />
+				<pattr name = "upperLeftDesktopY" value = "358" />
 			</patcher>
 		</patcher>
 	</slot>

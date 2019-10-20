@@ -3,7 +3,7 @@
 	"bs_gui_win_workspace_WorkSpace" : 	{
 		"_type" : "workspace",
 		"Main" : 		{
-			"_rect" : [ 550, 134, 1403, 604 ],
+			"_rect" : [ 550, 134, 1403, 553 ],
 			"_visible" : 1
 		}
 
@@ -166,7 +166,7 @@
 		"_type" : "workspace",
 		"Main" : 		{
 			"_rect" : [ 721, 133, 1399, 831 ],
-			"_visible" : 1
+			"_visible" : 0
 		}
 
 	}
